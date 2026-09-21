@@ -3,7 +3,7 @@ export const SITE_TITLE = 'Xpandor | Retail Expansion Partner';
 export const SITE_DESCRIPTION = 'Xpandor takes ownership of the operational complexity behind physical expansion. Locations, fit-outs, signage, and retail staffing across Bengaluru and South India.';
 
 export const CONTACT_PHONE = '+91 98458 08425';
-export const CONTACT_EMAIL = 'contact@xpandor.net';
+export const CONTACT_EMAIL = 'preetham@xpandor.net';
 export const WHATSAPP_NUMBER = '919845808425';
 export const WHATSAPP_BASE_URL = 'https://wa.me/919845808425';
 export const FOUNDER_NAME = 'Preetham Phirangi';
