@@ -1,0 +1,79 @@
+---
+---
+
+<header class="header">
+	<div class="container header-inner">
+		<a href="/" class="logo">
+			<span class="logo-mark">XP</span>
+			<span class="logo-text">Xpandor</span>
+		</a>
+		<nav class="nav">
+			<a href="#about" class="nav-link">About</a>
+			<a href="#services" class="nav-link">Services</a>
+			<a href="#contact" class="nav-link nav-btn">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<style>
+	.header {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		background: rgba(12, 13, 18, 0.8);
+		border-bottom: 1px solid var(--border-subtle);
+		padding: 1rem 0;
+	}
+	.header-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		font-weight: 700;
+		font-size: 1.25rem;
+		letter-spacing: -0.02em;
+	}
+	.logo-mark {
+		background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
+		color: #ffffff;
+		padding: 0.25rem 0.6rem;
+		border-radius: 6px;
+		font-size: 0.85rem;
+		font-weight: 800;
+	}
+	.logo-text {
+		color: var(--text-main);
+	}
+	.nav {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+	.nav-link {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		font-weight: 500;
+		transition: color 0.2s ease;
+	}
+	.nav-link:hover {
+		color: var(--text-main);
+	}
+	.nav-btn {
+		background: rgba(99, 102, 241, 0.15);
+		border: 1px solid var(--border-highlight);
+		color: #a5b4fc;
+		padding: 0.4rem 1rem;
+		border-radius: 9999px;
+		transition: all 0.2s ease;
+	}
+	.nav-btn:hover {
+		background: var(--accent);
+		color: #ffffff;
+	}
+</style>

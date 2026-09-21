@@ -1,0 +1,31 @@
+---
+const today = new Date();
+---
+
+<footer class="footer">
+	<div class="container footer-inner">
+		<p>&copy; {today.getFullYear()} xpandor.net. All rights reserved.</p>
+		<p class="built-with">Built with speed and precision.</p>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		margin-top: auto;
+		border-top: 1px solid var(--border-subtle);
+		padding: 2.5rem 0;
+		color: var(--text-muted);
+		font-size: 0.9rem;
+	}
+	.footer-inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+	.built-with {
+		font-size: 0.85rem;
+		opacity: 0.7;
+	}
+</style>

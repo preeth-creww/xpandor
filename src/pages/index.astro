@@ -1,0 +1,194 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<div class="container hero-content">
+					<div class="badge">xpandor.net</div>
+					<h1>Scale Without Friction.</h1>
+					<p class="subtitle">
+						High-performance systems, engineered for resilience and built for scale.
+					</p>
+					<div class="cta-group">
+						<a href="#contact" class="btn btn-primary">Get in Touch</a>
+						<a href="#about" class="btn btn-secondary">Learn More</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section">
+				<div class="container">
+					<div class="grid">
+						<div class="card">
+							<div class="card-icon">⚡</div>
+							<h3>Ultra Low Latency</h3>
+							<p>Deployed on Cloudflare's global edge network across 300+ cities worldwide.</p>
+						</div>
+						<div class="card">
+							<div class="card-icon">🛡️</div>
+							<h3>Enterprise Grade</h3>
+							<p>Built-in DDoS protection, automatic SSL, and ironclad infrastructure reliability.</p>
+						</div>
+						<div class="card">
+							<div class="card-icon">🚀</div>
+							<h3>Zero Overhead</h3>
+							<p>Modern static generation delivering near-instant page loads and zero server maintenance.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact-section">
+				<div class="container">
+					<div class="contact-box">
+						<h2>Ready to Collaborate?</h2>
+						<p>Get in touch with us to explore solutions tailored for your business.</p>
+						<a href="mailto:contact@xpandor.net" class="btn btn-primary">contact@xpandor.net</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		flex: 1;
+	}
+	.hero {
+		padding: 6rem 0 4rem;
+		text-align: center;
+		position: relative;
+	}
+	.badge {
+		display: inline-block;
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		background: rgba(99, 102, 241, 0.12);
+		border: 1px solid var(--border-highlight);
+		color: #a5b4fc;
+		font-size: 0.85rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		margin-bottom: 1.5rem;
+	}
+	.hero h1 {
+		font-size: clamp(2.5rem, 6vw, 4rem);
+		font-weight: 800;
+		line-height: 1.1;
+		margin: 0 auto 1.5rem;
+		max-width: 800px;
+		letter-spacing: -0.03em;
+		background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.7));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.subtitle {
+		font-size: clamp(1.1rem, 2vw, 1.3rem);
+		color: var(--text-muted);
+		max-width: 620px;
+		margin: 0 auto 2.5rem;
+		line-height: 1.6;
+	}
+	.cta-group {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75rem 1.75rem;
+		border-radius: 8px;
+		font-weight: 600;
+		font-size: 0.95rem;
+		transition: all 0.2s ease;
+	}
+	.btn-primary {
+		background: var(--accent);
+		color: #ffffff;
+		box-shadow: 0 4px 20px var(--accent-glow);
+	}
+	.btn-primary:hover {
+		opacity: 0.92;
+		transform: translateY(-1px);
+	}
+	.btn-secondary {
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		color: var(--text-main);
+	}
+	.btn-secondary:hover {
+		background: var(--bg-surface-light);
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+	}
+	.card {
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		padding: 2rem;
+		border-radius: 12px;
+		transition: border-color 0.2s ease, transform 0.2s ease;
+	}
+	.card:hover {
+		border-color: var(--border-highlight);
+		transform: translateY(-2px);
+	}
+	.card-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.card h3 {
+		font-size: 1.25rem;
+		margin: 0 0 0.5rem;
+	}
+	.card p {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	.contact-section {
+		padding-bottom: 6rem;
+	}
+	.contact-box {
+		background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(12, 13, 18, 0) 70%), var(--bg-surface);
+		border: 1px solid var(--border-highlight);
+		border-radius: 16px;
+		padding: 3.5rem 2rem;
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	.contact-box h2 {
+		font-size: 2rem;
+		margin: 0 0 1rem;
+	}
+	.contact-box p {
+		color: var(--text-muted);
+		margin: 0 0 2rem;
+		font-size: 1.1rem;
+	}
+</style>
