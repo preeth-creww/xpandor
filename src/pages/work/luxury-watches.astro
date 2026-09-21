@@ -1,0 +1,274 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { WHATSAPP_BASE_URL } from '../../consts';
+---
+
+<BaseLayout
+	title="Luxury Multi-Brand Watch Showroom | Xpandor Case Study"
+	description="Case study: Turnkey mall concourse timepiece boutique for Rado, Tissot, Guess & Gc. Marble flooring, custom vitrines, and security display joinery."
+>
+	<section class="case-hero">
+		<div class="container">
+			<div class="case-hero-inner">
+				<a href="/work" class="back-link">← Back to All Case Studies</a>
+				<div class="case-badge">
+					<span class="eyebrow">LUXURY ATRIUM SHOWROOM</span>
+				</div>
+				<h1 class="case-title">Multi-Brand Luxury Timepiece Boutique</h1>
+				<p class="case-subtitle">
+					Mall concourse luxury showroom hosting international horology brands including Rado, Tissot, Guess, and Gc. Executed with high-gloss marble flooring, custom perimeter wall units, and security vitrines.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="case-image-section">
+		<div class="container">
+			<div class="case-hero-img-wrap">
+				<img 
+					src="/images/img-001.jpg" 
+					alt="Luxury multi-brand watch showroom fit-out" 
+					class="case-main-img"
+					width="1200"
+					height="600"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="section case-body-section">
+		<div class="container">
+			<div class="case-grid">
+				<div class="case-details">
+					<div class="detail-block">
+						<h2 class="detail-heading">The Requirement</h2>
+						<p>
+							The client required a premium, open-concept timepiece salon within a major shopping mall atrium. The space needed to accommodate distinct visual brand identities for Swiss and global watchmakers (Rado, Tissot, Guess, Gc) while adhering to strict mall operational covenants and nighttime work windows.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">The Challenge</h2>
+						<p>
+							Luxury retail requires uncompromising tolerances: high-security toughened glass showcases, zero-vibration display bases, high-CRI color rendering (95+) to prevent dial color distortion, and mirror-finish marble floor alignment without lip page.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">What Xpandor Handled</h2>
+						<ul class="handled-list">
+							<li><strong>Marble Flooring & Concourse Transition:</strong> Laid seamless high-gloss imported marble tile flooring aligned flush with mall common areas.</li>
+							<li><strong>Perimeter Display Vitrines:</strong> Fabricated multi-tier brand alcoves with concealed high-output LED lighting strips and anti-glare glass vitrines.</li>
+							<li><strong>Floating Island Display Pods:</strong> Engineered standalone freestanding display islands in champagne gold and off-white lacquer finishes.</li>
+							<li><strong>Mall Covenants & Night Execution:</strong> Managed all dust barrier containment, sound mitigation, and night-shift execution to meet mall landlord guidelines.</li>
+						</ul>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">Execution & Result</h2>
+						<p>
+							The project was completed within 35 calendar days strictly during overnight mall non-trading hours. Each brand partner approved their respective shop-in-shop zone without a single snag rework.
+						</p>
+					</div>
+				</div>
+
+				<div class="case-sidebar">
+					<div class="sidebar-box">
+						<h3 class="sidebar-title">Project Summary</h3>
+						<div class="sidebar-fact">
+							<span class="fact-label">Brands</span>
+							<span class="fact-val">Rado • Tissot • Guess • Gc</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Category</span>
+							<span class="fact-val">Fine Horology & Watches</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Format</span>
+							<span class="fact-val">Mall Concourse Boutique</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Execution Time</span>
+							<span class="fact-val">35 Days (Night Shifts)</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Outcome</span>
+							<span class="fact-val text-gold">100% Brand Sign-Off</span>
+						</div>
+
+						<div class="sidebar-action">
+							<a 
+								href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20luxury%20retail%20fit-out%20with%20Xpandor.`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn-gold btn-full"
+							>
+								<span>Discuss Luxury Retail Fit-Out ↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.case-hero {
+		padding: 4rem 0 2rem;
+	}
+
+	.back-link {
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		color: var(--accent-gold);
+		display: inline-block;
+		margin-bottom: 1.5rem;
+	}
+
+	.back-link:hover {
+		text-decoration: underline;
+	}
+
+	.case-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.case-subtitle {
+		font-size: 1.15rem;
+		color: var(--text-muted);
+		max-width: 750px;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	.case-image-section {
+		padding: 1.5rem 0 3rem;
+	}
+
+	.case-hero-img-wrap {
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		border: 1px solid var(--border-gold);
+		box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+	}
+
+	.case-main-img {
+		width: 100%;
+		height: auto;
+		max-height: 580px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.case-grid {
+		display: grid;
+		grid-template-columns: 1.8fr 1fr;
+		gap: 3.5rem;
+		align-items: start;
+	}
+
+	@media (max-width: 900px) {
+		.case-grid {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.detail-block {
+		margin-bottom: 2.5rem;
+	}
+
+	.detail-heading {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: var(--text-main);
+	}
+
+	.detail-block p {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.handled-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.handled-list li {
+		font-size: 0.92rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+	}
+
+	.handled-list strong {
+		color: var(--text-main);
+	}
+
+	.sidebar-box {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+		position: sticky;
+		top: 100px;
+	}
+
+	.sidebar-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin: 0 0 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.sidebar-fact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.fact-label {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		color: var(--text-subdued);
+		letter-spacing: 0.08em;
+	}
+
+	.fact-val {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.text-gold {
+		color: var(--accent-gold) !important;
+	}
+
+	.sidebar-action {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.btn-full {
+		width: 100%;
+		font-size: 0.85rem;
+		padding: 0.75rem 1rem;
+	}
+</style>

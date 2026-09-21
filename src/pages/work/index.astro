@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { WHATSAPP_BASE_URL } from '../../consts';
+
+const caseStudies = [
+	{
+		client: "Kushal's Fashion & Silver Jewellery",
+		category: "Jewellery & High Street Retail",
+		location: "South India",
+		scope: "Fit-Out • Architectural Wave Facade • Signage • Retail Staffing",
+		slug: "/work/kushals",
+		image: "/images/kushals.jpeg",
+		highlight: "Standalone flagship store delivered turnkey with complete opening staff team."
+	},
+	{
+		client: "Luxury Multi-Brand Watch Showroom",
+		category: "Luxury Retail (Rado • Tissot • Guess • Gc)",
+		location: "Bengaluru",
+		scope: "Fit-Out • Custom Vitrines • Marble Flooring • Display Kiosks",
+		slug: "/work/luxury-watches",
+		image: "/images/img-001.jpg",
+		highlight: "High-spec atrium timepiece showroom with security vitrines and marble inlay."
+	},
+	{
+		client: "Toy Shire",
+		category: "Specialty Consumer Retail",
+		location: "Mall Concourse",
+		scope: "Fit-Out • Modular Joinery • 3D Dual-Language Signage",
+		slug: "/work/toy-shire",
+		image: "/images/img-000.jpg",
+		highlight: "Vibrant custom display joinery, cove lighting, and regional script channel letters."
+	},
+	{
+		client: "GoFix",
+		category: "Electronics Service & Retail",
+		location: "Bengaluru High Streets",
+		scope: "Commercial Location Search • Landlord Negotiation • Lease Closure",
+		slug: "/work/gofix",
+		image: "/images/img-002.jpg",
+		highlight: "2 retail locations identified and secured (~3,500 sqft transacted)."
+	}
+];
+---
+
+<BaseLayout
+	title="Selected Work & Case Studies | Xpandor"
+	description="Explore real retail projects executed by Xpandor across Bengaluru and South India: Kushal's, Luxury Watch Showrooms, Toy Shire, and GoFix."
+>
+	<!-- Hero Section -->
+	<section class="page-hero">
+		<div class="container">
+			<div class="hero-content">
+				<span class="eyebrow">SELECTED WORK</span>
+				<h1 class="page-title">Evidence over promises.</h1>
+				<p class="page-subhead">
+					We measure success by stores that open on schedule and trade successfully. Examine the real-world scope, execution challenges, and outcomes from our projects.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Grid -->
+	<section class="section">
+		<div class="container">
+			<div class="case-studies-grid">
+				{caseStudies.map((study) => (
+					<div class="cs-card">
+						<div class="cs-image-wrap">
+							<img src={study.image} alt={study.client} loading="lazy" width="600" height="380" />
+						</div>
+						<div class="cs-info">
+							<div class="cs-meta">
+								<span class="cs-cat">{study.category}</span>
+								<span class="cs-loc">{study.location}</span>
+							</div>
+							<h3 class="cs-client">{study.client}</h3>
+							<p class="cs-highlight">{study.highlight}</p>
+							<div class="cs-scope-tag">{study.scope}</div>
+							<a href={study.slug} class="cs-link">Read Full Case Study ↗</a>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="section cta-section">
+		<div class="container text-center">
+			<div class="cta-banner mx-auto">
+				<span class="eyebrow">Start Your Store</span>
+				<h2 class="cta-title">Ready to build your next flagship?</h2>
+				<p class="cta-desc">
+					Share your format requirements and target launch date. We'll outline how Xpandor can manage the entire operational journey.
+				</p>
+				<a 
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20case%20studies%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-gold btn-large"
+				>
+					<span>Discuss Your Project on WhatsApp ↗</span>
+				</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.page-hero {
+		padding: 5rem 0 3.5rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+	}
+
+	.hero-content {
+		max-width: 820px;
+	}
+
+	.page-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.02em;
+		margin: 0.75rem 0 1.25rem;
+	}
+
+	.page-subhead {
+		font-size: clamp(1.05rem, 2vw, 1.25rem);
+		line-height: 1.65;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	.case-studies-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2.5rem;
+	}
+
+	@media (max-width: 860px) {
+		.case-studies-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.cs-card {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.25s ease;
+	}
+
+	.cs-card:hover {
+		border-color: var(--border-gold);
+		transform: translateY(-2px);
+	}
+
+	.cs-image-wrap {
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
+		background: #000;
+	}
+
+	.cs-image-wrap img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.4s ease;
+	}
+
+	.cs-card:hover .cs-image-wrap img {
+		transform: scale(1.03);
+	}
+
+	.cs-info {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.cs-meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.6rem;
+		font-size: 0.75rem;
+	}
+
+	.cs-cat {
+		font-family: var(--font-mono);
+		color: var(--accent-gold);
+		font-weight: 600;
+	}
+
+	.cs-loc {
+		color: var(--text-subdued);
+	}
+
+	.cs-client {
+		font-size: 1.35rem;
+		font-weight: 700;
+		margin: 0 0 0.75rem;
+	}
+
+	.cs-highlight {
+		font-size: 0.9rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+		margin: 0 0 1.25rem;
+	}
+
+	.cs-scope-tag {
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		color: var(--text-subdued);
+		background: rgba(255, 255, 255, 0.04);
+		padding: 0.4rem 0.6rem;
+		border-radius: 2px;
+		margin-bottom: 1.5rem;
+	}
+
+	.cs-link {
+		margin-top: auto;
+		font-size: 0.88rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+	}
+
+	.cs-link:hover {
+		text-decoration: underline;
+	}
+
+	.cta-banner {
+		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-md);
+		padding: 4.5rem 2rem;
+		text-align: center;
+		max-width: 800px;
+	}
+
+	.cta-title {
+		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+		font-weight: 800;
+		margin: 0.75rem 0 1rem;
+	}
+
+	.cta-desc {
+		font-size: 1.05rem;
+		color: var(--text-muted);
+		margin-bottom: 2rem;
+	}
+
+	.btn-large {
+		padding: 0.85rem 2rem;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.mx-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>

@@ -1,0 +1,328 @@
+---
+import { CONTACT_PHONE, WHATSAPP_BASE_URL } from '../consts';
+---
+
+<div class="expansion-modal-backdrop" id="expansion-modal" aria-hidden="true">
+	<div class="expansion-modal-dialog">
+		<div class="modal-header">
+			<div>
+				<span class="eyebrow">Direct Expansion Intake</span>
+				<h3 class="modal-title">Tell Us About Your Expansion</h3>
+			</div>
+			<button type="button" class="modal-close" id="close-modal-btn" aria-label="Close intake modal">&times;</button>
+		</div>
+
+		<p class="modal-intro">
+			Tell us about your next store requirement. Your brief will be sent directly to <strong>Preetham Phirangi ({CONTACT_PHONE})</strong> on WhatsApp for an immediate commercial review.
+		</p>
+
+		<form id="expansion-form" class="modal-form">
+			<div class="form-row">
+				<div class="form-field">
+					<label for="brand-name">Brand Name *</label>
+					<input type="text" id="brand-name" required placeholder="e.g. Kushal's, GoFix, D2C Brand" />
+				</div>
+				<div class="form-field">
+					<label for="contact-person">Your Name / Title *</label>
+					<input type="text" id="contact-person" required placeholder="e.g. Founder, Head of Expansion" />
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-field">
+					<label for="target-city">Target City / Micro-Market *</label>
+					<input type="text" id="target-city" required placeholder="e.g. Bengaluru (Indiranagar / HSR / Mall)" />
+				</div>
+				<div class="form-field">
+					<label for="store-size">Target Footprint (sqft) *</label>
+					<input type="text" id="store-size" required placeholder="e.g. 1,500 – 2,500 sqft" />
+				</div>
+			</div>
+
+			<div class="form-field">
+				<label>Expansion Scope Needed (Select all that apply) *</label>
+				<div class="checkbox-grid">
+					<label class="custom-check">
+						<input type="checkbox" name="scope" value="Locations" checked />
+						<span>01 Locations (Site Search & Lease)</span>
+					</label>
+					<label class="custom-check">
+						<input type="checkbox" name="scope" value="Fit-outs" checked />
+						<span>02 Projects (End-to-End Fit-out)</span>
+					</label>
+					<label class="custom-check">
+						<input type="checkbox" name="scope" value="Signage" checked />
+						<span>03 Signage & Facade</span>
+					</label>
+					<label class="custom-check">
+						<input type="checkbox" name="scope" value="Staffing" checked />
+						<span>04 Store Staffing & Team</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="form-field">
+				<label for="opening-timeline">Target Opening Timeline</label>
+				<select id="opening-timeline">
+					<option value="Immediate (within 45–60 days)">Immediate (within 45–60 days)</option>
+					<option value="Next Quarter (60–90 days)">Next Quarter (60–90 days)</option>
+					<option value="Planning 3–6 months out">Planning 3–6 months out</option>
+					<option value="Multi-store South India rollout">Multi-store South India rollout</option>
+				</select>
+			</div>
+
+			<div class="modal-actions">
+				<button type="submit" class="btn btn-gold btn-submit">
+					<span>Send Brief to Preetham on WhatsApp ↗</span>
+				</button>
+				<span class="secure-note">Direct line to leadership • No middle brokers • Response within 2 hours</span>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script>
+	const modal = document.getElementById('expansion-modal');
+	const closeBtn = document.getElementById('close-modal-btn');
+	const form = document.getElementById('expansion-form');
+
+	function openModal() {
+		modal?.classList.add('is-open');
+		modal?.setAttribute('aria-hidden', 'false');
+		document.body.style.overflow = 'hidden';
+	}
+
+	function closeModal() {
+		modal?.classList.remove('is-open');
+		modal?.setAttribute('aria-hidden', 'true');
+		document.body.style.overflow = '';
+	}
+
+	closeBtn?.addEventListener('click', closeModal);
+	modal?.addEventListener('click', (e) => {
+		if (e.target === modal) closeModal();
+	});
+
+	// Connect any button with data-open-modal
+	document.querySelectorAll('[data-open-modal]').forEach(el => {
+		el.addEventListener('click', (e) => {
+			e.preventDefault();
+			openModal();
+		});
+	});
+
+	form?.addEventListener('submit', (e) => {
+		e.preventDefault();
+		const brand = (document.getElementById('brand-name') as HTMLInputElement)?.value || '';
+		const contact = (document.getElementById('contact-person') as HTMLInputElement)?.value || '';
+		const city = (document.getElementById('target-city') as HTMLInputElement)?.value || '';
+		const size = (document.getElementById('store-size') as HTMLInputElement)?.value || '';
+		const timeline = (document.getElementById('opening-timeline') as HTMLSelectElement)?.value || '';
+		
+		const scopes: string[] = [];
+		form.querySelectorAll('input[name="scope"]:checked').forEach((box) => {
+			scopes.push((box as HTMLInputElement).value);
+		});
+
+		const message = 
+`*NEW RETAIL EXPANSION BRIEF — XPANDOR*
+• *Brand:* ${brand}
+• *Contact:* ${contact}
+• *Target Market:* ${city}
+• *Store Size:* ${size}
+• *Scope Needed:* ${scopes.join(', ')}
+• *Target Timeline:* ${timeline}
+
+Hi Preetham, we would like to discuss this expansion with Xpandor.`;
+
+		const whatsappUrl = `https://wa.me/919845808425?text=${encodeURIComponent(message)}`;
+		window.open(whatsappUrl, '_blank');
+		closeModal();
+	});
+</script>
+
+<style>
+	.expansion-modal-backdrop {
+		position: fixed;
+		inset: 0;
+		background: rgba(4, 5, 8, 0.85);
+		backdrop-filter: blur(12px);
+		z-index: 3000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1.5rem;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.25s ease;
+	}
+
+	.expansion-modal-backdrop.is-open {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.expansion-modal-dialog {
+		background: #0B0F19;
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-md);
+		max-width: 650px;
+		width: 100%;
+		max-height: 90vh;
+		overflow-y: auto;
+		padding: 2.5rem;
+		box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9);
+		transform: translateY(15px);
+		transition: transform 0.25s ease;
+	}
+
+	.expansion-modal-backdrop.is-open .expansion-modal-dialog {
+		transform: translateY(0);
+	}
+
+	@media (max-width: 640px) {
+		.expansion-modal-dialog {
+			padding: 1.5rem;
+		}
+	}
+
+	.modal-header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.modal-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--text-main);
+		margin: 0.35rem 0 0;
+	}
+
+	.modal-close {
+		background: transparent;
+		border: none;
+		font-size: 2rem;
+		color: var(--text-muted);
+		cursor: pointer;
+		line-height: 1;
+		padding: 0;
+	}
+
+	.modal-close:hover {
+		color: var(--text-main);
+	}
+
+	.modal-intro {
+		font-size: 0.88rem;
+		color: var(--text-muted);
+		line-height: 1.55;
+		margin: 0 0 1.75rem;
+	}
+
+	.modal-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	@media (max-width: 640px) {
+		.form-row {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.form-field {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.form-field label {
+		font-size: 0.78rem;
+		font-family: var(--font-mono);
+		color: var(--accent-gold);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.form-field input, .form-field select {
+		background: #06080E;
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 0.75rem 1rem;
+		color: var(--text-main);
+		font-size: 0.9rem;
+		font-family: inherit;
+		transition: border-color 0.2s ease;
+	}
+
+	.form-field input:focus, .form-field select:focus {
+		outline: none;
+		border-color: var(--accent-gold);
+	}
+
+	.checkbox-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.6rem;
+		margin-top: 0.25rem;
+	}
+
+	@media (max-width: 640px) {
+		.checkbox-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.custom-check {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		background: #06080E;
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 0.55rem 0.75rem;
+		font-size: 0.8rem;
+		color: var(--text-muted);
+		cursor: pointer;
+		user-select: none;
+	}
+
+	.custom-check input[type="checkbox"] {
+		accent-color: var(--accent-gold);
+	}
+
+	.custom-check:hover {
+		border-color: var(--border-light);
+		color: var(--text-main);
+	}
+
+	.modal-actions {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		margin-top: 0.75rem;
+	}
+
+	.btn-submit {
+		width: 100%;
+		padding: 0.9rem;
+		font-size: 0.95rem;
+	}
+
+	.secure-note {
+		font-size: 0.75rem;
+		color: var(--text-subdued);
+		text-align: center;
+	}
+</style>

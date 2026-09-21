@@ -1,31 +1,251 @@
 ---
+import { CONTACT_EMAIL, CONTACT_PHONE, FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from '../consts';
+
 const today = new Date();
 ---
 
-<footer class="footer">
-	<div class="container footer-inner">
-		<p>&copy; {today.getFullYear()} xpandor.net. All rights reserved.</p>
-		<p class="built-with">Built with speed and precision.</p>
+<footer class="site-footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="footer-brand">
+				<a href="/" class="footer-logo">
+					<img src="/images/logo.png" alt="Xpandor" class="logo-img-footer" width="160" height="24" />
+				</a>
+				<p class="brand-thesis">
+					Xpandor takes ownership of the operational complexity behind physical expansion. We find locations, secure them, build stores, deliver signage and put the teams in place to open.
+				</p>
+				<div class="geo-badge">
+					<span class="geo-dot"></span>
+					<span>Bengaluru-first. South India capable.</span>
+				</div>
+			</div>
+
+			<div class="footer-col">
+				<h4 class="col-title">Expansion Journey</h4>
+				<ul class="footer-links">
+					<li><a href="/locations"><span class="step-num">01</span> Locations (Find)</a></li>
+					<li><a href="/projects"><span class="step-num">02</span> Projects (Fit-out)</a></li>
+					<li><a href="/signage"><span class="step-num">03</span> Signage (Storefront)</a></li>
+					<li><a href="/people"><span class="step-num">04</span> People (Staffing)</a></li>
+					<li><a href="/how-we-work">Operating Model</a></li>
+					<li><a href="/work">Selected Work</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4 class="col-title">Accountability</h4>
+				<ul class="footer-links">
+					<li><a href="/about">About Xpandor</a></li>
+					<li><a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer">Leadership ({FOUNDER_NAME}) ↗</a></li>
+					<li><a href="/contact">Tell us about your expansion</a></li>
+				</ul>
+				<div class="leadership-snippet">
+					<p class="lead-role">{FOUNDER_NAME}</p>
+					<p class="lead-desc">{FOUNDER_ROLE}</p>
+					<a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" class="linkedin-link">
+						Connect on LinkedIn ↗
+					</a>
+				</div>
+			</div>
+
+			<div class="footer-col contact-col">
+				<h4 class="col-title">Start Your Expansion</h4>
+				<p class="contact-desc">Discuss your next store or South India rollout directly with our expansion team.</p>
+				<div class="contact-actions">
+					<a 
+						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-gold btn-footer-action"
+					>
+						<span>WhatsApp Us ({CONTACT_PHONE})</span>
+					</a>
+					<a href={`mailto:${CONTACT_EMAIL}`} class="email-link">
+						{CONTACT_EMAIL}
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; {today.getFullYear()} Xpandor Retail Expansion Partners. All rights reserved.</p>
+			<p class="footer-subtext">One client. One expansion team. One accountable partner.</p>
+		</div>
 	</div>
 </footer>
 
 <style>
-	.footer {
-		margin-top: auto;
+	.site-footer {
+		background: #05060A;
 		border-top: 1px solid var(--border-subtle);
-		padding: 2.5rem 0;
+		padding: 5rem 0 2.5rem;
 		color: var(--text-muted);
 		font-size: 0.9rem;
 	}
-	.footer-inner {
+
+	.footer-top {
+		display: grid;
+		grid-template-columns: 1.8fr 1.2fr 1.2fr 1.4fr;
+		gap: 3.5rem;
+		padding-bottom: 4rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	@media (max-width: 1024px) {
+		.footer-top {
+			grid-template-columns: 1fr 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.footer-top {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.logo-img-footer {
+		filter: brightness(0) invert(1);
+		height: 22px;
+		width: auto;
+		margin-bottom: 1.25rem;
+	}
+
+	.brand-thesis {
+		line-height: 1.65;
+		margin-bottom: 1.5rem;
+		font-size: 0.88rem;
+		color: var(--text-muted);
+	}
+
+	.geo-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--accent-gold);
+		background: var(--accent-gold-subtle);
+		padding: 0.35rem 0.85rem;
+		border-radius: var(--radius-full);
+		border: 1px solid var(--border-gold);
+	}
+
+	.geo-dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--accent-gold);
+	}
+
+	.col-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		color: var(--text-main);
+		margin: 0 0 1.25rem;
+	}
+
+	.footer-links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.footer-links a {
+		color: var(--text-muted);
+		transition: color 0.2s ease, transform 0.2s ease;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+	}
+
+	.footer-links a:hover {
+		color: var(--accent-gold);
+		transform: translateX(2px);
+	}
+
+	.step-num {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		color: var(--accent-gold);
+		opacity: 0.8;
+	}
+
+	.leadership-snippet {
+		margin-top: 1.5rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.lead-role {
+		color: var(--text-main);
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.lead-desc {
+		font-size: 0.78rem;
+		color: var(--text-subdued);
+		margin: 0 0 0.4rem;
+	}
+
+	.linkedin-link {
+		font-size: 0.8rem;
+		color: var(--accent-gold);
+	}
+
+	.linkedin-link:hover {
+		text-decoration: underline;
+	}
+
+	.contact-desc {
+		font-size: 0.85rem;
+		line-height: 1.5;
+		margin-bottom: 1.25rem;
+	}
+
+	.contact-actions {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+	}
+
+	.btn-footer-action {
+		width: 100%;
+		font-size: 0.82rem;
+		padding: 0.65rem 1rem;
+	}
+
+	.email-link {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	.email-link:hover {
+		color: var(--accent-gold);
+	}
+
+	.footer-bottom {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		gap: 1rem;
+		padding-top: 2rem;
+		font-size: 0.8rem;
+		color: var(--text-subdued);
 	}
-	.built-with {
-		font-size: 0.85rem;
-		opacity: 0.7;
+
+	.footer-subtext {
+		font-family: var(--font-mono);
+		color: var(--accent-gold);
+		opacity: 0.85;
 	}
 </style>

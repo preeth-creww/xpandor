@@ -1,0 +1,283 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { WHATSAPP_BASE_URL } from '../../consts';
+---
+
+<BaseLayout
+	title="Kushal's Flagship Store & Architectural Facade | Xpandor Case Study"
+	description="Case study: Turnkey standalone flagship store for Kushal's Fashion & Silver Jewellery. Architectural wave facade, retail fit-out, storefront signage, and retail team staffing."
+>
+	<!-- Case Study Hero -->
+	<section class="case-hero">
+		<div class="container">
+			<div class="case-hero-inner">
+				<a href="/work" class="back-link">← Back to All Case Studies</a>
+				<div class="case-badge">
+					<span class="eyebrow">FLAGSHIP STORE DELIVERY</span>
+				</div>
+				<h1 class="case-title">Kushal's Fashion & Silver Jewellery</h1>
+				<p class="case-subtitle">
+					Standalone high-street flagship store delivered with custom architectural wave facade, complete retail interior fit-out, illuminated signage, and pre-opening store staffing.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main Photo Feature -->
+	<section class="case-image-section">
+		<div class="container">
+			<div class="case-hero-img-wrap">
+				<img 
+					src="/images/kushals.jpeg" 
+					alt="Kushal's Jewellery flagship store with illuminated wave facade" 
+					class="case-main-img"
+					width="1200"
+					height="600"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<!-- Structured Breakdown -->
+	<section class="section case-body-section">
+		<div class="container">
+			<div class="case-grid">
+				<!-- Left: Narrative Details -->
+				<div class="case-details">
+					<div class="detail-block">
+						<h2 class="detail-heading">The Requirement</h2>
+						<p>
+							Kushal's required a prominent standalone flagship store to anchor their regional expansion. The store needed to project a luxurious, modern, and inviting aesthetic from the street while optimizing floor circulation for high-value jewelry sales, security vitrines, and customer consultation.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">The Challenge</h2>
+						<p>
+							The high-street building presented a wide, elevated front elevation requiring an eye-catching facade intervention to disguise structural upper floors while creating an intimate ground-floor retail environment. Furthermore, the store opening deadline was tied to an upcoming festive shopping period, requiring tight coordination between facade engineering, interior millwork, and staff onboarding.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">What Xpandor Handled</h2>
+						<ul class="handled-list">
+							<li><strong>Architectural Wave Facade:</strong> Engineered and installed the backlit rhythmic wave facade panels flanking the upper storefront, creating an unmistakable nighttime landmark.</li>
+							<li><strong>Storefront & Regional Signage:</strong> Fabricated 3D front-lit channel brand lettering in English alongside precision-crafted regional script signage for local compliance.</li>
+							<li><strong>Interior Retail Fit-Out:</strong> Executed civil flooring, multi-tier false ceiling coves, high-CRI jewelry display lighting, security counters, and consultation islands.</li>
+							<li><strong>Store Opening Staffing:</strong> Managed the end-to-end recruitment, in-person vetting, and joining coordination for the store sales team and supervisory staff.</li>
+						</ul>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">Execution & Result</h2>
+						<p>
+							By managing both physical fabrication (facade + fit-out) and human staffing concurrently, Xpandor eliminated the customary 2–3 week delay between construction handover and trading doors. The store opened exactly on schedule for peak festive footfall, fully staffed and trading on day one.
+						</p>
+					</div>
+				</div>
+
+				<!-- Right: Quick Facts Sidebar -->
+				<div class="case-sidebar">
+					<div class="sidebar-box">
+						<h3 class="sidebar-title">Project Summary</h3>
+						<div class="sidebar-fact">
+							<span class="fact-label">Client</span>
+							<span class="fact-val">Kushal's Fashion & Silver Jewellery</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Category</span>
+							<span class="fact-val">Fine Fashion Jewellery</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Format</span>
+							<span class="fact-val">Standalone Multi-Level Flagship</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Location</span>
+							<span class="fact-val">South India</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Scope</span>
+							<span class="fact-val">Fit-Out • Facade • Signage • Staffing</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Outcome</span>
+							<span class="fact-val text-gold">On-Time Handover & Trading Day 1</span>
+						</div>
+
+						<div class="sidebar-action">
+							<a 
+								href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20flagship%20store%20project%20similar%20to%20Kushal's.`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn-gold btn-full"
+							>
+								<span>Discuss a Similar Flagship ↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.case-hero {
+		padding: 4rem 0 2rem;
+	}
+
+	.back-link {
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		color: var(--accent-gold);
+		display: inline-block;
+		margin-bottom: 1.5rem;
+	}
+
+	.back-link:hover {
+		text-decoration: underline;
+	}
+
+	.case-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.case-subtitle {
+		font-size: 1.15rem;
+		color: var(--text-muted);
+		max-width: 750px;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	.case-image-section {
+		padding: 1.5rem 0 3rem;
+	}
+
+	.case-hero-img-wrap {
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		border: 1px solid var(--border-gold);
+		box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+	}
+
+	.case-main-img {
+		width: 100%;
+		height: auto;
+		max-height: 580px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.case-grid {
+		display: grid;
+		grid-template-columns: 1.8fr 1fr;
+		gap: 3.5rem;
+		align-items: start;
+	}
+
+	@media (max-width: 900px) {
+		.case-grid {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.detail-block {
+		margin-bottom: 2.5rem;
+	}
+
+	.detail-heading {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: var(--text-main);
+	}
+
+	.detail-block p {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.handled-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.handled-list li {
+		font-size: 0.92rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+	}
+
+	.handled-list strong {
+		color: var(--text-main);
+	}
+
+	.sidebar-box {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+		position: sticky;
+		top: 100px;
+	}
+
+	.sidebar-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin: 0 0 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.sidebar-fact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.fact-label {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		color: var(--text-subdued);
+		letter-spacing: 0.08em;
+	}
+
+	.fact-val {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.text-gold {
+		color: var(--accent-gold) !important;
+	}
+
+	.sidebar-action {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.btn-full {
+		width: 100%;
+		font-size: 0.85rem;
+		padding: 0.75rem 1rem;
+	}
+</style>

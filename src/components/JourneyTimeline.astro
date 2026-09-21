@@ -1,0 +1,189 @@
+---
+interface Props {
+	activeStep?: number;
+}
+
+const { activeStep = 0 } = Astro.props;
+
+const steps = [
+	{
+		number: '01',
+		title: 'FIND',
+		subtitle: 'Locations',
+		desc: 'Identify micro-markets, source off-market sites, and evaluate commercial catchments.',
+		link: '/locations'
+	},
+	{
+		number: '02',
+		title: 'SECURE',
+		subtitle: 'Leasing',
+		desc: 'Direct landlord negotiations, commercial structuring, and transaction closure.',
+		link: '/locations#negotiation'
+	},
+	{
+		number: '03',
+		title: 'BUILD',
+		subtitle: 'Fit-outs',
+		desc: 'Design translation, BOQ control, civil, electrical, bespoke joinery, and site QA/QC.',
+		link: '/projects'
+	},
+	{
+		number: '04',
+		title: 'EQUIP',
+		subtitle: 'Signage',
+		desc: 'Storefront facades, illuminated 3D channel letters, wayfinding, and regional scripts.',
+		link: '/signage'
+	},
+	{
+		number: '05',
+		title: 'STAFF',
+		subtitle: 'Recruitment',
+		desc: 'Workforce planning, screening, and hiring the retail store team before opening.',
+		link: '/people'
+	},
+	{
+		number: '06',
+		title: 'OPEN',
+		subtitle: 'Trading Store',
+		desc: 'Handover of a fully functioning, inspected store ready to transact.',
+		link: '/how-we-work'
+	}
+];
+---
+
+<div class="journey-container">
+	<div class="journey-track">
+		{steps.map((step, idx) => (
+			<a href={step.link} class={`journey-card ${activeStep === idx + 1 ? 'is-active' : ''}`}>
+				<div class="card-step-header">
+					<span class="step-num">{step.number}</span>
+					<span class="step-arrow">→</span>
+				</div>
+				<div class="step-title-wrap">
+					<h3 class="step-title">{step.title}</h3>
+					<span class="step-subtitle">{step.subtitle}</span>
+				</div>
+				<p class="step-desc">{step.desc}</p>
+				<div class="card-glow"></div>
+			</a>
+		))}
+	</div>
+</div>
+
+<style>
+	.journey-container {
+		width: 100%;
+		position: relative;
+	}
+
+	.journey-track {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 1rem;
+	}
+
+	@media (max-width: 1100px) {
+		.journey-track {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.25rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.journey-track {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+	}
+
+	.journey-card {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 1.5rem 1.25rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.25s ease;
+	}
+
+	.journey-card:hover {
+		border-color: var(--border-gold);
+		background: var(--bg-surface-hover);
+		transform: translateY(-3px);
+		box-shadow: var(--shadow-card);
+	}
+
+	.journey-card.is-active {
+		border-color: var(--accent-gold);
+		background: rgba(212, 175, 55, 0.05);
+	}
+
+	.card-step-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+
+	.step-num {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent-gold);
+	}
+
+	.step-arrow {
+		font-size: 0.9rem;
+		color: var(--text-subdued);
+		transition: transform 0.2s ease, color 0.2s ease;
+	}
+
+	.journey-card:hover .step-arrow {
+		color: var(--accent-gold);
+		transform: translateX(3px);
+	}
+
+	.step-title-wrap {
+		margin-bottom: 0.75rem;
+	}
+
+	.step-title {
+		font-size: 1.15rem;
+		font-weight: 700;
+		margin: 0;
+		letter-spacing: 0.04em;
+		color: var(--text-main);
+	}
+
+	.step-subtitle {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--accent-gold);
+		display: block;
+		margin-top: 0.15rem;
+		letter-spacing: 0.05em;
+	}
+
+	.step-desc {
+		font-size: 0.82rem;
+		line-height: 1.55;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	.card-glow {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: transparent;
+		transition: background 0.25s ease;
+	}
+
+	.journey-card:hover .card-glow {
+		background: var(--accent-gold);
+	}
+</style>

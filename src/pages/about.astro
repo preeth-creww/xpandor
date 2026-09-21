@@ -1,0 +1,356 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from '../consts';
+---
+
+<BaseLayout
+	title="About Xpandor | Retail Expansion Partners"
+	description="Learn how Xpandor takes ownership of the operational complexity behind physical retail expansion across Bengaluru and South India."
+>
+	<!-- Hero Section -->
+	<section class="page-hero">
+		<div class="container">
+			<div class="hero-content">
+				<span class="eyebrow">ABOUT XPANDOR</span>
+				<h1 class="page-title">The operational partner behind physical retail expansion.</h1>
+				<p class="page-subhead">
+					We built Xpandor around a simple reality: expanding a retail brand into new physical locations shouldn't require managing seven disconnected vendors.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- The Thesis -->
+	<section class="section">
+		<div class="container">
+			<div class="manifesto-card">
+				<span class="eyebrow">Our Master Thesis</span>
+				<blockquote class="manifesto-quote">
+					“Xpandor takes ownership of the operational complexity behind physical expansion. A brand wants to go from ‘We want to open in Bengaluru’ to ‘Our store is open and trading.’ We manage the difficult middle.”
+				</blockquote>
+				<p class="manifesto-body">
+					In traditional retail growth, a brand must separately source a broker, negotiate a landlord lease, brief an architect, bid out a general contractor, coordinate MEP engineers, commission a signboard maker, and instruct a staffing recruiter. The problem is not that these specialists don't exist; the problem is that the head of expansion has to coordinate all of them, resulting in communication gaps, duplicated work, and unaccountable delays.
+				</p>
+				<p class="manifesto-body">
+					Xpandor brings all of that work under one roof: <strong>One client. One expansion team. One accountable partner.</strong>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- The 4 Differentiators -->
+	<section class="section diff-section">
+		<div class="container">
+			<div class="section-header">
+				<span class="eyebrow">Why We Are Different</span>
+				<h2 class="section-title">Four core principles that guide our work.</h2>
+				<p class="section-desc">
+					We don't call ourselves a generic turnkey agency. Our differentiation is built on tangible on-ground advantages.
+				</p>
+			</div>
+
+			<div class="grid-2">
+				<div class="card-glass">
+					<span class="diff-num">01</span>
+					<h3 class="diff-title">Ground-Level Intelligence</h3>
+					<p class="diff-text">
+						We don't just browse public property aggregators. We cultivate direct on-ground relationships with building owners, local commercial brokers, shopkeepers, building managers, and local operators. This gives our clients access to off-market retail spaces before leases expire.
+					</p>
+				</div>
+
+				<div class="card-glass">
+					<span class="diff-num">02</span>
+					<h3 class="diff-title">Commercial Understanding</h3>
+					<p class="diff-text">
+						Our objective isn't merely to find an attractive storefront. It is to find a commercial space that works for that particular retailer's unit economics: sustainable rent-to-sales ratios, proper frontage width, pedestrian footfall, and favorable lease structures.
+					</p>
+				</div>
+
+				<div class="card-glass">
+					<span class="diff-num">03</span>
+					<h3 class="diff-title">Execution Ownership</h3>
+					<p class="diff-text">
+						Our team directly controls the entire project chain: scope definition, BOQ pricing, vendor management, on-site supervision, line-by-line quality inspection, and client updates. When a specialist trade executes on site, Xpandor retains total delivery accountability.
+					</p>
+				</div>
+
+				<div class="card-glass">
+					<span class="diff-num">04</span>
+					<h3 class="diff-title">One Accountable Team</h3>
+					<p class="diff-text">
+						You never have to mediate between an architect blaming a contractor, or a contractor blaming a signmaker. You have one senior point of contact who owns the target opening date from initial site search to open trading doors.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Leadership & Accountability -->
+	<section class="section leadership-section">
+		<div class="container">
+			<div class="leadership-box">
+				<div class="leader-info">
+					<span class="eyebrow">Expansion Leadership</span>
+					<h2 class="section-title">{FOUNDER_NAME}</h2>
+					<p class="leader-role">{FOUNDER_ROLE}</p>
+					<p class="leader-bio">
+						Preetham founded Xpandor to eliminate the operational chaos that retail founders and expansion heads face when scaling offline. Having managed physical retail expansions, commercial siting, fit-out execution, and retail team recruitment across South India, Preetham provides hands-on oversight on every client project.
+					</p>
+					<div class="leader-links">
+						<a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+							<span>Connect on LinkedIn ↗</span>
+						</a>
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20connect%20regarding%20retail%20expansion.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Direct WhatsApp Message ↗</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="geo-focus-card">
+					<span class="geo-title">Geographic Footprint</span>
+					<div class="geo-item">
+						<strong>Bengaluru-First:</strong>
+						<p>Deep hyper-local commercial intelligence across Indiranagar, Koramangala, HSR Layout, Whitefield, Jayanagar, MG Road, and prime shopping concourses.</p>
+					</div>
+					<div class="geo-item">
+						<strong>South India Capable:</strong>
+						<p>Execution capability across Chennai, Hyderabad, Kochi, Coimbatore, and Tier-2 growth corridors for multi-store regional rollouts.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="section cta-section">
+		<div class="container text-center">
+			<div class="cta-banner mx-auto">
+				<span class="eyebrow">Expand With Xpandor</span>
+				<h2 class="cta-title">Let's discuss your brand's expansion.</h2>
+				<p class="cta-desc">
+					Whether you are an enterprise retail chain, a funded D2C brand moving offline, or an international brand entering South India, we are ready to partner.
+				</p>
+				<a 
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20partnering%20with%20Xpandor%20for%20our%20retail%20growth.`}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-gold btn-large"
+				>
+					<span>Connect with Preetham on WhatsApp ↗</span>
+				</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.page-hero {
+		padding: 5rem 0 3.5rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+	}
+
+	.hero-content {
+		max-width: 820px;
+	}
+
+	.page-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.02em;
+		margin: 0.75rem 0 1.25rem;
+	}
+
+	.page-subhead {
+		font-size: clamp(1.05rem, 2vw, 1.25rem);
+		line-height: 1.65;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	.manifesto-card {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-md);
+		padding: 3.5rem;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 640px) {
+		.manifesto-card {
+			padding: 1.75rem;
+		}
+	}
+
+	.manifesto-quote {
+		font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+		font-weight: 700;
+		line-height: 1.45;
+		color: var(--text-main);
+		margin: 1.25rem 0 2rem;
+		border-left: 3px solid var(--accent-gold);
+		padding-left: 1.5rem;
+	}
+
+	.manifesto-body {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.75;
+		margin-bottom: 1.25rem;
+	}
+
+	.diff-section {
+		background: #06080E;
+		border-top: 1px solid var(--border-subtle);
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.grid-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	@media (max-width: 860px) {
+		.grid-2 {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.diff-num {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent-gold);
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+
+	.diff-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 0.75rem;
+	}
+
+	.diff-text {
+		font-size: 0.9rem;
+		color: var(--text-muted);
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	/* Leadership Section */
+	.leadership-box {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-md);
+		padding: 3.5rem;
+		display: grid;
+		grid-template-columns: 1.4fr 1fr;
+		gap: 3.5rem;
+		align-items: start;
+	}
+
+	@media (max-width: 900px) {
+		.leadership-box {
+			grid-template-columns: 1fr;
+			padding: 2rem 1.25rem;
+			gap: 2rem;
+		}
+	}
+
+	.leader-role {
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		color: var(--accent-gold);
+		margin: -0.5rem 0 1.25rem;
+	}
+
+	.leader-bio {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+
+	.leader-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.geo-focus-card {
+		background: #06080E;
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.geo-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--accent-gold);
+		border-bottom: 1px solid var(--border-subtle);
+		padding-bottom: 0.75rem;
+	}
+
+	.geo-item strong {
+		display: block;
+		font-size: 0.95rem;
+		color: var(--text-main);
+		margin-bottom: 0.35rem;
+	}
+
+	.geo-item p {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.cta-banner {
+		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-md);
+		padding: 4.5rem 2rem;
+		text-align: center;
+		max-width: 800px;
+	}
+
+	.cta-title {
+		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+		font-weight: 800;
+		margin: 0.75rem 0 1rem;
+	}
+
+	.cta-desc {
+		font-size: 1.05rem;
+		color: var(--text-muted);
+		margin-bottom: 2rem;
+	}
+
+	.btn-large {
+		padding: 0.85rem 2rem;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.mx-auto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>

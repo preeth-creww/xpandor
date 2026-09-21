@@ -1,79 +1,363 @@
 ---
+import { WHATSAPP_BASE_URL } from '../consts';
+
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+	{ label: 'Locations', href: '/locations' },
+	{ label: 'Projects', href: '/projects' },
+	{ label: 'Signage', href: '/signage' },
+	{ label: 'People', href: '/people' },
+	{ label: 'How It Works', href: '/how-we-work' },
+	{ label: 'Work', href: '/work' },
+];
 ---
 
-<header class="header">
+<header class="site-header">
 	<div class="container header-inner">
-		<a href="/" class="logo">
-			<span class="logo-mark">XP</span>
-			<span class="logo-text">Xpandor</span>
+		<a href="/" class="brand-logo" aria-label="Xpandor Home">
+			<img src="/images/logo.png" alt="Xpandor Retail Expansion Partners" class="logo-img" width="160" height="24" />
+			<span class="brand-tag">RETAIL EXPANSION</span>
 		</a>
-		<nav class="nav">
-			<a href="#about" class="nav-link">About</a>
-			<a href="#services" class="nav-link">Services</a>
-			<a href="#contact" class="nav-link nav-btn">Contact</a>
+
+		<nav class="desktop-nav" aria-label="Main Navigation">
+			{navItems.map((item) => (
+				<a 
+					href={item.href} 
+					class={`nav-link ${currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) ? 'active' : ''}`}
+				>
+					{item.label}
+				</a>
+			))}
 		</nav>
+
+		<div class="header-actions">
+			<a 
+				href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-gold btn-header"
+			>
+				<span>Tell us about your expansion</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+			</a>
+
+			<button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" id="mobile-menu-btn">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</button>
+		</div>
+	</div>
+
+	<!-- Mobile Navigation Drawer -->
+	<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+		<div class="mobile-drawer-inner">
+			<div class="mobile-drawer-header">
+				<img src="/images/logo.png" alt="Xpandor Logo" class="logo-img-mobile" width="140" height="20" />
+				<button type="button" class="close-btn" id="close-drawer-btn" aria-label="Close menu">&times;</button>
+			</div>
+			
+			<div class="mobile-eyebrow">The Expansion Journey</div>
+			<ul class="mobile-nav-list">
+				{navItems.map((item) => (
+					<li>
+						<a 
+							href={item.href} 
+							class={`mobile-nav-link ${currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) ? 'active' : ''}`}
+						>
+							{item.label}
+						</a>
+					</li>
+				))}
+				<li>
+					<a href="/about" class={`mobile-nav-link ${currentPath === '/about' ? 'active' : ''}`}>About Xpandor</a>
+				</li>
+				<li>
+					<a href="/contact" class={`mobile-nav-link ${currentPath === '/contact' ? 'active' : ''}`}>Contact</a>
+				</li>
+			</ul>
+
+			<div class="mobile-drawer-footer">
+				<a 
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-gold mobile-cta-btn"
+				>
+					<span>WhatsApp Preetham (+91 98458 08425)</span>
+				</a>
+				<p class="mobile-footer-text">One client. One expansion team. One accountable partner.</p>
+			</div>
+		</div>
 	</div>
 </header>
 
+<script>
+	const menuBtn = document.getElementById('mobile-menu-btn');
+	const closeBtn = document.getElementById('close-drawer-btn');
+	const drawer = document.getElementById('mobile-drawer');
+
+	function toggleMenu() {
+		const isExpanded = drawer?.classList.toggle('is-open');
+		if (drawer) {
+			drawer.setAttribute('aria-hidden', (!isExpanded).toString());
+		}
+		document.body.style.overflow = isExpanded ? 'hidden' : '';
+	}
+
+	menuBtn?.addEventListener('click', toggleMenu);
+	closeBtn?.addEventListener('click', toggleMenu);
+
+	// Close on anchor click inside drawer
+	drawer?.querySelectorAll('a').forEach((link) => {
+		link.addEventListener('click', () => {
+			drawer.classList.remove('is-open');
+			drawer.setAttribute('aria-hidden', 'true');
+			document.body.style.overflow = '';
+		});
+	});
+</script>
+
 <style>
-	.header {
+	.site-header {
 		position: sticky;
 		top: 0;
-		z-index: 100;
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		background: rgba(12, 13, 18, 0.8);
+		z-index: 1000;
+		background: rgba(8, 10, 16, 0.88);
+		backdrop-filter: blur(14px);
+		-webkit-backdrop-filter: blur(14px);
 		border-bottom: 1px solid var(--border-subtle);
-		padding: 1rem 0;
+		height: 74px;
+		display: flex;
+		align-items: center;
 	}
+
 	.header-inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-	.logo {
-		display: flex;
-		align-items: center;
-		gap: 0.6rem;
-		font-weight: 700;
-		font-size: 1.25rem;
-		letter-spacing: -0.02em;
-	}
-	.logo-mark {
-		background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
-		color: #ffffff;
-		padding: 0.25rem 0.6rem;
-		border-radius: 6px;
-		font-size: 0.85rem;
-		font-weight: 800;
-	}
-	.logo-text {
-		color: var(--text-main);
-	}
-	.nav {
-		display: flex;
-		align-items: center;
 		gap: 1.5rem;
 	}
-	.nav-link {
-		color: var(--text-muted);
-		font-size: 0.95rem;
-		font-weight: 500;
-		transition: color 0.2s ease;
+
+	.brand-logo {
+		display: flex;
+		align-items: center;
+		gap: 0.85rem;
+		min-width: 0;
 	}
-	.nav-link:hover {
+
+	.logo-img {
+		filter: brightness(0) invert(1);
+		height: 22px;
+		width: auto;
+		object-fit: contain;
+	}
+
+	.brand-tag {
+		font-family: var(--font-mono);
+		font-size: 0.62rem;
+		letter-spacing: 0.18em;
+		color: var(--accent-gold);
+		border-left: 1px solid var(--border-gold);
+		padding-left: 0.85rem;
+		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	@media (max-width: 860px) {
+		.brand-tag {
+			display: none;
+		}
+	}
+
+	.desktop-nav {
+		display: flex;
+		align-items: center;
+		gap: 1.75rem;
+	}
+
+	@media (max-width: 980px) {
+		.desktop-nav {
+			display: none;
+		}
+	}
+
+	.nav-link {
+		font-size: 0.88rem;
+		font-weight: 500;
+		color: var(--text-muted);
+		position: relative;
+		padding: 0.4rem 0;
+		letter-spacing: 0.02em;
+	}
+
+	.nav-link:hover, .nav-link.active {
 		color: var(--text-main);
 	}
-	.nav-btn {
-		background: rgba(99, 102, 241, 0.15);
-		border: 1px solid var(--border-highlight);
-		color: #a5b4fc;
-		padding: 0.4rem 1rem;
-		border-radius: 9999px;
-		transition: all 0.2s ease;
+
+	.nav-link.active::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: var(--accent-gold);
 	}
-	.nav-btn:hover {
-		background: var(--accent);
-		color: #ffffff;
+
+	.header-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.btn-header {
+		padding: 0.55rem 1.15rem;
+		font-size: 0.82rem;
+		min-height: 38px;
+	}
+
+	@media (max-width: 640px) {
+		.btn-header {
+			display: none;
+		}
+	}
+
+	.mobile-toggle {
+		display: none;
+		background: transparent;
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-sm);
+		padding: 0.5rem;
+		width: 42px;
+		height: 42px;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		cursor: pointer;
+	}
+
+	@media (max-width: 980px) {
+		.mobile-toggle {
+			display: flex;
+		}
+	}
+
+	.hamburger-line {
+		width: 22px;
+		height: 2px;
+		background-color: var(--text-main);
+		border-radius: 2px;
+		transition: transform 0.2s ease, opacity 0.2s ease;
+	}
+
+	/* Mobile Drawer */
+	.mobile-drawer {
+		position: fixed;
+		inset: 0;
+		background: rgba(8, 10, 16, 0.98);
+		backdrop-filter: blur(20px);
+		z-index: 2000;
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.25s ease, transform 0.25s ease;
+		transform: translateY(-10px);
+	}
+
+	.mobile-drawer.is-open {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0);
+	}
+
+	.mobile-drawer-inner {
+		padding: 1.5rem;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+
+	.mobile-drawer-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.logo-img-mobile {
+		filter: brightness(0) invert(1);
+		height: 20px;
+		width: auto;
+	}
+
+	.close-btn {
+		background: transparent;
+		border: none;
+		font-size: 2.25rem;
+		color: var(--text-muted);
+		cursor: pointer;
+		line-height: 1;
+		padding: 0 0.5rem;
+	}
+
+	.close-btn:hover {
+		color: var(--text-main);
+	}
+
+	.mobile-eyebrow {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin: 2rem 0 1rem;
+	}
+
+	.mobile-nav-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile-nav-link {
+		display: block;
+		padding: 1rem 0;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--text-main);
+		border-bottom: 1px solid var(--border-subtle);
+		transition: color 0.2s ease, padding-left 0.2s ease;
+	}
+
+	.mobile-nav-link:hover, .mobile-nav-link.active {
+		color: var(--accent-gold);
+		padding-left: 0.5rem;
+	}
+
+	.mobile-drawer-footer {
+		margin-top: auto;
+		padding-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.mobile-cta-btn {
+		width: 100%;
+		padding: 0.9rem;
+	}
+
+	.mobile-footer-text {
+		font-size: 0.8rem;
+		color: var(--text-muted);
+		text-align: center;
+		margin: 0;
 	}
 </style>

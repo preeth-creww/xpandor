@@ -1,0 +1,488 @@
+---
+import { WHATSAPP_BASE_URL } from '../consts';
+---
+
+<div class="estimator-card" id="expansion-estimator">
+	<div class="estimator-header">
+		<div class="badge">Interactive Estimator</div>
+		<h3 class="estimator-title">Store Expansion Timeline & Milestone Planner</h3>
+		<p class="estimator-desc">
+			Input your retail format to estimate total weeks from requirement to trading doors, broken down across the 4 expansion verticals.
+		</p>
+	</div>
+
+	<div class="estimator-grid">
+		<!-- Controls -->
+		<div class="controls-panel">
+			<div class="control-group">
+				<label class="control-label">01 / Retail Category</label>
+				<div class="radio-grid" id="category-options">
+					<button type="button" class="option-btn active" data-category="fashion" data-label="Fashion & Apparel">
+						Fashion & Apparel
+					</button>
+					<button type="button" class="option-btn" data-category="jewellery" data-label="Jewellery">
+						Jewellery
+					</button>
+					<button type="button" class="option-btn" data-category="watches" data-label="Luxury Watches">
+						Luxury Watches
+					</button>
+					<button type="button" class="option-btn" data-category="furniture" data-label="Furniture & Home">
+						Furniture & Home
+					</button>
+					<button type="button" class="option-btn" data-category="specialty" data-label="Specialty Retail / QSR">
+						Specialty Retail
+					</button>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">02 / Store Format & Footprint</label>
+				<div class="radio-grid" id="size-options">
+					<button type="button" class="option-btn" data-size="boutique" data-label="Boutique (< 1,000 sqft)">
+						Boutique (< 1,000 sqft)
+					</button>
+					<button type="button" class="option-btn active" data-size="flagship" data-label="Flagship (1,000–3,500 sqft)">
+						Flagship (1,000–3,500 sqft)
+					</button>
+					<button type="button" class="option-btn" data-size="destination" data-label="Large Format (3,500–10,000+ sqft)">
+						Large Format (3,500+ sqft)
+					</button>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">03 / Current Location Status</label>
+				<div class="toggle-group" id="status-options">
+					<button type="button" class="toggle-btn active" data-status="need_location">
+						Need Location Search (Full Expansion)
+					</button>
+					<button type="button" class="toggle-btn" data-status="has_location">
+						Location Secured (Fit-out, Signage & Staff)
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Results Output -->
+		<div class="results-panel">
+			<div class="results-box">
+				<div class="results-top">
+					<span class="results-eyebrow">Estimated Target Timeline</span>
+					<div class="timeline-hero">
+						<span class="weeks-number" id="calculated-weeks">10 – 12</span>
+						<span class="weeks-unit">Weeks to Opening</span>
+					</div>
+					<p class="results-summary" id="timeline-summary">
+						For a 1,000–3,500 sqft Fashion & Apparel store including location sourcing in Bengaluru.
+					</p>
+				</div>
+
+				<div class="milestone-timeline">
+					<h4 class="milestone-heading">Expansion Milestone Progression</h4>
+					
+					<div class="milestone-item" id="milestone-find">
+						<div class="milestone-meta">
+							<span class="milestone-phase">Phase 1 / Locations</span>
+							<span class="milestone-weeks" id="phase-find-weeks">Weeks 1 – 3</span>
+						</div>
+						<p class="milestone-detail">Micro-market catchment study, property shortlist & commercial lease closure.</p>
+						<div class="progress-bar"><div class="bar-fill" style="width: 25%;"></div></div>
+					</div>
+
+					<div class="milestone-item">
+						<div class="milestone-meta">
+							<span class="milestone-phase">Phase 2 / Projects (Fit-out)</span>
+							<span class="milestone-weeks" id="phase-build-weeks">Weeks 4 – 9</span>
+						</div>
+						<p class="milestone-detail">CAD detailing, BOQ sign-off, civil, electrical, bespoke joinery & site execution.</p>
+						<div class="progress-bar"><div class="bar-fill" style="width: 50%;"></div></div>
+					</div>
+
+					<div class="milestone-item">
+						<div class="milestone-meta">
+							<span class="milestone-phase">Phase 3 / Signage & Facade</span>
+							<span class="milestone-weeks" id="phase-signage-weeks">Weeks 7 – 9</span>
+						</div>
+						<p class="milestone-detail">Storefront facade, 3D illuminated letters & regional branding installation.</p>
+						<div class="progress-bar"><div class="bar-fill" style="width: 75%;"></div></div>
+					</div>
+
+					<div class="milestone-item">
+						<div class="milestone-meta">
+							<span class="milestone-phase">Phase 4 / People & Store Opening</span>
+							<span class="milestone-weeks" id="phase-people-weeks">Weeks 9 – 11</span>
+						</div>
+						<p class="milestone-detail">Store manager & staff recruitment, joining coordination, snag list & open doors.</p>
+						<div class="progress-bar"><div class="bar-fill" style="width: 100%;"></div></div>
+					</div>
+				</div>
+
+				<div class="results-action">
+					<a 
+						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20used%20the%20Xpandor%20Timeline%20Estimator%20for%20a%20Flagship%20Fashion%20store%20(approx%2010-12%20weeks).%20Let's%20discuss.`}
+						id="whatsapp-planner-link"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-gold btn-full"
+					>
+						<span>Discuss This Schedule with Preetham on WhatsApp ↗</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const categories = document.querySelectorAll('#category-options .option-btn');
+	const sizes = document.querySelectorAll('#size-options .option-btn');
+	const statuses = document.querySelectorAll('#status-options .toggle-btn');
+	
+	const weeksEl = document.getElementById('calculated-weeks');
+	const summaryEl = document.getElementById('timeline-summary');
+	const whatsappLink = document.getElementById('whatsapp-planner-link');
+	
+	const milestoneFind = document.getElementById('milestone-find');
+	const phaseFindWeeks = document.getElementById('phase-find-weeks');
+	const phaseBuildWeeks = document.getElementById('phase-build-weeks');
+	const phaseSignageWeeks = document.getElementById('phase-signage-weeks');
+	const phasePeopleWeeks = document.getElementById('phase-people-weeks');
+
+	let state = {
+		category: 'fashion',
+		categoryLabel: 'Fashion & Apparel',
+		size: 'flagship',
+		sizeLabel: 'Flagship (1,000–3,500 sqft)',
+		status: 'need_location'
+	};
+
+	function updateCalculation() {
+		let baseWeeks = 6;
+		
+		// Category weights
+		if (state.category === 'watches' || state.category === 'jewellery') {
+			baseWeeks += 2; // High-security vitrines, specialised display joinery
+		} else if (state.category === 'furniture') {
+			baseWeeks += 3; // Massive footprint, large format displays
+		} else if (state.category === 'specialty') {
+			baseWeeks += 1;
+		}
+
+		// Size weights
+		if (state.size === 'boutique') {
+			baseWeeks -= 1;
+		} else if (state.size === 'destination') {
+			baseWeeks += 4;
+		}
+
+		// Location status
+		let locationBuffer = state.status === 'need_location' ? 3 : 0;
+		let totalMin = baseWeeks + locationBuffer;
+		let totalMax = totalMin + 2;
+
+		if (weeksEl) {
+			weeksEl.textContent = `${totalMin} – ${totalMax}`;
+		}
+
+		if (summaryEl) {
+			summaryEl.textContent = `Estimated timeline for a ${state.sizeLabel} in ${state.categoryLabel} ${state.status === 'need_location' ? 'including site sourcing' : 'with location already secured'}.`;
+		}
+
+		// Update milestones
+		if (milestoneFind) {
+			if (state.status === 'has_location') {
+				milestoneFind.style.display = 'none';
+			} else {
+				milestoneFind.style.display = 'block';
+				if (phaseFindWeeks) phaseFindWeeks.textContent = 'Weeks 1 – 3';
+			}
+		}
+
+		let buildStart = state.status === 'need_location' ? 4 : 1;
+		let buildEnd = buildStart + (state.size === 'destination' ? 6 : 5);
+		let signStart = buildEnd - 2;
+		let signEnd = buildEnd;
+		let peopleStart = buildEnd - 1;
+		let peopleEnd = totalMax;
+
+		if (phaseBuildWeeks) phaseBuildWeeks.textContent = `Weeks ${buildStart} – ${buildEnd}`;
+		if (phaseSignageWeeks) phaseSignageWeeks.textContent = `Weeks ${signStart} – ${signEnd}`;
+		if (phasePeopleWeeks) phasePeopleWeeks.textContent = `Weeks ${peopleStart} – ${peopleEnd}`;
+
+		if (whatsappLink) {
+			const text = `Hi Preetham, I used the Xpandor Timeline Estimator for a ${state.categoryLabel} (${state.sizeLabel}, target: ${totalMin}-${totalMax} weeks). I'd like to discuss our expansion.`;
+			whatsappLink.setAttribute('href', `https://wa.me/919845808425?text=${encodeURIComponent(text)}`);
+		}
+	}
+
+	categories.forEach(btn => {
+		btn.addEventListener('click', () => {
+			categories.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			state.category = btn.getAttribute('data-category') || 'fashion';
+			state.categoryLabel = btn.getAttribute('data-label') || 'Fashion';
+			updateCalculation();
+		});
+	});
+
+	sizes.forEach(btn => {
+		btn.addEventListener('click', () => {
+			sizes.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			state.size = btn.getAttribute('data-size') || 'flagship';
+			state.sizeLabel = btn.getAttribute('data-label') || 'Flagship';
+			updateCalculation();
+		});
+	});
+
+	statuses.forEach(btn => {
+		btn.addEventListener('click', () => {
+			statuses.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			state.status = btn.getAttribute('data-status') || 'need_location';
+			updateCalculation();
+		});
+	});
+</script>
+
+<style>
+	.estimator-card {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-md);
+		padding: 3rem;
+		box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+		position: relative;
+	}
+
+	@media (max-width: 768px) {
+		.estimator-card {
+			padding: 1.75rem 1.25rem;
+		}
+	}
+
+	.estimator-header {
+		max-width: 700px;
+		margin-bottom: 2.5rem;
+	}
+
+	.estimator-title {
+		font-size: clamp(1.4rem, 2.5vw, 2rem);
+		font-weight: 700;
+		color: var(--text-main);
+		margin: 0.75rem 0 0.5rem;
+	}
+
+	.estimator-desc {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.estimator-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	@media (max-width: 980px) {
+		.estimator-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+	}
+
+	.control-group {
+		margin-bottom: 2rem;
+	}
+
+	.control-label {
+		display: block;
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin-bottom: 0.85rem;
+		font-weight: 600;
+	}
+
+	.radio-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+	}
+
+	.option-btn {
+		background: rgba(15, 23, 42, 0.6);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 0.6rem 1rem;
+		color: var(--text-muted);
+		font-size: 0.85rem;
+		font-weight: 500;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+
+	.option-btn:hover {
+		border-color: var(--border-light);
+		color: var(--text-main);
+	}
+
+	.option-btn.active {
+		background: var(--accent-gold-subtle);
+		border-color: var(--accent-gold);
+		color: var(--text-main);
+		font-weight: 600;
+	}
+
+	.toggle-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.toggle-btn {
+		background: rgba(15, 23, 42, 0.6);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 0.75rem 1.25rem;
+		color: var(--text-muted);
+		font-size: 0.85rem;
+		text-align: left;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+
+	.toggle-btn.active {
+		background: var(--accent-gold-subtle);
+		border-color: var(--accent-gold);
+		color: var(--text-main);
+		font-weight: 600;
+	}
+
+	/* Results Output */
+	.results-box {
+		background: #06080E;
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+	}
+
+	@media (max-width: 640px) {
+		.results-box {
+			padding: 1.25rem;
+		}
+	}
+
+	.results-eyebrow {
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+	}
+
+	.timeline-hero {
+		display: flex;
+		align-items: baseline;
+		gap: 0.85rem;
+		margin: 0.5rem 0 0.5rem;
+	}
+
+	.weeks-number {
+		font-size: clamp(2.5rem, 5vw, 3.5rem);
+		font-weight: 800;
+		color: var(--text-main);
+		letter-spacing: -0.03em;
+		line-height: 1;
+	}
+
+	.weeks-unit {
+		font-size: 1.1rem;
+		color: var(--accent-gold);
+		font-weight: 600;
+	}
+
+	.results-summary {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		margin: 0 0 2rem;
+		line-height: 1.5;
+	}
+
+	.milestone-timeline {
+		border-top: 1px solid var(--border-subtle);
+		padding-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.milestone-heading {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+		margin: 0 0 0.5rem;
+	}
+
+	.milestone-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.milestone-meta {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.85rem;
+	}
+
+	.milestone-phase {
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.milestone-weeks {
+		font-family: var(--font-mono);
+		color: var(--accent-gold);
+		font-size: 0.8rem;
+	}
+
+	.milestone-detail {
+		font-size: 0.78rem;
+		color: var(--text-subdued);
+		margin: 0;
+	}
+
+	.progress-bar {
+		width: 100%;
+		height: 3px;
+		background: rgba(255, 255, 255, 0.08);
+		border-radius: 2px;
+		overflow: hidden;
+		margin-top: 0.2rem;
+	}
+
+	.bar-fill {
+		height: 100%;
+		background: var(--accent-gold);
+	}
+
+	.results-action {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.btn-full {
+		width: 100%;
+		font-size: 0.85rem;
+		padding: 0.85rem 1rem;
+	}
+</style>

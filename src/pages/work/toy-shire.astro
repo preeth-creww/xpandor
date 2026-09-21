@@ -1,0 +1,274 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { WHATSAPP_BASE_URL } from '../../consts';
+---
+
+<BaseLayout
+	title="Toy Shire Retail Store & Bilingual Signage | Xpandor Case Study"
+	description="Case study: Turnkey mall retail fit-out for Toy Shire. Color-matched display joinery, thematic cove lighting, and 3D illuminated regional channel signage."
+>
+	<section class="case-hero">
+		<div class="container">
+			<div class="case-hero-inner">
+				<a href="/work" class="back-link">← Back to All Case Studies</a>
+				<div class="case-badge">
+					<span class="eyebrow">SPECIALTY RETAIL & SIGNAGE</span>
+				</div>
+				<h1 class="case-title">Toy Shire Retail Storefront</h1>
+				<p class="case-subtitle">
+					High-energy specialty retail store delivered inside a prime shopping mall concourse. Custom color-matched modular shelving, cloud cove ceiling illumination, and 3D block-lit dual-script storefront signage.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="case-image-section">
+		<div class="container">
+			<div class="case-hero-img-wrap">
+				<img 
+					src="/images/img-000.jpg" 
+					alt="Toy Shire mall store fit-out and signage" 
+					class="case-main-img"
+					width="1200"
+					height="600"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="section case-body-section">
+		<div class="container">
+			<div class="case-grid">
+				<div class="case-details">
+					<div class="detail-block">
+						<h2 class="detail-heading">The Requirement</h2>
+						<p>
+							Toy Shire required a high-capacity, child-friendly retail environment that maximized shelf-facing product count while maintaining wide, stroller-accessible circulation aisles. The storefront demanded prominent visual magnetism visible across the entire mall concourse.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">The Challenge</h2>
+						<p>
+							Children's specialty retail experiences heavy physical wear: impacts from carts, heavy merchandise loading, and constant shelf adjustment. Standard commercial joinery degrades quickly. Custom edge-banding and reinforced steel internal bracket systems were required.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">What Xpandor Handled</h2>
+						<ul class="handled-list">
+							<li><strong>Dual-Script Channel Signage:</strong> Fabricated 3D front-lit channel letters in English alongside regional Bengali script letters with uniform high-lumen diffusion.</li>
+							<li><strong>Thematic Cloud Ceiling Coves:</strong> Formed custom multi-layer drywall ceiling profiles with concealed ambient blue and daylight LED cove troughs.</li>
+							<li><strong>Heavy-Duty Display Joinery:</strong> Built modular gondola shelving units and mobile wheeled display bins with impact-resistant PVC edge profiles.</li>
+							<li><strong>Low-Height Cashier Pods:</strong> Ergonomically engineered dual-tier cashier checkout counter accommodating children and adults.</li>
+						</ul>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">Execution & Result</h2>
+						<p>
+							Delivered 4 days ahead of schedule, passing mall structural, electrical, and fire safety inspections on the first attempt without rework.
+						</p>
+					</div>
+				</div>
+
+				<div class="case-sidebar">
+					<div class="sidebar-box">
+						<h3 class="sidebar-title">Project Summary</h3>
+						<div class="sidebar-fact">
+							<span class="fact-label">Client</span>
+							<span class="fact-val">Toy Shire</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Category</span>
+							<span class="fact-val">Specialty Toys & Games</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Location</span>
+							<span class="fact-val">Mall Concourse</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Scope</span>
+							<span class="fact-val">Fit-Out • Ceilings • Custom Joinery • Signage</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Outcome</span>
+							<span class="fact-val text-gold">Delivered 4 Days Ahead of Plan</span>
+						</div>
+
+						<div class="sidebar-action">
+							<a 
+								href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20mall%20retail%20fit-out%20with%20Xpandor.`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn-gold btn-full"
+							>
+								<span>Discuss Mall Retail Fit-Out ↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.case-hero {
+		padding: 4rem 0 2rem;
+	}
+
+	.back-link {
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		color: var(--accent-gold);
+		display: inline-block;
+		margin-bottom: 1.5rem;
+	}
+
+	.back-link:hover {
+		text-decoration: underline;
+	}
+
+	.case-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.case-subtitle {
+		font-size: 1.15rem;
+		color: var(--text-muted);
+		max-width: 750px;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	.case-image-section {
+		padding: 1.5rem 0 3rem;
+	}
+
+	.case-hero-img-wrap {
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		border: 1px solid var(--border-gold);
+		box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+	}
+
+	.case-main-img {
+		width: 100%;
+		height: auto;
+		max-height: 580px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.case-grid {
+		display: grid;
+		grid-template-columns: 1.8fr 1fr;
+		gap: 3.5rem;
+		align-items: start;
+	}
+
+	@media (max-width: 900px) {
+		.case-grid {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.detail-block {
+		margin-bottom: 2.5rem;
+	}
+
+	.detail-heading {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: var(--text-main);
+	}
+
+	.detail-block p {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.handled-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.handled-list li {
+		font-size: 0.92rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+	}
+
+	.handled-list strong {
+		color: var(--text-main);
+	}
+
+	.sidebar-box {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+		position: sticky;
+		top: 100px;
+	}
+
+	.sidebar-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin: 0 0 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.sidebar-fact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.fact-label {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		color: var(--text-subdued);
+		letter-spacing: 0.08em;
+	}
+
+	.fact-val {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.text-gold {
+		color: var(--accent-gold) !important;
+	}
+
+	.sidebar-action {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.btn-full {
+		width: 100%;
+		font-size: 0.85rem;
+		padding: 0.75rem 1rem;
+	}
+</style>

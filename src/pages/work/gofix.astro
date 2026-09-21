@@ -1,0 +1,279 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { WHATSAPP_BASE_URL } from '../../consts';
+---
+
+<BaseLayout
+	title="GoFix Retail Location Search & Leasing | Xpandor Case Study"
+	description="Case study: 2 retail commercial locations secured and ~3,500 sqft transacted for GoFix across Bengaluru high streets. Commercial search, owner negotiation and lease closure."
+>
+	<section class="case-hero">
+		<div class="container">
+			<div class="case-hero-inner">
+				<a href="/work" class="back-link">← Back to All Case Studies</a>
+				<div class="case-badge">
+					<span class="eyebrow">LOCATION SEARCH & TRANSACTION CLOSURE</span>
+				</div>
+				<h1 class="case-title">GoFix — Bengaluru Expansion</h1>
+				<p class="case-subtitle">
+					Identification, commercial evaluation, owner negotiations, and lease transaction closure for two retail locations across prime Bengaluru high-street catchments.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="case-image-section">
+		<div class="container">
+			<div class="case-hero-img-wrap">
+				<img 
+					src="/images/img-002.jpg" 
+					alt="GoFix commercial retail location search" 
+					class="case-main-img"
+					width="1200"
+					height="600"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="section case-body-section">
+		<div class="container">
+			<div class="case-grid">
+				<div class="case-details">
+					<div class="detail-block">
+						<h2 class="detail-heading">The Requirement</h2>
+						<p>
+							GoFix required strategic commercial retail storefronts in Bengaluru to expand their device repair and certified electronics service centers. Locations needed prominent ground-floor frontage, immediate customer parking or two-wheeler drop-off convenience, and strong residential-commercial catchment density.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">The Challenge</h2>
+						<p>
+							High-street commercial property in target Bengaluru micro-markets carries steep rental expectations, demanding security deposits of 10–12 months, and short fit-out periods. GoFix needed an expansion partner to navigate unlisted properties, engage building owners directly, and negotiate viable commercial economics.
+						</p>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">What Xpandor Handled</h2>
+						<ul class="handled-list">
+							<li><strong>Catchment Mapping:</strong> Identified high-yield micro-markets with optimal footfall and vehicle accessibility.</li>
+							<li><strong>Off-Market Sourcing:</strong> Engaged building owners directly through our on-ground network before spaces hit public brokers.</li>
+							<li><strong>Comparative Shortlisting:</strong> Evaluated properties against frontage width, electrical load capacity, and footfall quality.</li>
+							<li><strong>Commercial Lease Structuring:</strong> Successfully negotiated reduced security deposit terms, capped escalation percentages, and secured dedicated rent-free fit-out windows.</li>
+							<li><strong>Transaction Closure:</strong> Guided legal title verification and lease execution through final signature.</li>
+						</ul>
+					</div>
+
+					<div class="detail-block">
+						<h2 class="detail-heading">Execution & Result</h2>
+						<p>
+							Successfully secured 2 strategic retail locations representing approximately 3,500 sqft of prime commercial space. Both centers opened on target and established strong local trading presence.
+						</p>
+					</div>
+				</div>
+
+				<div class="case-sidebar">
+					<div class="sidebar-box">
+						<h3 class="sidebar-title">Project Summary</h3>
+						<div class="sidebar-fact">
+							<span class="fact-label">Client</span>
+							<span class="fact-val">GoFix</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Category</span>
+							<span class="fact-val">Electronics Retail & Service</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">City</span>
+							<span class="fact-val">Bengaluru, Karnataka</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Transacted Area</span>
+							<span class="fact-val">~3,500 sqft</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Locations Placed</span>
+							<span class="fact-val">2 Retail Outlets</span>
+						</div>
+						<div class="sidebar-fact">
+							<span class="fact-label">Outcome</span>
+							<span class="fact-val text-gold">Direct Lease Closure</span>
+						</div>
+
+						<div class="sidebar-action">
+							<a 
+								href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20location%20search%20in%20Bengaluru%20similar%20to%20GoFix.`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn-gold btn-full"
+							>
+								<span>Discuss Location Search ↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.case-hero {
+		padding: 4rem 0 2rem;
+	}
+
+	.back-link {
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		color: var(--accent-gold);
+		display: inline-block;
+		margin-bottom: 1.5rem;
+	}
+
+	.back-link:hover {
+		text-decoration: underline;
+	}
+
+	.case-title {
+		font-size: clamp(2.2rem, 5vw, 3.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.case-subtitle {
+		font-size: 1.15rem;
+		color: var(--text-muted);
+		max-width: 750px;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	.case-image-section {
+		padding: 1.5rem 0 3rem;
+	}
+
+	.case-hero-img-wrap {
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		border: 1px solid var(--border-gold);
+		box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+	}
+
+	.case-main-img {
+		width: 100%;
+		height: auto;
+		max-height: 580px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.case-grid {
+		display: grid;
+		grid-template-columns: 1.8fr 1fr;
+		gap: 3.5rem;
+		align-items: start;
+	}
+
+	@media (max-width: 900px) {
+		.case-grid {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.detail-block {
+		margin-bottom: 2.5rem;
+	}
+
+	.detail-heading {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: var(--text-main);
+	}
+
+	.detail-block p {
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.handled-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.handled-list li {
+		font-size: 0.92rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+	}
+
+	.handled-list strong {
+		color: var(--text-main);
+	}
+
+	.sidebar-box {
+		background: var(--bg-surface-card);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-sm);
+		padding: 2rem;
+		position: sticky;
+		top: 100px;
+	}
+
+	.sidebar-title {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-gold);
+		margin: 0 0 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.sidebar-fact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.fact-label {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		color: var(--text-subdued);
+		letter-spacing: 0.08em;
+	}
+
+	.fact-val {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.text-gold {
+		color: var(--accent-gold) !important;
+	}
+
+	.sidebar-action {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.btn-full {
+		width: 100%;
+		font-size: 0.85rem;
+		padding: 0.75rem 1rem;
+	}
+</style>
