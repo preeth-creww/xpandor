@@ -5,55 +5,47 @@ import { WHATSAPP_BASE_URL } from '../../consts';
 const caseStudies = [
 	{
 		client: "Kushal's Fashion & Silver Jewellery",
-		code: "BLR-CS-01",
-		category: "JEWELLERY FLAGSHIP",
-		location: "Commercial Street, Bengaluru",
-		footprint: "2,200 Sq. Ft.",
-		handover: "38 Days",
-		scope: "Civil • Wave Facade • MEP • Joinery • Retail Staffing",
+		code: "BLR-FACADE-01",
+		category: "FACADE & FIT-OUT",
+		location: "Bengaluru",
+		scope: "Backlit Wave Facade • 3D Letters • Interior Fit-Out",
 		slug: "/work/kushals",
 		image: "/images/kushals.jpeg",
 		plate: "PLATE 01",
-		highlight: "Standalone flagship store delivered turnkey with custom parametric backlit wave facade, vitrines, and complete opening staff team."
+		highlight: "Storefront execution featuring custom parametric backlit wave facade panels, precision illuminated brand lettering, and retail interior fit-out."
 	},
 	{
-		client: "Luxury Multi-Brand Watch Showroom",
-		code: "BLR-MALL-04",
+		client: "Timepiece & Horology Showroom",
+		code: "BLR-MALL-02",
 		category: "LUXURY TIMEPIECES",
-		location: "Mall Atrium, Bengaluru",
-		footprint: "1,850 Sq. Ft.",
-		handover: "42 Days",
-		scope: "Fit-Out • Security Vitrines • Composite Marble • Display Kiosks",
+		location: "Bengaluru",
+		scope: "Fit-Out • Vitrines • Floor Transitions • Display Lighting",
 		slug: "/work/luxury-watches",
 		image: "/images/img-001.jpg",
 		plate: "PLATE 02",
-		highlight: "High-spec atrium timepiece showroom for Rado, Tissot, Guess with composite marble flooring and reinforced vitrines."
+		highlight: "Premium boutique retail environment featuring custom perimeter display vitrines, calibrated accent display lighting, and seamless floor transitions."
 	},
 	{
-		client: "Toy Shire High-Street Storefront",
-		code: "BLR-RETAIL-08",
+		client: "Retail Storefront & Custom Millwork",
+		code: "BLR-RETAIL-03",
 		category: "SPECIALTY RETAIL",
-		location: "High-Street Corridor, Bengaluru",
-		footprint: "1,400 Sq. Ft.",
-		handover: "32 Days",
-		scope: "Fit-Out • Modular Joinery • 3D Channel Signage • POS",
+		location: "Bengaluru",
+		scope: "Modular Joinery • Display Shelving • 3D Channel Letters",
 		slug: "/work/toy-shire",
 		image: "/images/img-000.jpg",
 		plate: "PLATE 03",
-		highlight: "Precision retail fit-out with color-matched modular display joinery, ceiling cove details, and bilingual 3D channel letters."
+		highlight: "Precision retail fit-out with color-matched modular display joinery, ceiling cove details, and illuminated storefront signage."
 	},
 	{
-		client: "GoFix Electronics Retail Siting",
-		code: "BLR-SITE-02",
+		client: "GoFix Electronics Commercial Siting",
+		code: "BLR-SITE-04",
 		category: "COMMERCIAL SITING",
-		location: "High Streets, Bengaluru",
-		footprint: "3,500+ Sq. Ft. Total",
-		handover: "Lease Closure",
+		location: "Bengaluru",
 		scope: "Micro-Market Siting • Landlord Negotiation • Lease Structuring",
 		slug: "/work/gofix",
 		image: "/images/img-002.jpg",
 		plate: "PLATE 04",
-		highlight: "2 prime retail locations identified and secured on favorable commercial terms with rent-free execution grace periods."
+		highlight: "Strategic commercial retail locations identified and secured on favorable commercial terms with rent-free execution grace periods."
 	}
 ];
 ---
@@ -122,15 +114,7 @@ const caseStudies = [
 									<span class="spec-v">{study.location}</span>
 								</div>
 								<div class="spec-cell">
-									<span class="spec-k">FOOTPRINT</span>
-									<span class="spec-v">{study.footprint}</span>
-								</div>
-								<div class="spec-cell">
-									<span class="spec-k">HANDOVER</span>
-									<span class="spec-v">{study.handover}</span>
-								</div>
-								<div class="spec-cell">
-									<span class="spec-k">SCOPE</span>
+									<span class="spec-k">CORE SCOPE</span>
 									<span class="spec-v">{study.scope}</span>
 								</div>
 							</div>
@@ -360,13 +344,20 @@ const caseStudies = [
 
 	.dossier-specs-table {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.85rem;
-		padding: 1.25rem;
+		grid-template-columns: 1fr 2.2fr;
+		gap: 1rem;
+		padding: 1.15rem 1.25rem;
 		background: rgba(11, 13, 19, 0.5);
 		border: 1px solid var(--border-subtle);
 		border-radius: var(--radius-xs);
 		margin-bottom: 1.75rem;
+	}
+
+	@media (max-width: 560px) {
+		.dossier-specs-table {
+			grid-template-columns: 1fr;
+			gap: 0.75rem;
+		}
 	}
 
 	.spec-cell {
