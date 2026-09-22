@@ -99,47 +99,75 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		</div>
 	</section>
 
-	<!-- Section 2: Developer's Audit Metrics -->
+	<!-- Section 2: Operating Specifications Ledger -->
 	<section class="section metrics-section">
 		<div class="container">
-			<div class="metrics-ledger-grid">
-				<div class="metric-column">
-					<div class="metric-num">45 <span class="metric-unit">DAYS</span></div>
-					<div class="metric-title">Average Store Turnaround</div>
-					<p class="metric-detail">From signed commercial lease to fully traded, inspected store doors.</p>
+			<div class="metrics-ledger-frame architectural-frame">
+				<div class="metrics-ledger-grid">
+					<div class="metric-column">
+						<div class="metric-top-datum">
+							<span class="datum-spec-id">SPEC 01</span>
+							<span class="datum-spec-cat">TIMELINE</span>
+						</div>
+						<div class="metric-val-wrap">
+							<span class="metric-num">45</span>
+							<span class="metric-unit">DAYS</span>
+						</div>
+						<h4 class="metric-title">Average Store Turnaround</h4>
+						<p class="metric-detail">From signed commercial lease to fully traded, inspected store doors.</p>
+					</div>
+
+					<div class="metric-column">
+						<div class="metric-top-datum">
+							<span class="datum-spec-id">SPEC 02</span>
+							<span class="datum-spec-cat">GOVERNANCE</span>
+						</div>
+						<div class="metric-val-wrap">
+							<span class="metric-num">100</span>
+							<span class="metric-unit">%</span>
+						</div>
+						<h4 class="metric-title">Single Accountability</h4>
+						<p class="metric-detail">One client contact. One master contract. No vendor finger-pointing.</p>
+					</div>
+
+					<div class="metric-column">
+						<div class="metric-top-datum">
+							<span class="datum-spec-id">SPEC 03</span>
+							<span class="datum-spec-cat">COMMERCIALS</span>
+						</div>
+						<div class="metric-val-wrap">
+							<span class="metric-num">₹0</span>
+						</div>
+						<h4 class="metric-title">Hidden Contractor Markup</h4>
+						<p class="metric-detail">Transparent BOQ schedules with direct material procurement audit.</p>
+					</div>
+
+					<div class="metric-column">
+						<div class="metric-top-datum">
+							<span class="datum-spec-id">SPEC 04</span>
+							<span class="datum-spec-cat">NETWORK</span>
+						</div>
+						<div class="metric-val-wrap">
+							<span class="metric-num metric-num-text">South India</span>
+						</div>
+						<h4 class="metric-title">Regional Footprint</h4>
+						<p class="metric-detail">Deep on-ground network across Bengaluru and tier-1/tier-2 South hubs.</p>
+					</div>
 				</div>
 
-				<div class="metric-column">
-					<div class="metric-num">100%</div>
-					<div class="metric-title">Single Accountability</div>
-					<p class="metric-detail">One client contact. One master contract. No vendor finger-pointing.</p>
-				</div>
-
-				<div class="metric-column">
-					<div class="metric-num">₹0</div>
-					<div class="metric-title">Hidden Contractor Markup</div>
-					<p class="metric-detail">Transparent BOQ schedules with direct material procurement audit.</p>
-				</div>
-
-				<div class="metric-column">
-					<div class="metric-num">SOUTH <span class="metric-unit">INDIA</span></div>
-					<div class="metric-title">Regional Footprint</div>
-					<p class="metric-detail">Deep on-ground network across Bengaluru and tier-1/tier-2 South hubs.</p>
-				</div>
-			</div>
-
-			<div class="brand-lineage">
-				<span class="lineage-label">TRUSTED ACROSS REGIONAL & ENTERPRISE RETAIL ROLLOUTS</span>
-				<div class="lineage-names">
-					<span>KUSHAL'S</span>
-					<span class="dot">•</span>
-					<span>WOODEN STREET</span>
-					<span class="dot">•</span>
-					<span>GOFIX</span>
-					<span class="dot">•</span>
-					<span>R&B</span>
-					<span class="dot">•</span>
-					<span>WAKEFIT</span>
+				<div class="brand-lineage">
+					<span class="lineage-label">TRUSTED ACROSS REGIONAL & ENTERPRISE RETAIL ROLLOUTS</span>
+					<div class="lineage-names">
+						<span>KUSHAL'S</span>
+						<span class="dot">•</span>
+						<span>WOODEN STREET</span>
+						<span class="dot">•</span>
+						<span>GOFIX</span>
+						<span class="dot">•</span>
+						<span>R&B</span>
+						<span class="dot">•</span>
+						<span>WAKEFIT</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -763,106 +791,175 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		margin: 0;
 	}
 
-	/* Section 2: Developer's Audit Metrics */
+	/* Section 2: Operating Specifications Ledger */
 	.metrics-section {
-		padding: 4.5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
+		padding: 3.5rem 0 3.5rem;
+	}
+
+	.metrics-ledger-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
 	}
 
 	.metrics-ledger-grid {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 2.5rem;
-		padding-bottom: 3rem;
-		border-bottom: 1px solid var(--border-subtle);
 	}
 
 	@media (max-width: 960px) {
 		.metrics-ledger-grid {
 			grid-template-columns: repeat(2, 1fr);
-			gap: 2rem;
 		}
 	}
 
 	@media (max-width: 540px) {
 		.metrics-ledger-grid {
 			grid-template-columns: 1fr;
-			gap: 1.75rem;
 		}
 	}
 
 	.metric-column {
+		padding: 2.5rem 2rem;
+		border-right: 1px solid var(--border-subtle);
 		display: flex;
 		flex-direction: column;
 	}
 
+	.metric-column:last-child {
+		border-right: none;
+	}
+
+	@media (max-width: 960px) {
+		.metric-column:nth-child(2) {
+			border-right: none;
+		}
+		.metric-column:nth-child(1),
+		.metric-column:nth-child(2) {
+			border-bottom: 1px solid var(--border-subtle);
+		}
+	}
+
+	@media (max-width: 540px) {
+		.metric-column {
+			border-right: none;
+			border-bottom: 1px solid var(--border-subtle);
+			padding: 2rem 1.5rem;
+		}
+		.metric-column:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.metric-top-datum {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		margin-bottom: 1.25rem;
+	}
+
+	.datum-spec-id {
+		color: var(--accent-gold);
+		font-weight: 600;
+	}
+
+	.datum-spec-cat {
+		color: var(--text-subdued);
+	}
+
+	.metric-val-wrap {
+		display: flex;
+		align-items: baseline;
+		gap: 0.45rem;
+		margin-bottom: 0.75rem;
+	}
+
 	.metric-num {
 		font-family: var(--font-display);
-		font-size: clamp(2.6rem, 4vw, 3.6rem);
-		font-weight: 800;
+		font-size: clamp(2.2rem, 3.2vw, 2.75rem);
+		font-weight: 500;
 		color: var(--text-main);
 		line-height: 1;
-		margin-bottom: 0.6rem;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.025em;
+	}
+
+	.metric-num-text {
+		font-size: clamp(1.6rem, 2.4vw, 2.05rem);
+		font-weight: 500;
+		letter-spacing: -0.02em;
 	}
 
 	.metric-unit {
-		font-size: 0.45em;
-		color: var(--accent-gold);
 		font-family: var(--font-mono);
-		font-weight: 600;
+		font-size: 0.72rem;
+		color: var(--accent-gold);
+		font-weight: 500;
 		letter-spacing: 0.1em;
 	}
 
 	.metric-title {
 		font-family: var(--font-display);
-		font-size: 0.95rem;
-		font-weight: 700;
-		color: var(--accent-gold);
-		margin-bottom: 0.35rem;
-		text-transform: uppercase;
-		letter-spacing: 0.04em;
+		font-size: 0.92rem;
+		font-weight: 600;
+		color: var(--text-main);
+		margin: 0 0 0.45rem;
+		letter-spacing: -0.01em;
 	}
 
 	.metric-detail {
 		font-size: 0.82rem;
-		line-height: 1.55;
+		line-height: 1.6;
 		color: var(--text-muted);
 		margin: 0;
 	}
 
 	.brand-lineage {
-		padding-top: 2rem;
+		background: rgba(11, 13, 19, 0.65);
+		border-top: 1px solid var(--border-subtle);
+		padding: 1.35rem 2rem;
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		align-items: center;
-		text-align: center;
-		gap: 0.85rem;
+		justify-content: space-between;
+		gap: 1.25rem;
+	}
+
+	@media (max-width: 860px) {
+		.brand-lineage {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 1.25rem 1.5rem;
+		}
 	}
 
 	.lineage-label {
 		font-family: var(--font-mono);
-		font-size: 0.72rem;
+		font-size: 0.68rem;
 		letter-spacing: 0.14em;
 		color: var(--text-subdued);
+		white-space: nowrap;
 	}
 
 	.lineage-names {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: center;
-		gap: 1.25rem;
-		font-family: var(--font-display);
-		font-size: 0.95rem;
-		font-weight: 700;
-		letter-spacing: 0.08em;
+		gap: 1.15rem;
+		font-family: var(--font-mono);
+		font-size: 0.82rem;
+		font-weight: 500;
+		letter-spacing: 0.1em;
 		color: var(--text-muted);
 	}
 
 	.lineage-names .dot {
 		color: var(--accent-gold);
-		font-size: 0.8rem;
+		opacity: 0.6;
+		font-size: 0.7rem;
 	}
 
 	/* Section 3: Procurement Matrix */
