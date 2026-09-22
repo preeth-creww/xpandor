@@ -4,145 +4,187 @@ import { WHATSAPP_BASE_URL } from '../consts';
 ---
 
 <BaseLayout
-	title="Store Opening Staffing & Retail Recruitment | Xpandor"
-	description="A store isn't ready when construction ends. It's ready when the team is ready. Xpandor delivers store opening staffing for expanding retail brands in South India."
+	title="Retail Workforce & Store Launch Staffing | Xpandor"
+	description="A built store without a trained team is dead capital. Xpandor sources, vets, and deploys retail store teams 2 weeks prior to opening day."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
 		<div class="container">
-			<div class="hero-content">
-				<span class="eyebrow">04 — STAFF / STORE OPENING STAFFING</span>
-				<h1 class="page-title">A store isn't ready when construction ends.<br />It's ready when the team is ready.</h1>
-				<p class="page-subhead">
-					We don't operate as a generic resume broker. We build and deploy complete store teams—from store managers to front-of-house sales associates—synchronized with your fit-out handover date.
-				</p>
-				<div class="hero-actions">
-					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20store%20staffing%20for%20our%20retail%20expansion.`}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-gold"
-					>
-						<span>Discuss Store Staffing on WhatsApp ↗</span>
-					</a>
-					<a href="#roles" class="btn btn-outline">
-						<span>Explore Retail Roles</span>
-					</a>
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">DISCIPLINE 04</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">STORE WORKFORCE & LAUNCH TEAMS</span>
+					</div>
+					<div class="datum-right">
+						<span class="datum-coord">BENGALURU • SOUTH INDIA RETAIL HUBS</span>
+					</div>
+				</div>
+
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Retail Operational Readiness</span>
+					</div>
+
+					<h1 class="page-title">
+						A built store without a team <br class="hidden-sm" />
+						<span class="text-gradient-brass">is dead capital.</span>
+					</h1>
+
+					<p class="page-subhead">
+						Opening a physical store isn't just about paint and light fixtures. If your store manager and sales consultants aren't hired, vetted, and inducted before fit-out handover, your store sits empty while rent accrues. Xpandor synchronizes retail hiring with your construction schedule.
+					</p>
+
+					<div class="hero-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20store%20staffing%20requirements%20with%20Xpandor.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Discuss Retail Staffing on WhatsApp</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+						</a>
+						<a href="#schedule" class="btn btn-outline">
+							<span>View 6-Week Launch Schedule ↓</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Proof Highlight: Kushal's -->
-	<section class="section proof-highlight-section">
-		<div class="container">
-			<div class="proof-bar">
-				<div class="proof-item">
-					<span class="proof-number">100%</span>
-					<span class="proof-text">Store-Ready Teams on Day One</span>
-				</div>
-				<div class="proof-sep"></div>
-				<div class="proof-item">
-					<span class="proof-number">KUSHAL'S</span>
-					<span class="proof-text">Complete Retail Store Teams Recruited</span>
-				</div>
-				<div class="proof-sep"></div>
-				<div class="proof-item">
-					<span class="proof-number">6 Weeks</span>
-					<span class="proof-text">Target Hiring & Onboarding Cycle</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- The Staffing Timeline -->
-	<section class="section">
+	<!-- Section: The 6-Week Launch Schedule -->
+	<section id="schedule" class="section schedule-section">
 		<div class="container">
 			<div class="section-header">
 				<span class="eyebrow">Synchronized Hiring</span>
-				<h2 class="section-title">The store opening staffing lifecycle.</h2>
+				<h2 class="section-title">The 6-week retail launch schedule.</h2>
 				<p class="section-desc">
-					We initiate recruitment six weeks before fit-out completion so your staff is hired, trained, and on-site when the keys are handed over.
+					We initiate recruitment six weeks before your civil fit-out concludes, ensuring complete team readiness for POS setup and stock merchandising.
 				</p>
 			</div>
 
-			<div class="timeline-row">
-				<div class="time-card">
-					<span class="time-week">Week 1 – 2</span>
-					<h3 class="time-title">Manpower Planning & Profiling</h3>
-					<p class="time-desc">Defining store headcount, salary benchmarks, shift rosters, and customer service profiles tailored to your brand.</p>
+			<div class="schedule-grid">
+				<div class="sched-card architectural-frame">
+					<span class="sched-week">WEEKS 01–02</span>
+					<h3 class="sched-title">Headcount & Sourcing</h3>
+					<p class="sched-desc">Job descriptions, compensation benchmarking against regional retail corridors, and pipeline activation across Bengaluru.</p>
 				</div>
-				<div class="time-card">
-					<span class="time-week">Week 3 – 4</span>
-					<h3 class="time-title">Sourcing & In-Person Screening</h3>
-					<p class="time-desc">Filtering candidates through our verified retail talent network, screening for punctuality, language, and sales acumen.</p>
+				<div class="sched-card architectural-frame">
+					<span class="sched-week">WEEKS 03–04</span>
+					<h3 class="sched-title">Screening & Shortlist</h3>
+					<p class="sched-desc">In-person interviews, retail aptitude checks, spoken English & regional language fluency, and reference verification.</p>
 				</div>
-				<div class="time-card">
-					<span class="time-week">Week 5</span>
-					<h3 class="time-title">Selection & Offer Rollout</h3>
-					<p class="time-desc">Client final round interviews, offer letter coordination, background checks, and joining confirmation.</p>
+				<div class="sched-card architectural-frame">
+					<span class="sched-week">WEEK 05</span>
+					<h3 class="sched-title">Client Selection & Offers</h3>
+					<p class="sched-desc">Final interviews with your brand head, commercial offer issuance, background checks, and joining confirmation.</p>
 				</div>
-				<div class="time-card">
-					<span class="time-week">Week 6</span>
-					<h3 class="time-title">Store Launch Readiness</h3>
-					<p class="time-desc">On-site merchandising orientation, POS system training, dry run transactions, and grand opening day presence.</p>
+				<div class="sched-card architectural-frame">
+					<span class="sched-week">WEEK 06</span>
+					<h3 class="sched-title">On-Site Induction & Launch</h3>
+					<p class="sched-desc">Team arrives on-site 14 days before handover for merchandise inwarding, POS training, and dry-run sales simulations.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Roles We Fill -->
+	<!-- Roles We Fill: Clean SVG Stroke Icons (No Emojis) -->
 	<section id="roles" class="section roles-section">
 		<div class="container">
 			<div class="section-header">
 				<span class="eyebrow">Front & Back of House</span>
 				<h2 class="section-title">Retail roles we recruit and deploy.</h2>
 				<p class="section-desc">
-					Specialized retail talent across fashion, jewelry, luxury watches, furniture, and specialty consumer brands.
+					Specialized retail talent across fashion, jewelry, luxury timepieces, furniture, electronics, and specialty consumer flagships.
 				</p>
 			</div>
 
 			<div class="grid-3">
-				<div class="card-glass">
-					<span class="role-icon">👔</span>
+				<!-- Role 1: Store Managers -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+						</div>
+						<span class="role-tag">LEADERSHIP</span>
+					</div>
 					<h3 class="card-title">Store Managers & Team Leads</h3>
 					<p class="card-text">
-						Experienced retail leaders responsible for P&L, stock reconciliation, daily shift management, customer dispute resolution, and sales targets.
+						Experienced retail operators responsible for daily P&L, inventory audits, shift scheduling, staff training, and revenue targets.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="role-icon">💎</span>
+
+				<!-- Role 2: Sales Consultants -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						</div>
+						<span class="role-tag">CONSULTATIVE</span>
+					</div>
 					<h3 class="card-title">Senior Sales Consultants</h3>
 					<p class="card-text">
-						High-ticket consultative sales professionals trained in luxury goods, jewelry, watches, apparel styling, and customer rapport.
+						Consultative retail professionals trained in high-ticket luxury goods, jewelry, watches, premium apparel styling, and client rapport.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="role-icon">🖥️</span>
+
+				<!-- Role 3: Cashiers & POS -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+						</div>
+						<span class="role-tag">OPERATIONS</span>
+					</div>
 					<h3 class="card-title">Cashiers & POS Operators</h3>
 					<p class="card-text">
-						Detail-oriented cashiering staff proficient in retail ERPs, card machine batch settlements, invoice generation, and billing compliance.
+						Detail-oriented cashiering staff proficient in retail ERPs, card machine batch settlements, invoice generation, and GST compliance.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="role-icon">📦</span>
-					<h3 class="card-title">Inventory & Stock Keepers</h3>
+
+				<!-- Role 4: Inventory Keepers -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+						</div>
+						<span class="role-tag">INVENTORY</span>
+					</div>
+					<h3 class="card-title">Stockroom & Inventory Keepers</h3>
 					<p class="card-text">
-						Back-of-house inventory specialists managing inwards goods, barcode scanning, stockroom organization, and theft prevention.
+						Back-of-house logistics specialists managing barcode scanning, inward consignments, shrinkage control, and rapid floor replenishment.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="role-icon">👗</span>
+
+				<!-- Role 5: Visual Merchandisers -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+						</div>
+						<span class="role-tag">MERCHANDISE</span>
+					</div>
 					<h3 class="card-title">Visual Merchandisers</h3>
 					<p class="card-text">
-						On-floor display specialists who maintain mannequin styling, brand display guidelines, window rotation, and lighting alignment.
+						On-floor display specialists who maintain mannequin styling, planogram adherence, window rotation, and precision display lighting alignment.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="role-icon">🛡️</span>
-					<h3 class="card-title">Store Security & Front Greeters</h3>
+
+				<!-- Role 6: Store Security & Greeters -->
+				<div class="card-role architectural-frame">
+					<div class="role-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+						</div>
+						<span class="role-tag">SECURITY</span>
+					</div>
+					<h3 class="card-title">Store Security & Greeters</h3>
 					<p class="card-text">
-						Polite, alert security personnel and front-of-house greeters trained in customer welcome and loss prevention.
+						Polite, alert security personnel and front-of-house greeters trained in welcoming high-value customers and proactive loss prevention.
 					</p>
 				</div>
 			</div>
@@ -152,19 +194,19 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<!-- CTA -->
 	<section class="section cta-section">
 		<div class="container text-center">
-			<div class="cta-banner mx-auto">
-				<span class="eyebrow">Staff Your Next Store</span>
+			<div class="cta-banner architectural-frame mx-auto">
+				<span class="eyebrow">Workforce Planning</span>
 				<h2 class="cta-title">Opening a store in Bengaluru soon?</h2>
 				<p class="cta-desc">
-					Tell us your store location, opening date, and required headcount. We'll present a workforce plan and verified candidate pipeline.
+					Tell us your store location, targeted launch date, and required headcount. We will structure a synchronized workforce schedule and candidate pipeline.
 				</p>
 				<a 
 					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20store%20staffing%20requirements%20with%20Xpandor.`}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-gold btn-large"
+					class="btn btn-gold"
 				>
-					<span>Connect with Preetham on WhatsApp ↗</span>
+					<span>Discuss Staffing with Preetham on WhatsApp</span>
 				</a>
 			</div>
 		</div>
@@ -173,26 +215,92 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 <style>
 	.page-hero {
-		padding: 5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
-		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+		padding: 4.5rem 0 3rem;
 	}
 
-	.hero-content {
-		max-width: 820px;
+	@media (max-width: 768px) {
+		.page-hero {
+			padding: 2.5rem 0 2rem;
+		}
+	}
+
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+			padding: 0.75rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	.hero-body {
+		padding: 4rem 3.5rem;
+		max-width: 900px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.2rem, 5vw, 3.6rem);
-		font-weight: 800;
+		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-weight: 600;
 		line-height: 1.15;
-		letter-spacing: -0.02em;
-		margin: 0.75rem 0 1.25rem;
+		letter-spacing: -0.025em;
+		margin: 0.6rem 0 1.25rem;
+		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		line-height: 1.7;
 		color: var(--text-muted);
 		margin-bottom: 2.25rem;
 	}
@@ -203,127 +311,70 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		gap: 1rem;
 	}
 
-	/* Proof Highlight */
-	.proof-highlight-section {
-		padding: 2rem 0;
-		background: #06080E;
+	/* Schedule Grid */
+	.schedule-section {
+		border-top: 1px solid var(--border-subtle);
 		border-bottom: 1px solid var(--border-subtle);
+		background: #090B10;
 	}
 
-	.proof-bar {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		gap: 1.5rem;
-	}
-
-	.proof-item {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	.proof-number {
-		font-size: 2.2rem;
-		font-weight: 800;
-		color: var(--accent-gold);
-		line-height: 1;
-		font-family: var(--font-mono);
-	}
-
-	.proof-text {
-		font-size: 0.9rem;
-		font-weight: 600;
-		color: var(--text-main);
-		max-width: 200px;
-		line-height: 1.35;
-	}
-
-	.proof-sep {
-		width: 1px;
-		height: 40px;
-		background: var(--border-subtle);
-	}
-
-	@media (max-width: 768px) {
-		.proof-sep {
-			display: none;
-		}
-		.proof-bar {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-	}
-
-	/* Timeline Row */
-	.timeline-row {
+	.schedule-grid {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1.5rem;
 	}
 
-	@media (max-width: 900px) {
-		.timeline-row {
+	@media (max-width: 1024px) {
+		.schedule-grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	@media (max-width: 550px) {
-		.timeline-row {
+	@media (max-width: 600px) {
+		.schedule-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.time-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
-		padding: 2rem 1.5rem;
-		transition: all 0.25s ease;
+	.sched-card {
+		background: var(--bg-surface);
+		padding: 2.25rem 1.75rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
 	}
 
-	.time-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
-	}
-
-	.time-week {
+	.sched-week {
 		font-family: var(--font-mono);
-		font-size: 0.8rem;
+		font-size: 0.78rem;
 		font-weight: 700;
 		color: var(--accent-gold);
-		display: block;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.85rem;
+		letter-spacing: 0.08em;
 	}
 
-	.time-title {
-		font-size: 1.15rem;
-		font-weight: 700;
-		margin: 0 0 0.6rem;
+	.sched-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin: 0 0 0.75rem;
+		color: var(--text-main);
 	}
 
-	.time-desc {
-		font-size: 0.85rem;
+	.sched-desc {
+		font-size: 0.88rem;
+		line-height: 1.6;
 		color: var(--text-muted);
-		line-height: 1.55;
 		margin: 0;
 	}
 
-	/* Roles Section */
-	.roles-section {
-		background: #06080E;
-		border-top: 1px solid var(--border-subtle);
-		border-bottom: 1px solid var(--border-subtle);
-	}
-
+	/* Roles Grid */
 	.grid-3 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 960px) {
 		.grid-3 {
 			grid-template-columns: repeat(2, 1fr);
 		}
@@ -335,56 +386,69 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		}
 	}
 
-	.role-icon {
-		font-size: 1.75rem;
-		display: block;
-		margin-bottom: 0.85rem;
+	.card-role {
+		background: var(--bg-surface);
+		padding: 2.25rem 2rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.role-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.role-tag {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		color: var(--text-subdued);
 	}
 
 	.card-title {
-		font-size: 1.2rem;
-		font-weight: 700;
+		font-size: 1.25rem;
+		font-weight: 600;
 		margin: 0 0 0.75rem;
+		color: var(--text-main);
 	}
 
 	.card-text {
 		font-size: 0.88rem;
-		color: var(--text-muted);
 		line-height: 1.6;
+		color: var(--text-muted);
 		margin: 0;
 	}
 
+	/* CTA */
 	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
-		text-align: center;
+		background: var(--bg-surface);
+		padding: 4.5rem 3rem;
+		border-radius: var(--radius-xs);
 		max-width: 800px;
 	}
 
+	@media (max-width: 640px) {
+		.cta-banner {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
 	.cta-title {
-		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+		font-weight: 600;
+		line-height: 1.15;
 		margin: 0.75rem 0 1rem;
+		color: var(--text-main);
 	}
 
 	.cta-desc {
-		font-size: 1.05rem;
+		font-size: 1rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
-	}
-
-	.btn-large {
-		padding: 0.85rem 2rem;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 600px;
+		margin: 0 auto 2.25rem;
 	}
 </style>

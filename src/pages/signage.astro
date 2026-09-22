@@ -5,29 +5,52 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 <BaseLayout
 	title="Retail Signage & Architectural Facades | Xpandor"
-	description="Your storefront is part of the store, not a vendor afterthought. Xpandor coordinates architectural facades, 3D channel letters, illuminated signage, and wayfinding."
+	description="Your storefront is the physical face of your brand. Xpandor engineers architectural facades, 3D illuminated channel letters, multilingual scripts, and wayfinding in lockstep with store fit-out."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
 		<div class="container">
-			<div class="hero-content">
-				<span class="eyebrow">03 — EQUIP / SIGNAGE & FACADES</span>
-				<h1 class="page-title">Your storefront is part of the store.</h1>
-				<p class="page-subhead">
-					Signage shouldn't be a vendor afterthought bolted onto a finished building. Xpandor engineers storefront facades, 3D illuminated channel letters, and wayfinding in lockstep with your interior fit-out.
-				</p>
-				<div class="hero-actions">
-					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20storefront%20signage%20and%20facades%20with%20Xpandor.`}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-gold"
-					>
-						<span>Discuss Signage on WhatsApp ↗</span>
-					</a>
-					<a href="#showcase" class="btn btn-outline">
-						<span>View Storefront Work</span>
-					</a>
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">DISCIPLINE 03</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">FACADES & STOREFRONT SIGNAGE</span>
+					</div>
+					<div class="datum-right">
+						<span class="datum-coord">STRUCTURAL STEEL • 3D LETTERS • BILINGUAL SCRIPTS</span>
+					</div>
+				</div>
+
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Facade Engineering & Branding</span>
+					</div>
+
+					<h1 class="page-title">
+						Your storefront is <br class="hidden-sm" />
+						<span class="text-gradient-brass">part of the store.</span>
+					</h1>
+
+					<p class="page-subhead">
+						Signage shouldn't be a fragmented vendor afterthought bolted onto a finished building. Xpandor engineers storefront facades, 3D illuminated channel letters, and regional script compliance in lockstep with your interior fit-out schedule.
+					</p>
+
+					<div class="hero-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20storefront%20signage%20and%20facades%20with%20Xpandor.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Discuss Signage on WhatsApp</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+						</a>
+						<a href="#showcase" class="btn btn-outline">
+							<span>View Storefront Projects ↓</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -37,118 +60,180 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<section class="section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">The Integrated Advantage</span>
-				<h2 class="section-title">Why buying signage with expansion works better.</h2>
+				<span class="eyebrow">The Integrated Engineering Advantage</span>
+				<h2 class="section-title">Why procuring signage with fit-out eliminates rework.</h2>
 				<p class="section-desc">
-					When signage is treated as an isolated purchase, cables dangle through fresh paint, power points are missing, and facade handovers are delayed.
+					When signage is treated as an isolated vendor purchase, conduits dangle through fresh paint, electrical capacity is insufficient, and facade handovers lag behind store opening dates.
 				</p>
 			</div>
 
 			<div class="grid-3">
-				<div class="card-glass">
-					<span class="card-num">01</span>
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">01</span>
+						<span class="card-code">ELECTRICAL</span>
+					</div>
 					<h3 class="card-title">Electrical & MEP Synchronization</h3>
 					<p class="card-text">
-						Transformer placement, conduit routing, and power load requirements are embedded into the store's primary electrical drawings before walls are closed.
+						Transformer placement, conduit routing, and power loads are embedded into the store's primary electrical set before partition walls and ceilings are closed.
 					</p>
+					<ul class="spec-checklist">
+						<li>Concealed conduit pathways</li>
+						<li>Dedicated transformer access panels</li>
+						<li>Surge protection & timer relays</li>
+					</ul>
 				</div>
-				<div class="card-glass">
-					<span class="card-num">02</span>
-					<h3 class="card-title">Structural & Facade Rigor</h3>
+
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">02</span>
+						<span class="card-code">STRUCTURAL</span>
+					</div>
+					<h3 class="card-title">Structural & Wind Load Rigor</h3>
 					<p class="card-text">
-						Sub-frame structural calculations, wind load engineering for high-street facades, and moisture-proof seals prevent structural sagging and electrical shorts.
+						Engineered sub-frame steel calculations, wind load testing for high-street facades, and industrial weatherproofing seals prevent structural fatigue and short circuits.
 					</p>
+					<ul class="spec-checklist">
+						<li>Galvanized structural sub-frames</li>
+						<li>IP67 certified waterproof LEDs</li>
+						<li>Monsoon drainage weep channels</li>
+					</ul>
 				</div>
-				<div class="card-glass">
-					<span class="card-num">03</span>
-					<h3 class="card-title">Landlord & Mall Compliance</h3>
+
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">03</span>
+						<span class="card-code">COMPLIANCE</span>
+					</div>
+					<h3 class="card-title">Mall & Municipal Compliance</h3>
 					<p class="card-text">
-						Direct compliance management for mall concourse lumen limits, fire retardant material certifications, and municipal municipal display permissions.
+						Direct compliance management for mall concourse lumen maximums, fire retardant material certifications, and municipal bilingual nameboard regulations.
 					</p>
+					<ul class="spec-checklist">
+						<li>60:40 Kannada language compliance</li>
+						<li>Mall lumen & lux limit adherence</li>
+						<li>Class-1 fire retardant acrylics</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Capabilities -->
-	<section class="section capabilities-section">
+	<!-- Fabrication Scope Grid -->
+	<section class="section scope-section">
 		<div class="container">
 			<div class="section-header">
 				<span class="eyebrow">Fabrication Scope</span>
 				<h2 class="section-title">End-to-end storefront solutions.</h2>
 				<p class="section-desc">
-					From complex custom architectural wave cladding to precision laser-cut channel letters in regional scripts.
+					From complex parametric architectural wave cladding to precision laser-cut channel letters in regional scripts.
 				</p>
 			</div>
 
 			<div class="grid-4">
-				<div class="card-glass">
-					<span class="cap-tag">EXTERIOR</span>
-					<h3 class="cap-title">Architectural Facades</h3>
-					<p class="cap-desc">Custom wave cladding, backlit acrylic fins, composite paneling, and high-impact structural portals.</p>
+				<div class="scope-card architectural-frame">
+					<span class="scope-tag">EXTERIOR</span>
+					<h3 class="scope-title">Architectural Facades</h3>
+					<p class="scope-desc">Custom wave cladding, backlit acrylic fins, aluminum composite panels (ACP), and structural storefront portals.</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-tag">ILLUMINATION</span>
-					<h3 class="cap-title">3D Channel Lettering</h3>
-					<p class="cap-desc">Front-lit, halo-backlit, and edge-lit letters in stainless steel, brass, titanium gold, and cast acrylic.</p>
+				<div class="scope-card architectural-frame">
+					<span class="scope-tag">ILLUMINATION</span>
+					<h3 class="scope-title">3D Channel Lettering</h3>
+					<p class="scope-desc">Front-lit, halo-backlit, and edge-lit letterforms fabricated in stainless steel, brushed brass, titanium, and cast acrylic.</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-tag">REGIONAL SCRIPTS</span>
-					<h3 class="cap-title">Multilingual Signage</h3>
-					<p class="cap-desc">Exact typographic rendering of Kannada, Telugu, Tamil, Bengali, Hindi, and regional scripts for South India compliance.</p>
+				<div class="scope-card architectural-frame">
+					<span class="scope-tag">REGIONAL SCRIPTS</span>
+					<h3 class="scope-title">Multilingual Signage</h3>
+					<p class="scope-desc">Exact typographic rendering of Kannada, Telugu, Tamil, Hindi, and regional scripts for South Indian legal compliance.</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-tag">INTERIOR</span>
-					<h3 class="cap-title">Lightboxes & Wayfinding</h3>
-					<p class="cap-desc">Fabric LED lightboxes, category overhead indicators, cash counter brand marks, and fitting room signage.</p>
+				<div class="scope-card architectural-frame">
+					<span class="scope-tag">INTERIOR</span>
+					<h3 class="scope-title">In-Store Wayfinding & Lightboxes</h3>
+					<p class="scope-desc">Department identifiers, ultra-slim fabric lightboxes, cashier LED branding, and directional wayfinding.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Project Visual Showcase -->
+	<!-- Storefront Showcase Plates -->
 	<section id="showcase" class="section showcase-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">Installed Work</span>
-				<h2 class="section-title">Storefronts delivered on site.</h2>
+				<span class="eyebrow">Storefront Proof</span>
+				<h2 class="section-title">Executed facade projects.</h2>
 				<p class="section-desc">
-					Examine the real-world execution of our facade and signage installations.
+					Real storefronts engineered, fabricated, and installed by our facade specialists across commercial street fronts and malls.
 				</p>
 			</div>
 
-			<div class="showcase-grid">
-				<!-- Showcase 1: Kushal's -->
-				<div class="showcase-card">
-					<div class="showcase-img">
-						<img src="/images/kushals.jpeg" alt="Kushal's illuminated wave facade" loading="lazy" width="700" height="420" />
+			<div class="plates-grid">
+				<!-- Plate 1: Kushal's Wave Facade -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/kushals.jpeg" alt="Kushal's architectural wave facade and 3D illuminated storefront lettering" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 01 / ARCHITECTURAL FACADE</span>
 					</div>
-					<div class="showcase-info">
-						<span class="s-client">Kushal's Fashion & Silver Jewellery</span>
-						<h3 class="s-title">Architectural Backlit Wave Facade & Dual-Language Signage</h3>
-						<p class="s-desc">
-							Engineered and installed the iconic undulating vertical warm-white wave elements flanking the main entrance, 3D channel front-lit brand lettering, and regional Telugu script signage.
-						</p>
-						<div class="s-specs">
-							<span>Backlit Wave Fins</span> • <span>Front-lit Channel Letters</span> • <span>Dual-Script Typography</span>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">FAC-BLR-01</span>
+							<span class="dossier-sector">JEWELLERY FLAGSHIP</span>
 						</div>
+						<h3 class="dossier-title">Kushal's Parametric Wave Facade</h3>
+						<p class="dossier-summary">Two-story standalone building facade featuring custom fluid backlit wave cladding, warm white perimeter illumination, and 3D precision acrylic channel letters.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Commercial Street, Bengaluru</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">ELEVATION</span>
+								<span class="spec-v">Two-Story High-Street</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">MATERIALS</span>
+								<span class="spec-v">Composite Wave Fin Panels</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">LIGHTING</span>
+								<span class="spec-v">Concealed Waterproof LED Arrays</span>
+							</div>
+						</div>
+						<a href="/work/kushals" class="dossier-link">View Facade Case Study →</a>
 					</div>
 				</div>
 
-				<!-- Showcase 2: Toy Shire -->
-				<div class="showcase-card">
-					<div class="showcase-img">
-						<img src="/images/img-000.jpg" alt="Toy Shire 3D illuminated signage" loading="lazy" width="700" height="420" />
+				<!-- Plate 2: High-Street Mall Frontage -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/img-000.jpg" alt="Commercial storefront illuminated 3D letters and header panel" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 02 / CHANNEL LETTERING</span>
 					</div>
-					<div class="showcase-info">
-						<span class="s-client">Toy Shire</span>
-						<h3 class="s-title">Mall Concourse 3D Block Channel Signage</h3>
-						<p class="s-desc">
-							Precision routed acrylic channel letters with uniform edge diffusion, floating drop-down portal mounts, and regional script integration for high-density mall footfall.
-						</p>
-						<div class="s-specs">
-							<span>Cast Acrylic Fabrication</span> • <span>High-CRI LED Modules</span> • <span>Concourse Compliance</span>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">FAC-BLR-02</span>
+							<span class="dossier-sector">SPECIALTY RETAIL</span>
 						</div>
+						<h3 class="dossier-title">Toy Shire High-Contrast Storefront</h3>
+						<p class="dossier-summary">Illuminated cast acrylic 3D channel letters mounted on high-gloss composite fascia, paired with integrated threshold downlighting.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">High-Street Retail, Bengaluru</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">WIDTH</span>
+								<span class="spec-v">24 Ft Frontage Span</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">MATERIALS</span>
+								<span class="spec-v">Cast Acrylic & Powdered Steel</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCRIPTS</span>
+								<span class="spec-v">English + Regional Script</span>
+							</div>
+						</div>
+						<a href="/work/toy-shire" class="dossier-link">View Storefront Case Study →</a>
 					</div>
 				</div>
 			</div>
@@ -158,19 +243,19 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<!-- CTA -->
 	<section class="section cta-section">
 		<div class="container text-center">
-			<div class="cta-banner mx-auto">
-				<span class="eyebrow">Elevate Your Storefront</span>
-				<h2 class="cta-title">Need facade or signage engineering for your next store?</h2>
+			<div class="cta-banner architectural-frame mx-auto">
+				<span class="eyebrow">Storefront Specification</span>
+				<h2 class="cta-title">Need facade or signage engineering?</h2>
 				<p class="cta-desc">
-					Share your brand logo, storefront elevation, and dimensions. We'll provide technical fabrication recommendations and lighting specs.
+					Send us your brand guidelines, storefront elevation CADs, or site photos for technical fabrication scoping and compliance review.
 				</p>
 				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20storefront%20signage%20requirement%20with%20Xpandor.`}
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20storefront%20signage%20and%20facades%20with%20Xpandor.`}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-gold btn-large"
+					class="btn btn-gold"
 				>
-					<span>Connect with Preetham on WhatsApp ↗</span>
+					<span>Discuss Signage with Preetham on WhatsApp</span>
 				</a>
 			</div>
 		</div>
@@ -179,26 +264,92 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 <style>
 	.page-hero {
-		padding: 5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
-		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+		padding: 4.5rem 0 3rem;
 	}
 
-	.hero-content {
-		max-width: 820px;
+	@media (max-width: 768px) {
+		.page-hero {
+			padding: 2.5rem 0 2rem;
+		}
+	}
+
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+			padding: 0.75rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	.hero-body {
+		padding: 4rem 3.5rem;
+		max-width: 900px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.2rem, 5vw, 3.8rem);
-		font-weight: 800;
+		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-weight: 600;
 		line-height: 1.15;
-		letter-spacing: -0.02em;
-		margin: 0.75rem 0 1.25rem;
+		letter-spacing: -0.025em;
+		margin: 0.6rem 0 1.25rem;
+		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		line-height: 1.7;
 		color: var(--text-muted);
 		margin-bottom: 2.25rem;
 	}
@@ -209,45 +360,86 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		gap: 1rem;
 	}
 
+	/* Grid 3 Spec Cards */
 	.grid-3 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
+	@media (max-width: 960px) {
 		.grid-3 {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
 		}
+	}
+
+	.spec-card {
+		background: var(--bg-surface);
+		padding: 2.5rem 2rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.25rem;
 	}
 
 	.card-num {
 		font-family: var(--font-mono);
 		font-size: 0.85rem;
-		color: var(--accent-gold);
 		font-weight: 700;
-		display: block;
-		margin-bottom: 0.75rem;
+		color: var(--accent-gold);
+	}
+
+	.card-code {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		color: var(--text-subdued);
 	}
 
 	.card-title {
-		font-size: 1.2rem;
-		font-weight: 700;
-		margin: 0 0 0.75rem;
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin: 0 0 0.85rem;
+		color: var(--text-main);
 	}
 
 	.card-text {
 		font-size: 0.88rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		line-height: 1.6;
-		margin: 0;
+		margin: 0 0 1.5rem;
 	}
 
-	/* Capabilities Grid 4 */
-	.capabilities-section {
-		background: #06080E;
+	.spec-checklist {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		font-size: 0.82rem;
+		color: var(--text-muted);
+		border-top: 1px solid var(--border-subtle);
+		padding-top: 1.25rem;
+	}
+
+	.spec-checklist li::before {
+		content: '— ';
+		color: var(--accent-gold);
+	}
+
+	/* Scope Grid */
+	.scope-section {
 		border-top: 1px solid var(--border-subtle);
 		border-bottom: 1px solid var(--border-subtle);
+		background: #090B10;
 	}
 
 	.grid-4 {
@@ -262,150 +454,213 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		}
 	}
 
-	@media (max-width: 640px) {
+	@media (max-width: 600px) {
 		.grid-4 {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.cap-tag {
+	.scope-card {
+		background: var(--bg-surface);
+		padding: 2.25rem 1.75rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.scope-tag {
 		font-family: var(--font-mono);
-		font-size: 0.7rem;
+		font-size: 0.68rem;
 		letter-spacing: 0.12em;
 		color: var(--accent-gold);
-		background: var(--accent-gold-subtle);
-		padding: 0.2rem 0.5rem;
-		border-radius: 2px;
-		display: inline-block;
-		margin-bottom: 0.75rem;
+		margin-bottom: 1rem;
 	}
 
-	.cap-title {
-		font-size: 1.15rem;
-		font-weight: 700;
-		margin: 0 0 0.5rem;
+	.scope-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin: 0 0 0.75rem;
+		color: var(--text-main);
 	}
 
-	.cap-desc {
-		font-size: 0.85rem;
+	.scope-desc {
+		font-size: 0.88rem;
+		line-height: 1.6;
 		color: var(--text-muted);
-		line-height: 1.55;
 		margin: 0;
 	}
 
-	/* Showcase */
-	.showcase-grid {
+	/* Plates Grid */
+	.plates-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2.5rem;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
-		.showcase-grid {
+	@media (max-width: 960px) {
+		.plates-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.showcase-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
+	.specimen-plate {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
-		transition: all 0.25s ease;
+		transition: border-color 0.25s ease;
 	}
 
-	.showcase-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
+	.specimen-plate:hover {
+		border-color: var(--border-brass);
 	}
 
-	.showcase-img {
-		aspect-ratio: 16 / 9;
+	.plate-visual {
+		position: relative;
+		aspect-ratio: 16 / 10;
 		overflow: hidden;
 		background: #000;
 	}
 
-	.showcase-img img {
+	.plate-img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		transition: transform 0.4s ease;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
-	.showcase-card:hover .showcase-img img {
+	.specimen-plate:hover .plate-img {
 		transform: scale(1.03);
 	}
 
-	.showcase-info {
-		padding: 2rem;
+	.plate-tag {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		background: rgba(11, 13, 19, 0.85);
+		color: var(--accent-gold);
+		padding: 0.35rem 0.75rem;
+		border: 1px solid var(--border-brass);
+		backdrop-filter: blur(8px);
+		border-radius: 2px;
+	}
+
+	.plate-dossier {
+		padding: 2.25rem 2rem;
 		display: flex;
 		flex-direction: column;
 		flex: 1;
 	}
 
-	.s-client {
+	.dossier-header {
+		display: flex;
+		justify-content: space-between;
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
+		font-size: 0.72rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.dossier-code {
 		color: var(--accent-gold);
-		font-weight: 600;
-		margin-bottom: 0.4rem;
-	}
-
-	.s-title {
-		font-size: 1.25rem;
 		font-weight: 700;
-		margin: 0 0 0.75rem;
 	}
 
-	.s-desc {
-		font-size: 0.88rem;
-		color: var(--text-muted);
-		line-height: 1.6;
-		margin: 0 0 1.25rem;
-	}
-
-	.s-specs {
-		margin-top: auto;
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
+	.dossier-sector {
 		color: var(--text-subdued);
-		border-top: 1px solid var(--border-subtle);
-		padding-top: 1rem;
+		letter-spacing: 0.1em;
 	}
 
+	.dossier-title {
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin: 0 0 0.75rem;
+		color: var(--text-main);
+	}
+
+	.dossier-summary {
+		font-size: 0.88rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+		margin: 0 0 1.5rem;
+	}
+
+	.dossier-specs-table {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.85rem;
+		padding: 1.25rem;
+		background: rgba(11, 13, 19, 0.5);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-xs);
+		margin-bottom: 1.75rem;
+	}
+
+	.spec-cell {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.spec-k {
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.2rem;
+	}
+
+	.spec-v {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--text-main);
+	}
+
+	.dossier-link {
+		margin-top: auto;
+		font-family: var(--font-display);
+		font-size: 0.85rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--accent-gold);
+	}
+
+	.dossier-link:hover {
+		text-decoration: underline;
+	}
+
+	/* CTA */
 	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
-		text-align: center;
+		background: var(--bg-surface);
+		padding: 4.5rem 3rem;
+		border-radius: var(--radius-xs);
 		max-width: 800px;
 	}
 
+	@media (max-width: 640px) {
+		.cta-banner {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
 	.cta-title {
-		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+		font-weight: 600;
+		line-height: 1.15;
 		margin: 0.75rem 0 1rem;
+		color: var(--text-main);
 	}
 
 	.cta-desc {
-		font-size: 1.05rem;
+		font-size: 1rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
-	}
-
-	.btn-large {
-		padding: 0.85rem 2rem;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 600px;
+		margin: 0 auto 2.25rem;
 	}
 </style>

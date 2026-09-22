@@ -5,78 +5,139 @@ import { WHATSAPP_BASE_URL } from '../../consts';
 const caseStudies = [
 	{
 		client: "Kushal's Fashion & Silver Jewellery",
-		category: "Jewellery & High Street Retail",
-		location: "South India",
-		scope: "Fit-Out • Architectural Wave Facade • Signage • Retail Staffing",
+		code: "BLR-CS-01",
+		category: "JEWELLERY FLAGSHIP",
+		location: "Commercial Street, Bengaluru",
+		footprint: "2,200 Sq. Ft.",
+		handover: "38 Days",
+		scope: "Civil • Wave Facade • MEP • Joinery • Retail Staffing",
 		slug: "/work/kushals",
 		image: "/images/kushals.jpeg",
-		highlight: "Standalone flagship store delivered turnkey with complete opening staff team."
+		plate: "PLATE 01",
+		highlight: "Standalone flagship store delivered turnkey with custom parametric backlit wave facade, vitrines, and complete opening staff team."
 	},
 	{
 		client: "Luxury Multi-Brand Watch Showroom",
-		category: "Luxury Retail (Rado • Tissot • Guess • Gc)",
-		location: "Bengaluru",
-		scope: "Fit-Out • Custom Vitrines • Marble Flooring • Display Kiosks",
+		code: "BLR-MALL-04",
+		category: "LUXURY TIMEPIECES",
+		location: "Mall Atrium, Bengaluru",
+		footprint: "1,850 Sq. Ft.",
+		handover: "42 Days",
+		scope: "Fit-Out • Security Vitrines • Composite Marble • Display Kiosks",
 		slug: "/work/luxury-watches",
 		image: "/images/img-001.jpg",
-		highlight: "High-spec atrium timepiece showroom with security vitrines and marble inlay."
+		plate: "PLATE 02",
+		highlight: "High-spec atrium timepiece showroom for Rado, Tissot, Guess with composite marble flooring and reinforced vitrines."
 	},
 	{
-		client: "Toy Shire",
-		category: "Specialty Consumer Retail",
-		location: "Mall Concourse",
-		scope: "Fit-Out • Modular Joinery • 3D Dual-Language Signage",
+		client: "Toy Shire High-Street Storefront",
+		code: "BLR-RETAIL-08",
+		category: "SPECIALTY RETAIL",
+		location: "High-Street Corridor, Bengaluru",
+		footprint: "1,400 Sq. Ft.",
+		handover: "32 Days",
+		scope: "Fit-Out • Modular Joinery • 3D Channel Signage • POS",
 		slug: "/work/toy-shire",
 		image: "/images/img-000.jpg",
-		highlight: "Vibrant custom display joinery, cove lighting, and regional script channel letters."
+		plate: "PLATE 03",
+		highlight: "Precision retail fit-out with color-matched modular display joinery, ceiling cove details, and bilingual 3D channel letters."
 	},
 	{
-		client: "GoFix",
-		category: "Electronics Service & Retail",
-		location: "Bengaluru High Streets",
-		scope: "Commercial Location Search • Landlord Negotiation • Lease Closure",
+		client: "GoFix Electronics Retail Siting",
+		code: "BLR-SITE-02",
+		category: "COMMERCIAL SITING",
+		location: "High Streets, Bengaluru",
+		footprint: "3,500+ Sq. Ft. Total",
+		handover: "Lease Closure",
+		scope: "Micro-Market Siting • Landlord Negotiation • Lease Structuring",
 		slug: "/work/gofix",
 		image: "/images/img-002.jpg",
-		highlight: "2 retail locations identified and secured (~3,500 sqft transacted)."
+		plate: "PLATE 04",
+		highlight: "2 prime retail locations identified and secured on favorable commercial terms with rent-free execution grace periods."
 	}
 ];
 ---
 
 <BaseLayout
-	title="Selected Work & Case Studies | Xpandor"
+	title="Architectural Project Archive & Case Studies | Xpandor"
 	description="Explore real retail projects executed by Xpandor across Bengaluru and South India: Kushal's, Luxury Watch Showrooms, Toy Shire, and GoFix."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
 		<div class="container">
-			<div class="hero-content">
-				<span class="eyebrow">SELECTED WORK</span>
-				<h1 class="page-title">Evidence over promises.</h1>
-				<p class="page-subhead">
-					We measure success by stores that open on schedule and trade successfully. Examine the real-world scope, execution challenges, and outcomes from our projects.
-				</p>
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">PROJECT ARCHIVE</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">VERIFIED RETAIL EXECUTION</span>
+					</div>
+					<div class="datum-right">
+						<span class="datum-coord">BENGALURU & SOUTH INDIA</span>
+					</div>
+				</div>
+
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Project Dossiers</span>
+					</div>
+
+					<h1 class="page-title">
+						Evidence over <br class="hidden-sm" />
+						<span class="text-gradient-brass">marketing promises.</span>
+					</h1>
+
+					<p class="page-subhead">
+						We measure success by physical stores that open on schedule and trade successfully. Examine the real-world scope, technical specifications, and outcomes from our projects.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Projects Grid -->
+	<!-- Projects Grid: Architectural Specimen Plates -->
 	<section class="section">
 		<div class="container">
-			<div class="case-studies-grid">
+			<div class="plates-grid">
 				{caseStudies.map((study) => (
-					<div class="cs-card">
-						<div class="cs-image-wrap">
-							<img src={study.image} alt={study.client} loading="lazy" width="600" height="380" />
+					<div class="specimen-plate architectural-frame">
+						<div class="plate-visual">
+							<img src={study.image} alt={study.client} loading="lazy" width="800" height="500" class="plate-img" />
+							<span class="plate-tag">{study.plate} / {study.category}</span>
 						</div>
-						<div class="cs-info">
-							<div class="cs-meta">
-								<span class="cs-cat">{study.category}</span>
-								<span class="cs-loc">{study.location}</span>
+
+						<div class="plate-dossier">
+							<div class="dossier-header">
+								<span class="dossier-code">{study.code}</span>
+								<span class="dossier-sector">{study.category}</span>
 							</div>
-							<h3 class="cs-client">{study.client}</h3>
-							<p class="cs-highlight">{study.highlight}</p>
-							<div class="cs-scope-tag">{study.scope}</div>
-							<a href={study.slug} class="cs-link">Read Full Case Study ↗</a>
+
+							<h3 class="dossier-title">{study.client}</h3>
+							<p class="dossier-summary">{study.highlight}</p>
+
+							<div class="dossier-specs-table">
+								<div class="spec-cell">
+									<span class="spec-k">LOCATION</span>
+									<span class="spec-v">{study.location}</span>
+								</div>
+								<div class="spec-cell">
+									<span class="spec-k">FOOTPRINT</span>
+									<span class="spec-v">{study.footprint}</span>
+								</div>
+								<div class="spec-cell">
+									<span class="spec-k">HANDOVER</span>
+									<span class="spec-v">{study.handover}</span>
+								</div>
+								<div class="spec-cell">
+									<span class="spec-k">SCOPE</span>
+									<span class="spec-v">{study.scope}</span>
+								</div>
+							</div>
+
+							<a href={study.slug} class="dossier-link">
+								<span>Read Complete Case Dossier →</span>
+							</a>
 						</div>
 					</div>
 				))}
@@ -87,19 +148,19 @@ const caseStudies = [
 	<!-- CTA -->
 	<section class="section cta-section">
 		<div class="container text-center">
-			<div class="cta-banner mx-auto">
-				<span class="eyebrow">Start Your Store</span>
-				<h2 class="cta-title">Ready to build your next flagship?</h2>
+			<div class="cta-banner architectural-frame mx-auto">
+				<span class="eyebrow">Commission Your Store</span>
+				<h2 class="cta-title">Ready to execute your next flagship?</h2>
 				<p class="cta-desc">
-					Share your format requirements and target launch date. We'll outline how Xpandor can manage the entire operational journey.
+					Share your store format, square footage, and target launch date. We will prepare an operational plan and turnkey timeline.
 				</p>
 				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20case%20studies%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20project%20dossiers%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-gold btn-large"
+					class="btn btn-gold"
 				>
-					<span>Discuss Your Project on WhatsApp ↗</span>
+					<span>Discuss Expansion with Preetham on WhatsApp</span>
 				</a>
 			</div>
 		</div>
@@ -108,164 +169,267 @@ const caseStudies = [
 
 <style>
 	.page-hero {
-		padding: 5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
-		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+		padding: 4.5rem 0 3rem;
 	}
 
-	.hero-content {
-		max-width: 820px;
+	@media (max-width: 768px) {
+		.page-hero {
+			padding: 2.5rem 0 2rem;
+		}
+	}
+
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+			padding: 0.75rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	.hero-body {
+		padding: 4rem 3.5rem;
+		max-width: 900px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.2rem, 5vw, 3.8rem);
-		font-weight: 800;
+		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-weight: 600;
 		line-height: 1.15;
-		letter-spacing: -0.02em;
-		margin: 0.75rem 0 1.25rem;
+		letter-spacing: -0.025em;
+		margin: 0.6rem 0 1.25rem;
+		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		line-height: 1.7;
 		color: var(--text-muted);
 		margin: 0;
 	}
 
-	.case-studies-grid {
+	/* Plates Grid */
+	.plates-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2.5rem;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
-		.case-studies-grid {
+	@media (max-width: 960px) {
+		.plates-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.cs-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
+	.specimen-plate {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
-		transition: all 0.25s ease;
+		transition: border-color 0.25s ease;
 	}
 
-	.cs-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
+	.specimen-plate:hover {
+		border-color: var(--border-brass);
 	}
 
-	.cs-image-wrap {
-		aspect-ratio: 16 / 9;
+	.plate-visual {
+		position: relative;
+		aspect-ratio: 16 / 10;
 		overflow: hidden;
 		background: #000;
 	}
 
-	.cs-image-wrap img {
+	.plate-img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		transition: transform 0.4s ease;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
-	.cs-card:hover .cs-image-wrap img {
+	.specimen-plate:hover .plate-img {
 		transform: scale(1.03);
 	}
 
-	.cs-info {
-		padding: 2rem;
+	.plate-tag {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		background: rgba(11, 13, 19, 0.85);
+		color: var(--accent-gold);
+		padding: 0.35rem 0.75rem;
+		border: 1px solid var(--border-brass);
+		backdrop-filter: blur(8px);
+		border-radius: 2px;
+	}
+
+	.plate-dossier {
+		padding: 2.25rem 2rem;
 		display: flex;
 		flex-direction: column;
 		flex: 1;
 	}
 
-	.cs-meta {
+	.dossier-header {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 0.6rem;
-		font-size: 0.75rem;
-	}
-
-	.cs-cat {
-		font-family: var(--font-mono);
-		color: var(--accent-gold);
-		font-weight: 600;
-	}
-
-	.cs-loc {
-		color: var(--text-subdued);
-	}
-
-	.cs-client {
-		font-size: 1.35rem;
-		font-weight: 700;
-		margin: 0 0 0.75rem;
-	}
-
-	.cs-highlight {
-		font-size: 0.9rem;
-		color: var(--text-muted);
-		line-height: 1.6;
-		margin: 0 0 1.25rem;
-	}
-
-	.cs-scope-tag {
 		font-family: var(--font-mono);
 		font-size: 0.72rem;
-		color: var(--text-subdued);
-		background: rgba(255, 255, 255, 0.04);
-		padding: 0.4rem 0.6rem;
-		border-radius: 2px;
-		margin-bottom: 1.5rem;
+		margin-bottom: 0.75rem;
 	}
 
-	.cs-link {
-		margin-top: auto;
-		font-size: 0.88rem;
+	.dossier-code {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.dossier-sector {
+		color: var(--text-subdued);
+		letter-spacing: 0.1em;
+	}
+
+	.dossier-title {
+		font-size: 1.4rem;
 		font-weight: 600;
+		margin: 0 0 0.75rem;
+		color: var(--text-main);
+	}
+
+	.dossier-summary {
+		font-size: 0.88rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+		margin: 0 0 1.5rem;
+	}
+
+	.dossier-specs-table {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.85rem;
+		padding: 1.25rem;
+		background: rgba(11, 13, 19, 0.5);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-xs);
+		margin-bottom: 1.75rem;
+	}
+
+	.spec-cell {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.spec-k {
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.2rem;
+	}
+
+	.spec-v {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--text-main);
+	}
+
+	.dossier-link {
+		margin-top: auto;
+		font-family: var(--font-display);
+		font-size: 0.85rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
 		color: var(--accent-gold);
 	}
 
-	.cs-link:hover {
+	.dossier-link:hover {
 		text-decoration: underline;
 	}
 
+	/* CTA */
 	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
-		text-align: center;
+		background: var(--bg-surface);
+		padding: 4.5rem 3rem;
+		border-radius: var(--radius-xs);
 		max-width: 800px;
 	}
 
+	@media (max-width: 640px) {
+		.cta-banner {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
 	.cta-title {
-		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+		font-weight: 600;
+		line-height: 1.15;
 		margin: 0.75rem 0 1rem;
+		color: var(--text-main);
 	}
 
 	.cta-desc {
-		font-size: 1.05rem;
+		font-size: 1rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
-	}
-
-	.btn-large {
-		padding: 0.85rem 2rem;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 600px;
+		margin: 0 auto 2.25rem;
 	}
 </style>

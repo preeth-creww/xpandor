@@ -4,89 +4,141 @@ import { WHATSAPP_BASE_URL } from '../consts';
 ---
 
 <BaseLayout
-	title="Retail Location Search & Commercial Siting | Xpandor"
-	description="We help retail brands identify, evaluate and secure commercial spaces across Bengaluru and South India matched to their format, customer and unit economics."
+	title="Retail Siting & Commercial Lease Acquisition | Xpandor"
+	description="We help retail brands identify, evaluate, and secure prime commercial locations across Bengaluru and South India matched to format, catchment, and unit economics."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
 		<div class="container">
-			<div class="hero-content">
-				<span class="eyebrow">01 — FIND / LOCATIONS</span>
-				<h1 class="page-title">The right location is the first decision.</h1>
-				<p class="page-subhead">
-					We help retail brands identify, evaluate, and secure locations matched to their format, customer demographics, and expansion economics across Bengaluru and South India.
-				</p>
-				<div class="hero-actions">
-					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20location%20requirement%20for%20our%20retail%20brand.`}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-gold"
-					>
-						<span>Share Your Location Requirement ↗</span>
-					</a>
-					<a href="#shortlist" class="btn btn-outline">
-						<span>See How We Shortlist Sites</span>
-					</a>
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">DISCIPLINE 01</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">SITING & COMMERCIAL LEASING</span>
+					</div>
+					<div class="datum-right">
+						<span class="datum-coord">BENGALURU CATCHMENTS • SOUTH INDIA</span>
+					</div>
+				</div>
+
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Location Intelligence & Siting</span>
+					</div>
+
+					<h1 class="page-title">
+						The right location is <br class="hidden-sm" />
+						<span class="text-gradient-brass">the first decision.</span>
+					</h1>
+
+					<p class="page-subhead">
+						We help retail brands identify, evaluate, and secure commercial spaces matched to their store format, target demographics, and unit economics across Bengaluru and South India retail corridors.
+					</p>
+
+					<div class="hero-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20location%20requirement%20for%20our%20retail%20brand.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Share Your Location Requirement</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+						</a>
+						<a href="#shortlist" class="btn btn-outline">
+							<span>View Comparative Shortlist Matrix ↓</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section: Proof Highlight -->
-	<section class="section proof-highlight-section">
+	<!-- Proof Highlight Bar -->
+	<section class="section proof-section">
 		<div class="container">
-			<div class="proof-bar">
+			<div class="proof-bar architectural-frame">
 				<div class="proof-item">
 					<span class="proof-number">2</span>
-					<span class="proof-text">Locations Secured for GoFix</span>
+					<span class="proof-label">Commercial Sites Placed</span>
+					<span class="proof-sub">Prime Bengaluru retail locations for GoFix</span>
 				</div>
 				<div class="proof-sep"></div>
 				<div class="proof-item">
-					<span class="proof-number">~3,500</span>
-					<span class="proof-text">Sqft Commercial Space Transacted</span>
+					<span class="proof-number">3,500+</span>
+					<span class="proof-label">Sq. Ft. Leased</span>
+					<span class="proof-sub">Prime high-street & corridor footprint</span>
 				</div>
 				<div class="proof-sep"></div>
 				<div class="proof-item">
 					<span class="proof-number">100%</span>
-					<span class="proof-text">Direct Landlord Negotiation & Closure</span>
+					<span class="proof-label">Direct Landlord Closure</span>
+					<span class="proof-sub">Rent-free execution buffers secured</span>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section: Your Requirement -->
+	<!-- Section: The 3 Criteria Gates -->
 	<section class="section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">The Brief</span>
-				<h2 class="section-title">What you define. What we evaluate.</h2>
+				<span class="eyebrow">The Siting Framework</span>
+				<h2 class="section-title">What you define. What we audit.</h2>
 				<p class="section-desc">
-					Before searching, we formalize the commercial and operational criteria that define a successful store for your brand.
+					Before searching the market, we formalize the commercial and operational parameters that define a viable store for your business model.
 				</p>
 			</div>
 
 			<div class="grid-3">
-				<div class="card-glass">
-					<span class="card-num">01</span>
-					<h3 class="card-title">Catchment & Micro-Market</h3>
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">01</span>
+						<span class="card-code">CATCHMENT</span>
+					</div>
+					<h3 class="card-title">Micro-Market Demographics</h3>
 					<p class="card-text">
-						Identifying target consumer density, day-vs-night footfall, competitor adjacency, and anchor driver proximity.
+						Analysis of consumer spending density, daytime vs. evening footfall, competitor clustering, and high-street anchor driver proximity.
 					</p>
+					<ul class="spec-checklist">
+						<li>Pedestrian count & vehicle visibility</li>
+						<li>Competitor trading density</li>
+						<li>Neighborhood affluence index</li>
+					</ul>
 				</div>
-				<div class="card-glass">
-					<span class="card-num">02</span>
-					<h3 class="card-title">Physical Store Format</h3>
+
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">02</span>
+						<span class="card-code">PHYSICAL</span>
+					</div>
+					<h3 class="card-title">Store Format & MEP Feasibility</h3>
 					<p class="card-text">
-						Minimum frontage width, carpet vs super built-up efficiency, ceiling height clearance, and MEP load capacities.
+						Minimum frontage width, floor-to-ceiling clearance, carpet vs. super-built efficiency, power load capacity, and HVAC ducting paths.
 					</p>
+					<ul class="spec-checklist">
+						<li>Frontage ratio & glass exposure</li>
+						<li>Floor load & structural columns</li>
+						<li>Electrical sanction & generator backup</li>
+					</ul>
 				</div>
-				<div class="card-glass">
-					<span class="card-num">03</span>
-					<h3 class="card-title">Commercial Economics</h3>
+
+				<div class="spec-card architectural-frame">
+					<div class="card-top">
+						<span class="card-num">03</span>
+						<span class="card-code">ECONOMICS</span>
+					</div>
+					<h3 class="card-title">Commercial Unit Economics</h3>
 					<p class="card-text">
-						Rent ceiling, rent-to-projected-revenue ratio, security deposit terms, CAM charges, and rent-free fit-out periods.
+						Base rent ceiling, rent-to-projected-revenue ratio, security deposit terms, common area maintenance (CAM), and rent-free fit-out periods.
 					</p>
+					<ul class="spec-checklist">
+						<li>Rent-free fit-out period (45–75 days)</li>
+						<li>Lease tenure & escalation caps</li>
+						<li>Title verification & landlord clearance</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -96,21 +148,21 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<section id="shortlist" class="section matrix-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">Consulting vs Brokerage</span>
-				<h2 class="section-title">We don't send listings. We build a shortlist.</h2>
+				<span class="eyebrow">Institutional Siting vs. Brokerage</span>
+				<h2 class="section-title">We don't send listings. We build a comparative shortlist.</h2>
 				<p class="section-desc">
-					Brokers flood your inbox with PDF brochures. Xpandor filters properties against your unit economics and formats before presenting a verified comparative shortlist.
+					Brokers flood your inbox with PDF brochures. Xpandor filters properties against your unit economics and formats before presenting an audited comparative shortlist.
 				</p>
 			</div>
 
-			<div class="table-container">
+			<div class="table-frame architectural-frame">
 				<table class="shortlist-table">
 					<thead>
 						<tr>
-							<th>Evaluation Factor</th>
-							<th>Property A — High Street</th>
-							<th>Property B — Retail Mall</th>
-							<th>Property C — Transit Concourse</th>
+							<th>EVALUATION FACTOR</th>
+							<th>PROPERTY A — HIGH STREET</th>
+							<th>PROPERTY B — RETAIL MALL</th>
+							<th>PROPERTY C — TRANSIT CONCOURSE</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -122,13 +174,13 @@ import { WHATSAPP_BASE_URL } from '../consts';
 						</tr>
 						<tr>
 							<td class="factor-cell">Frontage & Visibility</td>
-							<td><span class="badge-high">High</span> 35 ft prominent road-facing</td>
-							<td><span class="badge-med">Medium</span> 22 ft corridor-facing</td>
-							<td><span class="badge-high">High</span> 28 ft corner glass</td>
+							<td><span class="status-tag status-rec">HIGH</span> 35 ft prominent road-facing</td>
+							<td><span class="status-tag">MED</span> 22 ft corridor-facing</td>
+							<td><span class="status-tag status-rec">HIGH</span> 28 ft corner glass</td>
 						</tr>
 						<tr>
 							<td class="factor-cell">Dedicated Parking</td>
-							<td>4 car bays + valet easement</td>
+							<td>4 dedicated bays + valet easement</td>
 							<td>Common mall parking (400+ bays)</td>
 							<td>Basement transit drop-off</td>
 						</tr>
@@ -136,17 +188,17 @@ import { WHATSAPP_BASE_URL } from '../consts';
 							<td class="factor-cell">Target Catchment Fit</td>
 							<td>A+ Affluent residential & café crowd</td>
 							<td>A Weekend shopping & family dwell</td>
-							<td>A High daily business & commuter footfall</td>
+							<td>A High daily commuter footfall</td>
 						</tr>
 						<tr>
-							<td class="factor-cell">Fit-Out Period</td>
+							<td class="factor-cell">Fit-Out Grace Period</td>
 							<td>60 days rent-free negotiated</td>
 							<td>45 days rent-free standard</td>
 							<td>30 days rent-free</td>
 						</tr>
 						<tr>
-							<td class="factor-cell">Xpandor Assessment</td>
-							<td class="eval-rec"><strong>Recommended for Flagship</strong> (strong street presence, sustainable rent ratio)</td>
+							<td class="factor-cell">Xpandor Recommendation</td>
+							<td class="eval-rec"><strong>Recommended for Flagship</strong> (high street presence, sustainable rent ratio)</td>
 							<td>Viable for secondary mall unit</td>
 							<td>Strong for high-velocity impulse sales</td>
 						</tr>
@@ -157,35 +209,48 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		</div>
 	</section>
 
-	<!-- Section: Ground-Level Intelligence -->
+	<!-- Section: Ground-Level Intelligence & Negotiation -->
 	<section class="section intelligence-section">
 		<div class="container">
-			<div class="intel-box">
+			<div class="intel-frame architectural-frame">
 				<div class="intel-text">
-					<span class="eyebrow">Supply-Side Advantage</span>
-					<h2 class="section-title">On-ground property intelligence.</h2>
+					<span class="eyebrow">Supply-Side Ground Network</span>
+					<h2 class="section-title">Off-market property intelligence.</h2>
 					<p class="intel-lead">
-						The best retail spaces are rarely listed on public portals. They are secured through relationships before the current lease expires.
+						The highest-performing retail spaces rarely hit public property portals. They are transacted through relationships before the outgoing tenant's lease concludes.
 					</p>
 					<p class="intel-body">
-						In Bengaluru and South India, our team maintains direct relationships with building owners, local commercial brokers, shopkeepers, building managers, and local operators. This gives our clients access to off-market retail spaces with verified ownership and clean commercial titles.
+						Across Bengaluru and South India, Xpandor maintains direct relationships with building owners, institutional developers, commercial landlords, and store managers. This grants our clients access to pre-vacancy retail opportunities with verified ownership and clear title history.
 					</p>
 					<div class="intel-tags">
 						<span class="intel-tag">Direct Landlord Contact</span>
-						<span class="intel-tag">Off-Market Opportunities</span>
 						<span class="intel-tag">Pre-Vacancy Tracking</span>
+						<span class="intel-tag">Off-Market Exclusives</span>
 						<span class="intel-tag">Clear Title Due Diligence</span>
 					</div>
 				</div>
 
 				<div class="negotiation-card">
+					<div class="n-badge">COMMERCIAL TERMS</div>
 					<h3 class="n-title">Commercial Negotiation</h3>
 					<p class="n-desc">Once a location is shortlisted, Xpandor structures and negotiates the transaction on your behalf:</p>
 					<ul class="n-list">
-						<li><strong>Rent-Free Period:</strong> Securing 45–75 days for fit-out & approvals so you don't pay rent before trading.</li>
-						<li><strong>Escalation Caps:</strong> Capping multi-year lease escalations within retail margin growth.</li>
-						<li><strong>Deposit Rationalization:</strong> Negotiating commercial deposits down from standard market demands.</li>
-						<li><strong>Signage & Facade Rights:</strong> Locking in exclusive facade branding and rooftop signage rights.</li>
+						<li>
+							<strong>Rent-Free Fit-Out Grace:</strong>
+							<span>Securing 45–75 days of rent-free execution buffer so you never pay rent before trading.</span>
+						</li>
+						<li>
+							<strong>Escalation Caps:</strong>
+							<span>Locking multi-year lease escalations within reasonable retail revenue growth bands.</span>
+						</li>
+						<li>
+							<strong>Deposit Rationalization:</strong>
+							<span>Negotiating commercial security deposits down from inflated market demands.</span>
+						</li>
+						<li>
+							<strong>Facade & Rooftop Signage Rights:</strong>
+							<span>Securing irrevocable rights for primary facade illumination and street signage.</span>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -195,19 +260,19 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<!-- CTA -->
 	<section class="section cta-section">
 		<div class="container text-center">
-			<div class="cta-banner mx-auto">
-				<span class="eyebrow">Find Your Next Space</span>
+			<div class="cta-banner architectural-frame mx-auto">
+				<span class="eyebrow">Location Commissioning</span>
 				<h2 class="cta-title">Looking for retail space in Bengaluru?</h2>
 				<p class="cta-desc">
-					Tell us your target micro-market, format, and square footage. We will map availability and build your commercial shortlist.
+					Share your target micro-market, required square footage, and budget. We will audit commercial availability and prepare your shortlist.
 				</p>
 				<a 
 					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20location%20search%20with%20Xpandor.`}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-gold btn-large"
+					class="btn btn-gold"
 				>
-					<span>Discuss Locations with Preetham on WhatsApp ↗</span>
+					<span>Discuss Locations with Preetham on WhatsApp</span>
 				</a>
 			</div>
 		</div>
@@ -216,26 +281,92 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 <style>
 	.page-hero {
-		padding: 5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
-		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+		padding: 4.5rem 0 3rem;
 	}
 
-	.hero-content {
-		max-width: 820px;
+	@media (max-width: 768px) {
+		.page-hero {
+			padding: 2.5rem 0 2rem;
+		}
+	}
+
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+			padding: 0.75rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	.hero-body {
+		padding: 4rem 3.5rem;
+		max-width: 900px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.2rem, 5vw, 3.8rem);
-		font-weight: 800;
+		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-weight: 600;
 		line-height: 1.15;
-		letter-spacing: -0.02em;
-		margin: 0.75rem 0 1.25rem;
+		letter-spacing: -0.025em;
+		margin: 0.6rem 0 1.25rem;
+		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		line-height: 1.7;
 		color: var(--text-muted);
 		margin-bottom: 2.25rem;
 	}
@@ -247,203 +378,255 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	}
 
 	/* Proof Highlight */
-	.proof-highlight-section {
+	.proof-section {
 		padding: 2rem 0;
-		background: #06080E;
-		border-bottom: 1px solid var(--border-subtle);
 	}
 
 	.proof-bar {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr auto 1fr;
 		align-items: center;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		gap: 1.5rem;
+		padding: 2rem 3rem;
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+	}
+
+	@media (max-width: 860px) {
+		.proof-bar {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+			padding: 1.75rem 1.5rem;
+		}
+		.proof-sep {
+			display: none;
+		}
 	}
 
 	.proof-item {
 		display: flex;
-		align-items: center;
-		gap: 1rem;
+		flex-direction: column;
 	}
 
 	.proof-number {
-		font-size: 2.5rem;
-		font-weight: 800;
-		color: var(--accent-gold);
-		line-height: 1;
-	}
-
-	.proof-text {
-		font-size: 0.9rem;
+		font-family: var(--font-display);
+		font-size: clamp(2rem, 3.5vw, 2.75rem);
 		font-weight: 600;
 		color: var(--text-main);
-		max-width: 180px;
-		line-height: 1.35;
+		line-height: 1;
+		margin-bottom: 0.4rem;
+	}
+
+	.proof-label {
+		font-family: var(--font-display);
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+		margin-bottom: 0.2rem;
+	}
+
+	.proof-sub {
+		font-size: 0.8rem;
+		color: var(--text-muted);
 	}
 
 	.proof-sep {
 		width: 1px;
-		height: 40px;
+		height: 50px;
 		background: var(--border-subtle);
 	}
 
-	@media (max-width: 768px) {
-		.proof-sep {
-			display: none;
-		}
-		.proof-bar {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-	}
-
-	/* Grid */
+	/* Grid 3 Spec Cards */
 	.grid-3 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
+	@media (max-width: 900px) {
 		.grid-3 {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
 		}
+	}
+
+	.spec-card {
+		background: var(--bg-surface);
+		padding: 2.5rem 2rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.25rem;
 	}
 
 	.card-num {
 		font-family: var(--font-mono);
 		font-size: 0.85rem;
-		color: var(--accent-gold);
 		font-weight: 700;
-		display: block;
-		margin-bottom: 0.75rem;
+		color: var(--accent-gold);
+	}
+
+	.card-code {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		color: var(--text-subdued);
 	}
 
 	.card-title {
-		font-size: 1.25rem;
-		font-weight: 700;
-		margin: 0 0 0.75rem;
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin: 0 0 0.85rem;
+		color: var(--text-main);
 	}
 
 	.card-text {
-		font-size: 0.9rem;
+		font-size: 0.88rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		line-height: 1.6;
-		margin: 0;
+		margin: 0 0 1.5rem;
 	}
 
-	/* Matrix Table */
+	.spec-checklist {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		font-size: 0.82rem;
+		color: var(--text-muted);
+		border-top: 1px solid var(--border-subtle);
+		padding-top: 1.25rem;
+	}
+
+	.spec-checklist li::before {
+		content: '— ';
+		color: var(--accent-gold);
+	}
+
+	/* Shortlist Table Frame */
 	.matrix-section {
-		background: #06080E;
 		border-top: 1px solid var(--border-subtle);
 		border-bottom: 1px solid var(--border-subtle);
+		background: #090B10;
 	}
 
-	.table-container {
+	.table-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
 		overflow-x: auto;
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
-		background: var(--bg-surface-card);
+		margin-top: 2.5rem;
 	}
 
 	.shortlist-table {
 		width: 100%;
 		border-collapse: collapse;
+		font-size: 0.9rem;
 		text-align: left;
-		font-size: 0.88rem;
-		min-width: 650px;
+		min-width: 720px;
 	}
 
 	.shortlist-table th {
-		background: #0D1322;
-		color: var(--accent-gold);
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		padding: 1.2rem 1rem;
+		padding: 1.2rem 1.5rem;
+		background: rgba(11, 13, 19, 0.7);
 		border-bottom: 1px solid var(--border-subtle);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+		color: var(--accent-gold);
+		font-weight: 600;
 	}
 
 	.shortlist-table td {
-		padding: 1.1rem 1rem;
+		padding: 1.2rem 1.5rem;
 		border-bottom: 1px solid var(--border-subtle);
 		color: var(--text-muted);
-		vertical-align: top;
-		line-height: 1.5;
+		line-height: 1.55;
+	}
+
+	.shortlist-table tr:last-child td {
+		border-bottom: none;
 	}
 
 	.factor-cell {
 		font-weight: 600;
 		color: var(--text-main) !important;
-		background: rgba(255, 255, 255, 0.02);
-		width: 22%;
+		font-family: var(--font-display);
+		width: 220px;
+	}
+
+	.status-tag {
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		padding: 0.2rem 0.5rem;
+		border-radius: 2px;
+		background: var(--bg-stone-muted);
+		color: var(--text-muted);
+		margin-right: 0.35rem;
+	}
+
+	.status-rec {
+		background: var(--accent-gold-subtle);
+		color: var(--accent-gold);
+		border: 1px solid var(--border-brass);
 	}
 
 	.eval-rec {
+		background: rgba(197, 168, 128, 0.05);
 		color: var(--text-main) !important;
-		background: rgba(212, 175, 55, 0.05);
-		border-left: 2px solid var(--accent-gold);
-	}
-
-	.badge-high {
-		display: inline-block;
-		font-size: 0.7rem;
-		font-weight: 700;
-		background: rgba(16, 185, 129, 0.15);
-		color: #10b981;
-		padding: 0.15rem 0.4rem;
-		border-radius: 2px;
-		margin-right: 0.3rem;
-	}
-
-	.badge-med {
-		display: inline-block;
-		font-size: 0.7rem;
-		font-weight: 700;
-		background: rgba(245, 158, 11, 0.15);
-		color: #f59e0b;
-		padding: 0.15rem 0.4rem;
-		border-radius: 2px;
-		margin-right: 0.3rem;
+		border-left: 1px solid var(--border-brass);
 	}
 
 	.table-caption {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
 		color: var(--text-subdued);
-		margin-top: 0.85rem;
+		margin-top: 1rem;
 	}
 
 	/* Intelligence Section */
-	.intel-box {
+	.intel-frame {
 		display: grid;
-		grid-template-columns: 1.4fr 1fr;
-		gap: 3.5rem;
-		align-items: start;
+		grid-template-columns: 1fr 420px;
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
 	}
 
-	@media (max-width: 900px) {
-		.intel-box {
+	@media (max-width: 960px) {
+		.intel-frame {
 			grid-template-columns: 1fr;
-			gap: 2.5rem;
+		}
+	}
+
+	.intel-text {
+		padding: 4rem 3.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.intel-text {
+			padding: 2.5rem 1.5rem;
 		}
 	}
 
 	.intel-lead {
-		font-size: 1.15rem;
-		font-weight: 500;
+		font-size: 1.05rem;
+		line-height: 1.7;
 		color: var(--text-main);
-		line-height: 1.6;
-		margin: 1rem 0;
+		margin: 1.25rem 0 1rem;
 	}
 
 	.intel-body {
-		font-size: 0.92rem;
-		color: var(--text-muted);
+		font-size: 0.9rem;
 		line-height: 1.7;
-		margin-bottom: 1.75rem;
+		color: var(--text-muted);
+		margin-bottom: 2rem;
 	}
 
 	.intel-tags {
@@ -453,33 +636,52 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	}
 
 	.intel-tag {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		color: var(--accent-gold);
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		padding: 0.4rem 0.8rem;
-		border-radius: var(--radius-sm);
+		font-size: 0.72rem;
+		letter-spacing: 0.08em;
+		background: rgba(11, 13, 19, 0.7);
+		border: 1px solid var(--border-subtle);
+		padding: 0.4rem 0.85rem;
+		color: var(--accent-gold);
+		border-radius: 2px;
 	}
 
 	.negotiation-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
-		padding: 2rem;
+		padding: 3.5rem 2.5rem;
+		background: rgba(11, 13, 19, 0.6);
+		border-left: 1px solid var(--border-subtle);
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media (max-width: 960px) {
+		.negotiation-card {
+			border-left: none;
+			border-top: 1px solid var(--border-subtle);
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.n-badge {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		color: var(--accent-gold);
+		letter-spacing: 0.14em;
+		margin-bottom: 0.75rem;
 	}
 
 	.n-title {
-		font-size: 1.25rem;
-		font-weight: 700;
-		margin: 0 0 0.5rem;
+		font-size: 1.35rem;
+		font-weight: 600;
+		margin: 0 0 0.85rem;
+		color: var(--text-main);
 	}
 
 	.n-desc {
 		font-size: 0.85rem;
+		line-height: 1.6;
 		color: var(--text-muted);
-		margin: 0 0 1.25rem;
-		line-height: 1.5;
+		margin-bottom: 1.5rem;
 	}
 
 	.n-list {
@@ -488,50 +690,49 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 0.85rem;
+		gap: 1.15rem;
 		font-size: 0.85rem;
-	}
-
-	.n-list li {
-		color: var(--text-muted);
-		line-height: 1.5;
+		line-height: 1.55;
 	}
 
 	.n-list strong {
+		display: block;
 		color: var(--text-main);
+		margin-bottom: 0.2rem;
+		font-family: var(--font-display);
 	}
 
+	.n-list span {
+		color: var(--text-muted);
+	}
+
+	/* CTA Banner */
 	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
-		text-align: center;
+		background: var(--bg-surface);
+		padding: 4.5rem 3rem;
+		border-radius: var(--radius-xs);
 		max-width: 800px;
 	}
 
+	@media (max-width: 640px) {
+		.cta-banner {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
 	.cta-title {
-		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+		font-weight: 600;
+		line-height: 1.15;
 		margin: 0.75rem 0 1rem;
+		color: var(--text-main);
 	}
 
 	.cta-desc {
-		font-size: 1.05rem;
+		font-size: 1rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
-	}
-
-	.btn-large {
-		padding: 0.85rem 2rem;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 600px;
+		margin: 0 auto 2.25rem;
 	}
 </style>

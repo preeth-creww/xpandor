@@ -4,30 +4,53 @@ import { WHATSAPP_BASE_URL } from '../consts';
 ---
 
 <BaseLayout
-	title="Retail Fit-Outs & Turnkey Projects | Xpandor"
-	description="From empty shell to opening day. Xpandor manages retail fit-outs with strict BOQ ownership, custom joinery, civil, electrical, and line-by-line QA/QC."
+	title="Retail Fit-Outs & Turnkey Civil Projects | Xpandor"
+	description="From empty shell to open trading doors. Xpandor manages retail fit-outs with strict BOQ ownership, bespoke joinery, MEP engineering, and line-by-line QA/QC."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
 		<div class="container">
-			<div class="hero-content">
-				<span class="eyebrow">02 — BUILD / PROJECTS</span>
-				<h1 class="page-title">From empty shell to opening day.</h1>
-				<p class="page-subhead">
-					You found the space. We'll make it a store. Xpandor manages retail fit-outs from technical drawings and BOQ ownership through procurement, execution, quality control, and inspected handover.
-				</p>
-				<div class="hero-actions">
-					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20fit-out%20project%20with%20Xpandor.`}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-gold"
-					>
-						<span>Discuss Your Fit-Out on WhatsApp ↗</span>
-					</a>
-					<a href="#process" class="btn btn-outline">
-						<span>Explore Execution Process</span>
-					</a>
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">DISCIPLINE 02</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">TURNKEY FIT-OUT & EXECUTION</span>
+					</div>
+					<div class="datum-right">
+						<span class="datum-coord">CIVIL • MEP • MILLWORK • HANDOVER</span>
+					</div>
+				</div>
+
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Turnkey Fit-Out Management</span>
+					</div>
+
+					<h1 class="page-title">
+						From empty shell to <br class="hidden-sm" />
+						<span class="text-gradient-brass">open trading doors.</span>
+					</h1>
+
+					<p class="page-subhead">
+						You found the space. We make it a high-performing store. Xpandor manages retail fit-outs from architectural CAD drawings and itemized BOQs through civil execution, custom millwork, services coordination, and inspected handover.
+					</p>
+
+					<div class="hero-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20fit-out%20project%20with%20Xpandor.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Discuss Your Fit-Out on WhatsApp</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+						</a>
+						<a href="#process" class="btn btn-outline">
+							<span>Explore Execution Lifecycle ↓</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -37,166 +60,296 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<section id="process" class="section process-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">Project Lifecycle</span>
-				<h2 class="section-title">The fit-out progression.</h2>
+				<span class="eyebrow">Project Progression</span>
+				<h2 class="section-title">The fit-out lifecycle.</h2>
 				<p class="section-desc">
-					Our internal project management coordinates every trade under a single contract with transparent weekly milestones.
+					Our internal project management coordinates every trade under a single contract with daily site inspections and transparent milestone reporting.
 				</p>
 			</div>
 
 			<div class="process-grid">
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">01</span>
 					<h3 class="proc-title">Site Survey & As-Built</h3>
-					<p class="proc-desc">Laser-accurate physical dimensions, MEP shaft mapping, structural beam clearances, and landlord guidelines.</p>
+					<p class="proc-desc">Laser-accurate physical dimensions, MEP shaft mapping, structural beam clearances, floor flatness, and landlord fit-out guidelines.</p>
 				</div>
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">02</span>
 					<h3 class="proc-title">Design Translation</h3>
-					<p class="proc-desc">Adapting brand concept drawings into detailed technical CAD drawings, joinery shop drawings, and fixture elevations.</p>
+					<p class="proc-desc">Adapting brand concept renders into precise technical CAD sets, joinery shop drawings, lighting layouts, and MEP schematic elevations.</p>
 				</div>
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">03</span>
-					<h3 class="proc-title">BOQ Ownership</h3>
-					<p class="proc-desc">Itemized Bill of Quantities with clear material specifications, fixed line-item pricing, and protected contingencies.</p>
+					<h3 class="proc-title">Strict BOQ Control</h3>
+					<p class="proc-desc">Itemized Bill of Quantities with verified material specifications, fixed line-item pricing, and zero undisclosed contractor variation claims.</p>
 				</div>
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">04</span>
 					<h3 class="proc-title">Managed Execution</h3>
-					<p class="proc-desc">Civil, partition walls, flooring, electrical cabling, HVAC ducting coordination, and specialized display lighting.</p>
+					<p class="proc-desc">Civil masonry, drywalls, flooring installation, electrical cabling, HVAC balancing, and specialized high-CRI retail accent lighting.</p>
 				</div>
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">05</span>
 					<h3 class="proc-title">Bespoke Millwork</h3>
-					<p class="proc-desc">Off-site factory fabrication of custom display counters, cashier desks, wall panelling, vitrines, and island kiosks.</p>
+					<p class="proc-desc">Off-site factory fabrication of custom display counters, cash desks, wall vitrines, security displays, and floating island pods.</p>
 				</div>
-				<div class="proc-card">
+				<div class="proc-card architectural-frame">
 					<span class="proc-step">06</span>
 					<h3 class="proc-title">QA/QC & Handover</h3>
-					<p class="proc-desc">Line-by-line inspection of joinery, shadow gaps, illumination levels, snag list clearance, and trading handover.</p>
+					<p class="proc-desc">Line-by-line inspection of joinery reveals, paint flatness, electrical loads, snag list resolution, and ready-to-trade site handover.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Core Capabilities (from AV Engineering benchmark) -->
+	<!-- Core Capabilities (Architectural SVG Stroke Icons — No Emojis) -->
 	<section class="section capabilities-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">Trade Depth</span>
+				<span class="eyebrow">Technical Trade Depth</span>
 				<h2 class="section-title">Engineered for retail footfall & durability.</h2>
 				<p class="section-desc">
-					We build spaces designed to handle thousands of daily customer touches without peeling laminate, sagging shelving, or lighting failure.
+					We build physical spaces designed to withstand thousands of daily customer touches without peeling laminate, sagging shelving, or lighting failure.
 				</p>
 			</div>
 
 			<div class="grid-3">
-				<div class="card-glass">
-					<span class="cap-icon">📐</span>
+				<!-- Card 1: Retail Interior Solutions -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+						</div>
+						<span class="trade-tag">SPATIAL</span>
+					</div>
 					<h3 class="card-title">Retail Interior Solutions</h3>
 					<p class="card-text">
-						Customer circulation zoning, high-density display shelving, cashier POS pods, fitting rooms, and brand zones engineered for maximum sales-per-square-foot.
+						Customer circulation zoning, high-density display fixtures, cashier POS pods, fitting rooms, and brand zones engineered for maximum sales per square foot.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-icon">🪚</span>
+
+				<!-- Card 2: Custom Joinery & Millwork -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" x2="16" y1="13" y2="13"></line><line x1="8" x2="16" y1="17" y2="17"></line></svg>
+						</div>
+						<span class="trade-tag">MILLWORK</span>
+					</div>
 					<h3 class="card-title">Custom Joinery & Millwork</h3>
 					<p class="card-text">
-						Bespoke display vitrines with security hardware, floating island counters, marble-clad cash desks, and modular wall panelling fabricated to precise millimeter site tolerances.
+						Bespoke display vitrines with security hardware, floating island counters, marble-clad cash desks, and modular wall panelling fabricated to millimeter tolerances.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-icon">⚙️</span>
+
+				<!-- Card 3: MEP & Services Coordination -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+						</div>
+						<span class="trade-tag">ENGINEERING</span>
+					</div>
 					<h3 class="card-title">Services & MEP Coordination</h3>
 					<p class="card-text">
-						Electrical load distribution, retail accent track lighting, HVAC airflow balancing, and fire compliance coordination managed by qualified site engineers.
+						Electrical load distribution, retail accent track lighting, HVAC airflow balancing, and statutory fire compliance coordinated by site engineers.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-icon">✨</span>
+
+				<!-- Card 4: Architectural Detailing -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="22" x2="18" y1="12" y2="12"></line><line x1="6" x2="2" y1="12" y2="12"></line><line x1="12" x2="12" y1="6" y2="2"></line><line x1="12" x2="12" y1="22" y2="18"></line></svg>
+						</div>
+						<span class="trade-tag">FINISHES</span>
+					</div>
 					<h3 class="card-title">Architectural Detailing</h3>
 					<p class="card-text">
 						The details that set flagship stores apart: shadow gaps, precision reveals, layered cove ceilings, concealed ambient lighting, and seamless floor transitions.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-icon">🛡️</span>
+
+				<!-- Card 5: Line-by-Line QA/QC -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+						</div>
+						<span class="trade-tag">AUDIT</span>
+					</div>
 					<h3 class="card-title">Line-by-Line QA/QC</h3>
 					<p class="card-text">
-						Finishes checked against specification line by line. Alignment, surface flatness, paint consistency, and joinery gaps are inspected before the client ever walks the site.
+						Finishes checked against specification line by line. Alignment, surface flatness, paint consistency, and joinery reveals are inspected before client walkthroughs.
 					</p>
 				</div>
-				<div class="card-glass">
-					<span class="cap-icon">🤝</span>
-					<h3 class="card-title">Zero Operational Leaks</h3>
+
+				<!-- Card 6: Zero Operational Leaks -->
+				<div class="card-trade architectural-frame">
+					<div class="trade-header">
+						<div class="arch-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="m9 12 2 2 4-4"></path></svg>
+						</div>
+						<span class="trade-tag">GOVERNANCE</span>
+					</div>
+					<h3 class="card-title">Zero Operational Leakage</h3>
 					<p class="card-text">
-						Single-point accountability. You don't manage multiple subcontractors on WhatsApp. Xpandor provides milestone photo updates and transparent schedule reports.
+						Single-point accountability under one master contract. You never manage multiple subcontractors or arbitrate trade disputes. Transparent schedule tracking.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Project Visual Proof Gallery -->
+	<!-- Project Visual Proof: Architectural Specimen Plates -->
 	<section class="section gallery-section">
 		<div class="container">
 			<div class="section-header">
 				<span class="eyebrow">Real Fit-Outs</span>
 				<h2 class="section-title">Executed retail projects.</h2>
 				<p class="section-desc">
-					A sample of high-street flagships, mall showrooms, and transit concourse stores delivered by our project execution team.
+					A selection of high-street flagships, mall showrooms, and transit concourse stores delivered by our project execution team.
 				</p>
 			</div>
 
-			<div class="fitout-grid">
+			<div class="plates-grid">
 				<!-- Project 1: Kushal's -->
-				<div class="fitout-card large-fitout">
-					<img src="/images/kushals.jpeg" alt="Kushal's standalone flagship store fit-out" loading="lazy" width="800" height="500" />
-					<div class="fitout-content">
-						<span class="f-eyebrow">High Street Flagship</span>
-						<h3 class="f-title">Kushal's Fashion & Silver Jewellery</h3>
-						<p class="f-desc">Complete store fit-out, illuminated wave facade, internal lighting design, vitrines & store staffing.</p>
-						<span class="f-tag">Turnkey Store Handover</span>
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/kushals.jpeg" alt="Kushal's standalone flagship store fit-out" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 01 / FLAGSHIP RETAIL</span>
+					</div>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-CS-01</span>
+							<span class="dossier-sector">JEWELLERY FLAGSHIP</span>
+						</div>
+						<h3 class="dossier-title">Kushal's Fashion & Silver Jewellery</h3>
+						<p class="dossier-summary">Complete store fit-out, parametric backlit wave facade, internal lighting design, vitrines, and opening staffing.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Commercial Street, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">2,200 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">38 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Civil • Wave Facade • MEP • Joinery</span>
+							</div>
+						</div>
+						<a href="/work/kushals" class="dossier-link">View Case Study →</a>
 					</div>
 				</div>
 
 				<!-- Project 2: Luxury Watch Showroom -->
-				<div class="fitout-card">
-					<img src="/images/img-001.jpg" alt="Luxury watch mall showroom" loading="lazy" width="600" height="400" />
-					<div class="fitout-content">
-						<span class="f-eyebrow">Mall Atrium</span>
-						<h3 class="f-title">Luxury Timepiece Showroom</h3>
-						<p class="f-desc">Rado, Tissot, Guess multi-brand boutique with premium marble flooring and security glass display vitrines.</p>
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/img-001.jpg" alt="Luxury watch mall showroom" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 02 / TIMEPIECE SALON</span>
+					</div>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-MALL-04</span>
+							<span class="dossier-sector">LUXURY TIMEPIECES</span>
+						</div>
+						<h3 class="dossier-title">Multi-Brand Luxury Timepiece Showroom</h3>
+						<p class="dossier-summary">Multi-brand boutique with Italian composite marble flooring, custom vitrines, and floating island display fixtures.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Mall Atrium, Bengaluru</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">1,850 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">42 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Fit-Out • Security Glass • Lighting</span>
+							</div>
+						</div>
+						<a href="/work/luxury-watches" class="dossier-link">View Case Study →</a>
 					</div>
 				</div>
 
 				<!-- Project 3: Toy Shire -->
-				<div class="fitout-card">
-					<img src="/images/img-000.jpg" alt="Toy Shire mall store" loading="lazy" width="600" height="400" />
-					<div class="fitout-content">
-						<span class="f-eyebrow">Specialty Retail</span>
-						<h3 class="f-title">Toy Shire Mall Store</h3>
-						<p class="f-desc">Color-matched custom display joinery, thematic cloud cove lighting, and 3D illuminated storefront channel letters.</p>
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/img-000.jpg" alt="Toy Shire mall store" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 03 / SPECIALTY RETAIL</span>
+					</div>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-RETAIL-08</span>
+							<span class="dossier-sector">SPECIALTY RETAIL</span>
+						</div>
+						<h3 class="dossier-title">Toy Shire Mall Store & Custom Millwork</h3>
+						<p class="dossier-summary">Custom color-matched modular display shelving, ceiling cove details, and 3D illuminated channel letters.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">High-Street Corridor, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">1,400 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">32 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Modular Joinery • Signage • POS</span>
+							</div>
+						</div>
+						<a href="/work/toy-shire" class="dossier-link">View Case Study →</a>
 					</div>
 				</div>
 
-				<!-- Project 4: House of Elixir -->
-				<div class="fitout-card">
-					<img src="/images/img-002.jpg" alt="House of Elixir concourse store" loading="lazy" width="600" height="400" />
-					<div class="fitout-content">
-						<span class="f-eyebrow">Airport Concourse</span>
-						<h3 class="f-title">House of Elixir</h3>
-						<p class="f-desc">High-gloss black and gold display joinery, overhead acoustic baffles, and integrated security display counters.</p>
+				<!-- Project 4: Concourse Retail -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img src="/images/img-002.jpg" alt="Commercial concourse store" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 04 / CONCOURSE COMMERCE</span>
 					</div>
-				</div>
-
-				<!-- Project 5: Pravasi -->
-				<div class="fitout-card">
-					<img src="/images/img-021.jpg" alt="Pravasi artisanal store" loading="lazy" width="600" height="400" />
-					<div class="fitout-content">
-						<span class="f-eyebrow">Lifestyle & Craft</span>
-						<h3 class="f-title">Pravasi Artisanal Store</h3>
-						<p class="f-desc">Custom arched wall niches, decorative ceiling millwork, hanging brass signage, and patterned vitrified floor inlay.</p>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-HUB-12</span>
+							<span class="dossier-sector">CONCOURSE RETAIL</span>
+						</div>
+						<h3 class="dossier-title">High-Footfall Concourse Retail Store</h3>
+						<p class="dossier-summary">High-gloss black and gold display joinery, linear ceiling baffles, and integrated security display counters.</p>
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Transit Concourse, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">2,800 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">45 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Civil • MEP • Baffles • Display</span>
+							</div>
+						</div>
+						<a href="/work" class="dossier-link">View Project Specifications →</a>
 					</div>
 				</div>
 			</div>
@@ -206,19 +359,19 @@ import { WHATSAPP_BASE_URL } from '../consts';
 	<!-- CTA -->
 	<section class="section cta-section">
 		<div class="container text-center">
-			<div class="cta-banner mx-auto">
-				<span class="eyebrow">Execute With Confidence</span>
+			<div class="cta-banner architectural-frame mx-auto">
+				<span class="eyebrow">Execute With Rigor</span>
 				<h2 class="cta-title">Planning a store fit-out in South India?</h2>
 				<p class="cta-desc">
-					Send us your architectural drawings, BOQ, or site floorplan for an immediate scope evaluation and milestone schedule.
+					Send us your architectural drawings, BOQ draft, or site floorplan for an immediate scope evaluation and milestone schedule.
 				</p>
 				<a 
 					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20store%20fit-out%20project%20with%20Xpandor.`}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-gold btn-large"
+					class="btn btn-gold"
 				>
-					<span>Connect with Preetham on WhatsApp ↗</span>
+					<span>Connect with Preetham on WhatsApp</span>
 				</a>
 			</div>
 		</div>
@@ -227,26 +380,92 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 <style>
 	.page-hero {
-		padding: 5rem 0 3.5rem;
-		border-bottom: 1px solid var(--border-subtle);
-		background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+		padding: 4.5rem 0 3rem;
 	}
 
-	.hero-content {
-		max-width: 820px;
+	@media (max-width: 768px) {
+		.page-hero {
+			padding: 2.5rem 0 2rem;
+		}
+	}
+
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+			padding: 0.75rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	.hero-body {
+		padding: 4rem 3.5rem;
+		max-width: 900px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.2rem, 5vw, 3.8rem);
-		font-weight: 800;
+		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-weight: 600;
 		line-height: 1.15;
-		letter-spacing: -0.02em;
-		margin: 0.75rem 0 1.25rem;
+		letter-spacing: -0.025em;
+		margin: 0.6rem 0 1.25rem;
+		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		line-height: 1.7;
 		color: var(--text-muted);
 		margin-bottom: 2.25rem;
 	}
@@ -259,33 +478,35 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 	/* Process Grid */
 	.process-section {
-		background: #06080E;
+		border-top: 1px solid var(--border-subtle);
 		border-bottom: 1px solid var(--border-subtle);
+		background: #090B10;
 	}
 
 	.process-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
+	@media (max-width: 960px) {
+		.process-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 600px) {
 		.process-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
 	.proc-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
-		padding: 2rem;
-		transition: all 0.25s ease;
-	}
-
-	.proc-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
+		background: var(--bg-surface);
+		padding: 2.5rem 2rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
 	}
 
 	.proc-step {
@@ -293,31 +514,31 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		font-size: 0.85rem;
 		font-weight: 700;
 		color: var(--accent-gold);
-		display: block;
-		margin-bottom: 0.75rem;
+		margin-bottom: 1rem;
 	}
 
 	.proc-title {
-		font-size: 1.2rem;
-		font-weight: 700;
+		font-size: 1.25rem;
+		font-weight: 600;
 		margin: 0 0 0.75rem;
+		color: var(--text-main);
 	}
 
 	.proc-desc {
 		font-size: 0.88rem;
-		color: var(--text-muted);
 		line-height: 1.6;
+		color: var(--text-muted);
 		margin: 0;
 	}
 
-	/* Grid 3 */
+	/* Trade Cards */
 	.grid-3 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 960px) {
 		.grid-3 {
 			grid-template-columns: repeat(2, 1fr);
 		}
@@ -329,132 +550,213 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		}
 	}
 
-	.cap-icon {
-		font-size: 1.75rem;
-		display: block;
-		margin-bottom: 1rem;
+	.card-trade {
+		background: var(--bg-surface);
+		padding: 2.25rem 2rem;
+		border-radius: var(--radius-xs);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.trade-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.trade-tag {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		color: var(--text-subdued);
 	}
 
 	.card-title {
-		font-size: 1.2rem;
-		font-weight: 700;
+		font-size: 1.25rem;
+		font-weight: 600;
 		margin: 0 0 0.75rem;
+		color: var(--text-main);
 	}
 
 	.card-text {
 		font-size: 0.88rem;
-		color: var(--text-muted);
 		line-height: 1.6;
+		color: var(--text-muted);
 		margin: 0;
 	}
 
-	/* Fitout Grid */
-	.fitout-grid {
+	/* Plates Grid */
+	.plates-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
-		.fitout-grid {
+	@media (max-width: 960px) {
+		.plates-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.large-fitout {
-		grid-column: 1 / -1;
+	.specimen-plate {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		transition: border-color 0.25s ease;
 	}
 
-	.fitout-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
+	.specimen-plate:hover {
+		border-color: var(--border-brass);
+	}
+
+	.plate-visual {
+		position: relative;
+		aspect-ratio: 16 / 10;
 		overflow: hidden;
-		transition: all 0.25s ease;
+		background: #000;
+	}
+
+	.plate-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	.specimen-plate:hover .plate-img {
+		transform: scale(1.03);
+	}
+
+	.plate-tag {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		background: rgba(11, 13, 19, 0.85);
+		color: var(--accent-gold);
+		padding: 0.35rem 0.75rem;
+		border: 1px solid var(--border-brass);
+		backdrop-filter: blur(8px);
+		border-radius: 2px;
+	}
+
+	.plate-dossier {
+		padding: 2.25rem 2rem;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.dossier-header {
+		display: flex;
+		justify-content: space-between;
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.dossier-code {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.dossier-sector {
+		color: var(--text-subdued);
+		letter-spacing: 0.1em;
+	}
+
+	.dossier-title {
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin: 0 0 0.75rem;
+		color: var(--text-main);
+	}
+
+	.dossier-summary {
+		font-size: 0.88rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+		margin: 0 0 1.5rem;
+	}
+
+	.dossier-specs-table {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.85rem;
+		padding: 1.25rem;
+		background: rgba(11, 13, 19, 0.5);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-xs);
+		margin-bottom: 1.75rem;
+	}
+
+	.spec-cell {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.fitout-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
-	}
-
-	.fitout-card img {
-		width: 100%;
-		height: auto;
-		max-height: 420px;
-		object-fit: cover;
-	}
-
-	.fitout-content {
-		padding: 1.75rem;
-	}
-
-	.f-eyebrow {
+	.spec-k {
 		font-family: var(--font-mono);
-		font-size: 0.72rem;
-		letter-spacing: 0.12em;
+		font-size: 0.65rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.2rem;
+	}
+
+	.spec-v {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--text-main);
+	}
+
+	.dossier-link {
+		margin-top: auto;
+		font-family: var(--font-display);
+		font-size: 0.85rem;
+		font-weight: 600;
 		text-transform: uppercase;
+		letter-spacing: 0.06em;
 		color: var(--accent-gold);
-		display: block;
-		margin-bottom: 0.4rem;
 	}
 
-	.f-title {
-		font-size: 1.35rem;
-		font-weight: 700;
-		margin: 0 0 0.6rem;
+	.dossier-link:hover {
+		text-decoration: underline;
 	}
 
-	.f-desc {
-		font-size: 0.88rem;
-		color: var(--text-muted);
-		line-height: 1.55;
-		margin: 0 0 1rem;
-	}
-
-	.f-tag {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		color: var(--accent-gold);
-		background: var(--accent-gold-subtle);
-		border: 1px solid var(--border-gold);
-		padding: 0.25rem 0.6rem;
-		border-radius: var(--radius-sm);
-	}
-
+	/* CTA */
 	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
-		text-align: center;
+		background: var(--bg-surface);
+		padding: 4.5rem 3rem;
+		border-radius: var(--radius-xs);
 		max-width: 800px;
 	}
 
+	@media (max-width: 640px) {
+		.cta-banner {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
 	.cta-title {
-		font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-		font-weight: 800;
+		font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+		font-weight: 600;
+		line-height: 1.15;
 		margin: 0.75rem 0 1rem;
+		color: var(--text-main);
 	}
 
 	.cta-desc {
-		font-size: 1.05rem;
+		font-size: 1rem;
+		line-height: 1.65;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
-	}
-
-	.btn-large {
-		padding: 0.85rem 2rem;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
+		max-width: 600px;
+		margin: 0 auto 2.25rem;
 	}
 </style>
