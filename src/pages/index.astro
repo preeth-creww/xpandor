@@ -6,152 +6,244 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 ---
 
 <BaseLayout 
-	title="Xpandor | Retail Expansion Partner — From Expansion Plan to Open Doors"
-	description="Xpandor takes ownership of the operational complexity behind physical expansion. We find locations, secure them, build stores, deliver signage and put teams in place to open."
+	title="Xpandor | Retail Expansion Partner — Siting, Fit-Out, Signage & Staffing"
+	description="Xpandor takes complete operational ownership behind physical retail growth in South India. We find locations, secure leases, engineer turnkey fit-outs, deliver facades, and recruit opening teams."
 >
-	<!-- Hero Section -->
+	<!-- Hero Section: Architectural Drafting Frame (No Photo Required) -->
 	<section class="hero-section">
-		<div class="container hero-inner">
-			<div class="hero-badge-wrap">
-				<span class="badge">Retail Expansion Partners</span>
-			</div>
-			
-			<h1 class="hero-title">
-				Expand without the <br class="hidden-sm" />
-				<span class="text-gradient-gold">operational mess.</span>
-			</h1>
-
-			<p class="hero-subhead">
-				Xpandor is the physical expansion partner for growing retail brands. We help you find locations, secure them, build stores, deliver signage and put the right teams in place to open successfully.
-			</p>
-
-			<div class="hero-cta-group">
-				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-gold btn-hero"
-				>
-					<span>Tell us about your expansion</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-				</a>
-
-				<a href="#journey" class="btn btn-outline btn-hero">
-					<span>See How We Work</span>
-				</a>
-			</div>
-
-			<!-- Hero Real Project Spotlight Banner -->
-			<div class="hero-spotlight">
-				<div class="spotlight-image-wrapper">
-					<img 
-						src="/images/kushals.jpeg" 
-						alt="Kushal's flagship retail store delivered by Xpandor — architectural wave facade and retail fit-out" 
-						class="spotlight-img"
-						loading="eager"
-						width="1200"
-						height="600"
-					/>
-					<div class="spotlight-overlay">
-						<div class="spotlight-caption">
-							<span class="eyebrow">Real Execution</span>
-							<p class="caption-title">Kushal's Fashion & Silver Jewellery — Standalone Flagship</p>
-							<p class="caption-detail">Store Fit-Out • Illuminated Wave Facade • Storefront Signage • Retail Team Staffing</p>
-						</div>
+		<div class="container">
+			<div class="hero-drafting-frame architectural-frame">
+				<!-- Top Datum Bar -->
+				<div class="datum-bar">
+					<div class="datum-left">
+						<span class="datum-tag">XPANDOR / SPECIFICATION</span>
+						<span class="datum-sep">/</span>
+						<span class="datum-text">RETAIL EXPANSION PARTNER</span>
 					</div>
+					<div class="datum-right">
+						<span class="datum-coord">BENGALURU HQ • 12.9716° N, 77.5946° E</span>
+					</div>
+				</div>
+
+				<!-- Hero Centerpiece -->
+				<div class="hero-body">
+					<div class="hero-eyebrow-wrap">
+						<span class="eyebrow">Turnkey Retail Infrastructure</span>
+					</div>
+
+					<h1 class="hero-title">
+						Expand without the <br class="hidden-sm" />
+						<span class="text-gradient-brass">operational chaos.</span>
+					</h1>
+
+					<p class="hero-lead">
+						Xpandor takes complete operational ownership behind physical retail growth. We find locations, negotiate commercial leases, engineer turnkey fit-outs, fabricate facades, and recruit opening teams — managed under a single master contract.
+					</p>
+
+					<div class="hero-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>Start An Expansion Brief</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+						</a>
+
+						<a href="#selected-work" class="btn btn-outline">
+							<span>Explore Completed Works ↓</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Integrated 4-Bay Architectural Ledger -->
+				<div class="discipline-ledger">
+					<a href="/locations" class="ledger-bay">
+						<div class="bay-header">
+							<span class="bay-num">01</span>
+							<span class="bay-arrow">↗</span>
+						</div>
+						<h3 class="bay-title">Siting & Catchment</h3>
+						<p class="bay-desc">Commercial lease sourcing, footfall feasibility, and lease structuring across key South Indian retail corridors.</p>
+					</a>
+
+					<a href="/projects" class="ledger-bay">
+						<div class="bay-header">
+							<span class="bay-num">02</span>
+							<span class="bay-arrow">↗</span>
+						</div>
+						<h3 class="bay-title">Turnkey Fit-Out</h3>
+						<p class="bay-desc">Civil construction, MEP engineering, bespoke joinery, and inspected delivery on committed dates.</p>
+					</a>
+
+					<a href="/signage" class="ledger-bay">
+						<div class="bay-header">
+							<span class="bay-num">03</span>
+							<span class="bay-arrow">↗</span>
+						</div>
+						<h3 class="bay-title">Facades & Signage</h3>
+						<p class="bay-desc">Structural steel fabrication, 3D illuminated letters, and compliant bilingual storefront branding.</p>
+					</a>
+
+					<a href="/people" class="ledger-bay">
+						<div class="bay-header">
+							<span class="bay-num">04</span>
+							<span class="bay-arrow">↗</span>
+						</div>
+						<h3 class="bay-title">Retail Staffing</h3>
+						<p class="bay-desc">Store leadership and retail associate recruitment, deployed on-site 2 weeks prior to trading doors.</p>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section 2: The Fragmentation Problem vs Unified Accountability -->
-	<section class="section problem-section">
+	<!-- Section 2: Developer's Audit Metrics -->
+	<section class="section metrics-section">
 		<div class="container">
-			<div class="section-header text-center">
-				<span class="eyebrow">The Expansion Problem</span>
-				<h2 class="section-title">Opening a store is one project.<br />Not seven disconnected vendors.</h2>
+			<div class="metrics-ledger-grid">
+				<div class="metric-column">
+					<div class="metric-num">45 <span class="metric-unit">DAYS</span></div>
+					<div class="metric-title">Average Store Turnaround</div>
+					<p class="metric-detail">From signed commercial lease to fully traded, inspected store doors.</p>
+				</div>
+
+				<div class="metric-column">
+					<div class="metric-num">100%</div>
+					<div class="metric-title">Single Accountability</div>
+					<p class="metric-detail">One client contact. One master contract. No vendor finger-pointing.</p>
+				</div>
+
+				<div class="metric-column">
+					<div class="metric-num">₹0</div>
+					<div class="metric-title">Hidden Contractor Markup</div>
+					<p class="metric-detail">Transparent BOQ schedules with direct material procurement audit.</p>
+				</div>
+
+				<div class="metric-column">
+					<div class="metric-num">SOUTH <span class="metric-unit">INDIA</span></div>
+					<div class="metric-title">Regional Footprint</div>
+					<p class="metric-detail">Deep on-ground network across Bengaluru and tier-1/tier-2 South hubs.</p>
+				</div>
+			</div>
+
+			<div class="brand-lineage">
+				<span class="lineage-label">TRUSTED ACROSS REGIONAL & ENTERPRISE RETAIL ROLLOUTS</span>
+				<div class="lineage-names">
+					<span>KUSHAL'S</span>
+					<span class="dot">•</span>
+					<span>WOODEN STREET</span>
+					<span class="dot">•</span>
+					<span>GOFIX</span>
+					<span class="dot">•</span>
+					<span>R&B</span>
+					<span class="dot">•</span>
+					<span>WAKEFIT</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section 3: The Procurement Matrix (The 7-Vendor Problem vs. Turnkey Ownership) -->
+	<section class="section matrix-section">
+		<div class="container">
+			<div class="section-header text-center mx-auto" style="max-width: 780px;">
+				<span class="eyebrow">Procurement Reality</span>
+				<h2 class="section-title">Opening a store is one physical project.<br />Not seven disconnected vendors.</h2>
 				<p class="section-desc mx-auto">
-					The problem with physical expansion isn't that brokers, contractors, or signmakers don't exist. The problem is that the head of expansion has to coordinate all of them.
+					Traditional retail expansion fractures responsibility across brokers, lawyers, designers, and trades. When a store opening is delayed by four weeks, every vendor blames the next.
 				</p>
 			</div>
 
-			<div class="comparison-grid">
-				<!-- Old Fragmented Way -->
-				<div class="comp-card fragmented-card">
-					<div class="comp-badge old-badge">Traditional Expansion</div>
-					<h3 class="comp-title">Fragmented Handoffs</h3>
-					<ul class="comp-list">
-						<li>
-							<span class="vendor-tag">Location</span>
-							<span class="vendor-desc">Broker with zero understanding of build costs</span>
-						</li>
-						<li>
-							<span class="vendor-tag">Lease</span>
-							<span class="vendor-desc">Disconnected legal & landlord friction</span>
-						</li>
-						<li>
-							<span class="vendor-tag">Design & BOQ</span>
-							<span class="vendor-desc">Architectural drawings unaligned with site reality</span>
-						</li>
-						<li>
-							<span class="vendor-tag">Civil & MEP</span>
-							<span class="vendor-desc">General contractor shifting blame for site delays</span>
-						</li>
-						<li>
-							<span class="vendor-tag">Signage</span>
-							<span class="vendor-desc">Separate vendor unaware of facade handover dates</span>
-						</li>
-						<li>
-							<span class="vendor-tag">Hiring</span>
-							<span class="vendor-desc">Agency sending resumes after the store is built</span>
-						</li>
-					</ul>
-					<div class="comp-footer text-danger">
-						Result: Cost leakage, delayed openings, duplicated work, and zero single accountability.
+			<div class="matrix-table architectural-frame">
+				<div class="matrix-row matrix-header-row">
+					<div class="col-phase">EXPANSION PHASE</div>
+					<div class="col-trad">CONVENTIONAL FRAGMENTED MODEL</div>
+					<div class="col-xpandor">THE XPANDOR TURNKEY PARTNERSHIP</div>
+				</div>
+
+				<div class="matrix-row">
+					<div class="col-phase">
+						<span class="phase-code">01</span>
+						<strong>Site Selection</strong>
+					</div>
+					<div class="col-trad text-muted">
+						Local broker shows spaces without evaluating fit-out feasibility, MEP loads, or true civil renovation costs.
+					</div>
+					<div class="col-xpandor">
+						<span class="check-mark">✓</span>
+						<strong>Commercial Feasibility Audit:</strong> Every site screened against unit economics, power loads, and build capex before you sign.
 					</div>
 				</div>
 
-				<!-- Xpandor Way -->
-				<div class="comp-card xpandor-card">
-					<div class="comp-badge xpandor-badge">The Xpandor Way</div>
-					<h3 class="comp-title">One Expansion Team</h3>
-					<p class="xpandor-premise">
-						<strong>Xpandor takes complete operational ownership</strong> between your strategy deck and opening day. One client. One expansion team. One accountable partner.
-					</p>
-					<ul class="comp-list xpandor-list">
-						<li>
-							<span class="gold-check">✓</span>
-							<span><strong>Commercial Siting:</strong> Locations filtered against unit economics & retail footfall.</span>
-						</li>
-						<li>
-							<span class="gold-check">✓</span>
-							<span><strong>Managed Fit-out:</strong> BOQ control, civil, electrical, HVAC & custom display joinery.</span>
-						</li>
-						<li>
-							<span class="gold-check">✓</span>
-							<span><strong>Integrated Signage:</strong> Facades & 3D illuminated letters synchronized with fit-out.</span>
-						</li>
-						<li>
-							<span class="gold-check">✓</span>
-							<span><strong>Opening Staffing:</strong> Store manager & retail staff recruited 6 weeks prior to open doors.</span>
-						</li>
-					</ul>
-					<div class="comp-footer text-gold">
-						Result: Predictable handover dates, protected capital, and a store ready to trade.
+				<div class="matrix-row">
+					<div class="col-phase">
+						<span class="phase-code">02</span>
+						<strong>Lease Negotiation</strong>
+					</div>
+					<div class="col-trad text-muted">
+						Disconnected legal counsel unaware of rent-free fit-out periods required for civil execution.
+					</div>
+					<div class="col-xpandor">
+						<span class="check-mark">✓</span>
+						<strong>Turnkey Commercial Structuring:</strong> Rent-free execution buffers, landlord NOCs, and escalation caps locked upfront.
+					</div>
+				</div>
+
+				<div class="matrix-row">
+					<div class="col-phase">
+						<span class="phase-code">03</span>
+						<strong>Fit-Out & Execution</strong>
+					</div>
+					<div class="col-trad text-muted">
+						Architect drawings fail to align with site MEP reality. Contractor pushes cost variations onto client.
+					</div>
+					<div class="col-xpandor">
+						<span class="check-mark">✓</span>
+						<strong>Strict BOQ & Schedule Control:</strong> Single master team coordinating civil, HVAC, electrical, and bespoke joinery with zero markup leakage.
+					</div>
+				</div>
+
+				<div class="matrix-row">
+					<div class="col-phase">
+						<span class="phase-code">04</span>
+						<strong>Facade & Signage</strong>
+					</div>
+					<div class="col-trad text-muted">
+						Sign vendor shows up on handover day only to realize facade framing was never reinforced.
+					</div>
+					<div class="col-xpandor">
+						<span class="check-mark">✓</span>
+						<strong>Synchronized Signage:</strong> Facade engineering built directly into civil schedules. 3D illuminated letters ready 7 days prior.
+					</div>
+				</div>
+
+				<div class="matrix-row">
+					<div class="col-phase">
+						<span class="phase-code">05</span>
+						<strong>Store Launch</strong>
+					</div>
+					<div class="col-trad text-muted">
+						Staffing agency begins sourcing associates after doors are built. Store sits empty paying rent.
+					</div>
+					<div class="col-xpandor">
+						<span class="check-mark">✓</span>
+						<strong>Day-One Ready Team:</strong> Store manager and retail crew recruited, vetted, and inducted 14 days before handover.
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section 3: Visual Journey Timeline -->
+	<!-- Section 4: The 6-Stage Turnkey Journey -->
 	<section id="journey" class="section journey-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">The Sequence Is The Product</span>
-				<h2 class="section-title">From location brief to open doors.</h2>
+				<span class="eyebrow">Structured Execution</span>
+				<h2 class="section-title">The Sequence Is The Product.</h2>
 				<p class="section-desc">
-					You don't buy disconnected services. You go through one expansion journey. We step in at location search and see it through until your store is trading.
+					You don't buy fragmented services. You commission one integrated expansion sequence from location discovery to doors open.
 				</p>
 			</div>
 
@@ -159,1015 +251,1072 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		</div>
 	</section>
 
-	<!-- Section 4: What We Do (The 4 Verticals) -->
-	<section class="section verticals-section">
+	<!-- Section 5: Selected Project Specimen Plates (Framed with Curatorial Dignity) -->
+	<section id="selected-work" class="section work-section">
 		<div class="container">
 			<div class="section-header">
-				<span class="eyebrow">Four Core Verticals</span>
-				<h2 class="section-title">Built around the stages of retail growth.</h2>
-				<p class="section-desc">
-					Each capability is integrated into the expansion timeline, giving you deep trade expertise without vendor coordination overhead.
-				</p>
-			</div>
-
-			<div class="verticals-grid">
-				<!-- 01 Locations -->
-				<div class="vertical-card">
-					<div class="v-card-top">
-						<span class="v-number">01</span>
-						<span class="v-tag">FIND</span>
+				<div class="header-split">
+					<div>
+						<span class="eyebrow">Real Physical Execution</span>
+						<h2 class="section-title">Curated Project Dossiers.</h2>
+						<p class="section-desc">
+							Every project is delivered with disciplined engineering, precision joinery, and inspected on-ground accountability.
+						</p>
 					</div>
-					<h3 class="v-title">Locations</h3>
-					<p class="v-subtitle">Retail & Commercial Location Search</p>
-					<p class="v-desc">
-						We don't send endless unstructured listings. We build a commercial shortlist filtered by catchment demographics, visibility, competition, frontage, and rent-to-revenue feasibility.
-					</p>
-					<ul class="v-features">
-						<li>Micro-market demand mapping</li>
-						<li>Direct owner negotiation</li>
-						<li>Lease structuring & commercial closure</li>
-					</ul>
-					<a href="/locations" class="v-link">Explore Locations ↗</a>
-				</div>
-
-				<!-- 02 Projects -->
-				<div class="vertical-card">
-					<div class="v-card-top">
-						<span class="v-number">02</span>
-						<span class="v-tag">BUILD</span>
-					</div>
-					<h3 class="v-title">Projects</h3>
-					<p class="v-subtitle">End-to-End Retail Fit-outs</p>
-					<p class="v-desc">
-						You found the space. We'll make it a store. We own the project from drawings and BOQ through execution, civil, electrical, bespoke display fixtures, line-by-line QA/QC, and handover.
-					</p>
-					<ul class="v-features">
-						<li>Strict BOQ ownership & material controls</li>
-						<li>Bespoke millwork, vitrines & island kiosks</li>
-						<li>Daily milestone tracking & snag-free delivery</li>
-					</ul>
-					<a href="/projects" class="v-link">Explore Fit-outs ↗</a>
-				</div>
-
-				<!-- 03 Signage -->
-				<div class="vertical-card">
-					<div class="v-card-top">
-						<span class="v-number">03</span>
-						<span class="v-tag">EQUIP</span>
-					</div>
-					<h3 class="v-title">Signage & Facades</h3>
-					<p class="v-subtitle">Storefront & Brand Identity</p>
-					<p class="v-desc">
-						Your storefront is part of the store, not a vendor afterthought. We design, fabricate, and install high-visibility architectural facades, illuminated 3D channel letters, and wayfinding.
-					</p>
-					<ul class="v-features">
-						<li>Architectural wave facades & cladding</li>
-						<li>Multilingual & regional script fabrication</li>
-						<li>High-lumen LED lightboxes & vitrine lighting</li>
-					</ul>
-					<a href="/signage" class="v-link">Explore Signage ↗</a>
-				</div>
-
-				<!-- 04 People -->
-				<div class="vertical-card">
-					<div class="v-card-top">
-						<span class="v-number">04</span>
-						<span class="v-tag">STAFF</span>
-					</div>
-					<h3 class="v-title">People</h3>
-					<p class="v-subtitle">Store Opening Staffing</p>
-					<p class="v-desc">
-						A store isn't ready when construction ends. It's ready when the team is ready. We manage workforce planning, role definitions, sourcing, and screening to staff your store before day one.
-					</p>
-					<ul class="v-features">
-						<li>Store managers, supervisors & sales teams</li>
-						<li>Pre-screened retail talent pool</li>
-						<li>Joining coordination aligned with opening day</li>
-					</ul>
-					<a href="/people" class="v-link">Explore Staffing ↗</a>
+					<a href="/work" class="btn btn-outline hidden-sm">
+						<span>View Full Project Archive ↗</span>
+					</a>
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<!-- Section 5: Real Track Record & Brand Proof -->
-	<section class="section proof-section">
-		<div class="container">
-			<div class="proof-box">
-				<div class="proof-header">
-					<span class="eyebrow">Real Evidence</span>
-					<h2 class="section-title">Built on real expansion, not inflated claims.</h2>
-					<p class="section-desc">
-						We are honest about where we are. We have proven execution on the ground in Bengaluru and South India across respected retail names.
-					</p>
-				</div>
+			<!-- Project Plates Grid -->
+			<div class="plates-grid">
+				<!-- Plate 01: Kushal's -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img 
+							src="/images/kushals.jpeg" 
+							alt="Kushal's flagship jewellery store fit-out and backlit wave facade by Xpandor" 
+							loading="lazy" 
+							width="800" 
+							height="500" 
+							class="plate-img"
+						/>
+						<span class="plate-tag">PLATE 01 / FLAGSHIP RETAIL</span>
+					</div>
 
-				<div class="metrics-row">
-					<div class="metric-card">
-						<span class="metric-value">2</span>
-						<span class="metric-label">Locations Secured</span>
-						<span class="metric-sub">Commercial sites placed for GoFix</span>
-					</div>
-					<div class="metric-card">
-						<span class="metric-value">3,500+</span>
-						<span class="metric-label">Sqft Transacted</span>
-						<span class="metric-sub">Prime retail footprint leased</span>
-					</div>
-					<div class="metric-card">
-						<span class="metric-value">5+</span>
-						<span class="metric-label">Enterprise Brand Relationships</span>
-						<span class="metric-sub">Locations, fit-outs, signage & staffing</span>
-					</div>
-					<div class="metric-card">
-						<span class="metric-value">100%</span>
-						<span class="metric-label">On-Time Handover</span>
-						<span class="metric-sub">Inspected and snag-free delivery</span>
-					</div>
-				</div>
-
-				<div class="brands-band">
-					<span class="brands-eyebrow">Trusted by growing retail brands & regional leaders</span>
-					<div class="brands-list">
-						<span class="brand-item">KUSHAL'S</span>
-						<span class="brand-sep">•</span>
-						<span class="brand-item">WOODEN STREET</span>
-						<span class="brand-sep">•</span>
-						<span class="brand-item">GOFIX</span>
-						<span class="brand-sep">•</span>
-						<span class="brand-item">R&B</span>
-						<span class="brand-sep">•</span>
-						<span class="brand-item">WAKEFIT</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Section 6: Real Project Gallery (AV Engineering & Retail Work) -->
-	<section class="section gallery-section">
-		<div class="container">
-			<div class="section-header">
-				<span class="eyebrow">Selected Work</span>
-				<h2 class="section-title">Real spaces. Real execution.</h2>
-				<p class="section-desc">
-					Every project reflects disciplined engineering, precision joinery, and reliable on-ground execution.
-				</p>
-			</div>
-
-			<div class="gallery-grid">
-				<!-- Project 1: Kushal's -->
-				<div class="gallery-card">
-					<div class="gallery-img-wrap">
-						<img src="/images/kushals.jpeg" alt="Kushal's flagship jewellery store" loading="lazy" width="600" height="400" />
-					</div>
-					<div class="gallery-info">
-						<div class="gallery-meta">
-							<span class="gallery-client">Kushal's Fashion & Silver Jewellery</span>
-							<span class="gallery-cat">Jewellery</span>
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-CS-01</span>
+							<span class="dossier-sector">JEWELLERY FLAGSHIP</span>
 						</div>
-						<h4 class="gallery-title">Standalone Flagship Store & Architectural Wave Facade</h4>
-						<p class="gallery-scope">Handled: Store Fit-Out, Backlit Wave Cladding, Storefront Signage & Retail Team Staffing.</p>
-						<a href="/work/kushals" class="gallery-link">View Case Study ↗</a>
+
+						<h3 class="dossier-title">Kushal's Fashion & Silver Jewellery</h3>
+						<p class="dossier-summary">Standalone flagship retail environment featuring a parametric backlit wave facade, custom security vitrines, and turnkey lighting.</p>
+
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Commercial Street, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">2,200 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">38 Days (On Schedule)</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Civil • Wave Facade • MEP • Staffing</span>
+							</div>
+						</div>
+
+						<a href="/work/kushals" class="dossier-link">
+							<span>Read Execution Case Study →</span>
+						</a>
 					</div>
 				</div>
 
-				<!-- Project 2: Luxury Watch Showroom -->
-				<div class="gallery-card">
-					<div class="gallery-img-wrap">
-						<img src="/images/img-001.jpg" alt="Luxury watch mall showroom" loading="lazy" width="600" height="400" />
+				<!-- Plate 02: Luxury Watches -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img 
+							src="/images/img-001.jpg" 
+							alt="Luxury watch showroom mall atrium interior fit-out" 
+							loading="lazy" 
+							width="800" 
+							height="500" 
+							class="plate-img"
+						/>
+						<span class="plate-tag">PLATE 02 / TIMEPIECE SALON</span>
 					</div>
-					<div class="gallery-info">
-						<div class="gallery-meta">
-							<span class="gallery-client">Rado • Tissot • Guess • Gc</span>
-							<span class="gallery-cat">Luxury Retail</span>
+
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-MALL-04</span>
+							<span class="dossier-sector">LUXURY TIMEPIECES</span>
 						</div>
-						<h4 class="gallery-title">Mall Atrium Luxury Multi-Brand Timepiece Showroom</h4>
-						<p class="gallery-scope">Handled: Custom Marble Flooring, Security Display Vitrines, Floating Island Kiosks & Backlit Lightboxes.</p>
-						<a href="/work/luxury-watches" class="gallery-link">View Case Study ↗</a>
+
+						<h3 class="dossier-title">Multi-Brand Luxury Watch Showroom</h3>
+						<p class="dossier-summary">Mall atrium multi-brand boutique featuring Italian composite marble flooring, high-security vitrines, and floating island display fixtures.</p>
+
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Mall Atrium, Bengaluru</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">1,850 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">42 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Fit-Out • Security Vitrines • Signage</span>
+							</div>
+						</div>
+
+						<a href="/work/luxury-watches" class="dossier-link">
+							<span>Read Execution Case Study →</span>
+						</a>
 					</div>
 				</div>
 
-				<!-- Project 3: Toy Shire -->
-				<div class="gallery-card">
-					<div class="gallery-img-wrap">
-						<img src="/images/img-000.jpg" alt="Toy Shire retail store" loading="lazy" width="600" height="400" />
+				<!-- Plate 03: Specialty Retail -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img 
+							src="/images/img-000.jpg" 
+							alt="Toy Shire specialty retail store and custom modular millwork" 
+							loading="lazy" 
+							width="800" 
+							height="500" 
+							class="plate-img"
+						/>
+						<span class="plate-tag">PLATE 03 / SPECIALTY RETAIL</span>
 					</div>
-					<div class="gallery-info">
-						<div class="gallery-meta">
-							<span class="gallery-client">Toy Shire</span>
-							<span class="gallery-cat">Specialty Retail</span>
+
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-RETAIL-08</span>
+							<span class="dossier-sector">SPECIALTY RETAIL</span>
 						</div>
-						<h4 class="gallery-title">Mall Concourse Retail Storefront & Custom Millwork</h4>
-						<p class="gallery-scope">Handled: Custom Color-Matched Modular Display Fixtures, Cove Lighting & Bilingual 3D Channel Signage.</p>
-						<a href="/work/toy-shire" class="gallery-link">View Case Study ↗</a>
+
+						<h3 class="dossier-title">High-Street Storefront & Custom Millwork</h3>
+						<p class="dossier-summary">Precision retail fit-out with high-contrast powder-coated display racks, recessed architectural cove lighting, and storefront signage.</p>
+
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">High-Street Corridor, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">1,400 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">32 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Turnkey Joinery • 3D Facade • POS</span>
+							</div>
+						</div>
+
+						<a href="/work/toy-shire" class="dossier-link">
+							<span>Read Execution Case Study →</span>
+						</a>
 					</div>
 				</div>
 
-				<!-- Project 4: House of Elixir -->
-				<div class="gallery-card">
-					<div class="gallery-img-wrap">
-						<img src="/images/img-002.jpg" alt="House of Elixir concourse store" loading="lazy" width="600" height="400" />
+				<!-- Plate 04: Commercial Concourse -->
+				<div class="specimen-plate architectural-frame">
+					<div class="plate-visual">
+						<img 
+							src="/images/img-002.jpg" 
+							alt="Commercial concourse retail store and structural fit-out" 
+							loading="lazy" 
+							width="800" 
+							height="500" 
+							class="plate-img"
+						/>
+						<span class="plate-tag">PLATE 04 / CONCOURSE COMMERCE</span>
 					</div>
-					<div class="gallery-info">
-						<div class="gallery-meta">
-							<span class="gallery-client">House of Elixir</span>
-							<span class="gallery-cat">Commercial Retail</span>
+
+					<div class="plate-dossier">
+						<div class="dossier-header">
+							<span class="dossier-code">BLR-HUB-12</span>
+							<span class="dossier-sector">CONCOURSE RETAIL</span>
 						</div>
-						<h4 class="gallery-title">Airport Concourse Emporium & High-Gloss POS Islands</h4>
-						<p class="gallery-scope">Handled: High-Contrast Black & Gold Fixtures, Linear Ceiling Baffles & Glass-Clad Display Islands.</p>
-						<a href="/work/index" class="gallery-link">View Portfolio ↗</a>
+
+						<h3 class="dossier-title">Mall Concourse Emporium & POS Islands</h3>
+						<p class="dossier-summary">Fast-track turnkey retail delivery engineered for heavy footfall circulation, linear ceiling baffles, and glass-clad merchandising units.</p>
+
+						<div class="dossier-specs-table">
+							<div class="spec-cell">
+								<span class="spec-k">LOCATION</span>
+								<span class="spec-v">Transit Concourse, BLR</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">FOOTPRINT</span>
+								<span class="spec-v">2,800 Sq. Ft.</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">HANDOVER</span>
+								<span class="spec-v">45 Days</span>
+							</div>
+							<div class="spec-cell">
+								<span class="spec-k">SCOPE</span>
+								<span class="spec-v">Civil • MEP • Ceiling Baffles • Signage</span>
+							</div>
+						</div>
+
+						<a href="/work" class="dossier-link">
+							<span>View Project Specifications →</span>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section 7: Signature Interactive Timeline Estimator -->
+	<!-- Section 6: Interactive Store Milestone Specifier -->
 	<section class="section estimator-section">
 		<div class="container">
 			<TimelineEstimator />
 		</div>
 	</section>
 
-	<!-- Section 8: Operating Model (Who Owns What) -->
-	<section class="section model-section">
+	<!-- Section 7: Founder & Expansion Lead Accountability -->
+	<section class="section leadership-section">
 		<div class="container">
-			<div class="model-box">
-				<div class="model-text">
-					<span class="eyebrow">Operating Model</span>
-					<h2 class="section-title">One team. One point of accountability.</h2>
-					<p class="model-lead">
-						Xpandor is not a lead referral network or a generic agency aggregator. We take complete responsibility for your physical rollout.
+			<div class="leadership-frame architectural-frame">
+				<div class="leadership-body">
+					<span class="eyebrow">Direct Principal Accountability</span>
+					<h2 class="leadership-title">No junior account managers.<br />One direct line to leadership.</h2>
+					<p class="leadership-lead">
+						In commercial real estate and physical construction, deals are won on trust and executed on personal accountability. Every Xpandor rollout is overseen directly by senior leadership.
 					</p>
-					<p class="model-body">
-						Xpandor owns the client relationship, project management, commercial negotiations, BOQ control, schedules, quality inspection, and site handover. Where specialist trade execution is required, specialists execute strictly under Xpandor's project management and quality control structure.
+					<p class="leadership-text">
+						We own commercial negotiations, BOQ verification, site inspections, and handover sign-offs directly. If a contractor falls behind or a landlord pushes an unreasonable clause, you speak directly with the decision-maker who resolves it.
 					</p>
-					<div class="model-points">
-						<div class="m-point">
-							<span class="m-icon">🎯</span>
+
+					<div class="leadership-highlights">
+						<div class="hl-item">
+							<span class="hl-dot">▪</span>
 							<div>
-								<strong>Single Contractual Accountability</strong>
-								<p>You never have to mediate between an architect and a contractor.</p>
+								<strong>Single Master Contract:</strong> Zero mediation between architects and trades.
 							</div>
 						</div>
-						<div class="m-point">
-							<span class="m-icon">📊</span>
+						<div class="hl-item">
+							<span class="hl-dot">▪</span>
 							<div>
-								<strong>Transparent BOQ & Commercial Control</strong>
-								<p>No hidden contractor markups or uncontrolled budget creep.</p>
-							</div>
-						</div>
-						<div class="m-point">
-							<span class="m-icon">⚡</span>
-							<div>
-								<strong>Guaranteed Handover Dates</strong>
-								<p>Site schedules tracked daily with proactive snag list resolution.</p>
+								<strong>Daily Milestone Audits:</strong> Proactive snag resolution before handover dates.
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="founder-card">
-					<div class="founder-avatar-wrap">
-						<div class="founder-initials">PP</div>
-					</div>
+				<div class="founder-spec-card">
+					<div class="founder-badge">FOUNDER & LEAD</div>
+					<div class="founder-monogram">PP</div>
 					<h3 class="founder-name">{FOUNDER_NAME}</h3>
-					<p class="founder-title">{FOUNDER_ROLE}</p>
+					<p class="founder-role">{FOUNDER_ROLE}</p>
 					<p class="founder-quote">
-						“Expansion heads don't need another list of vendors. They need an on-ground partner who treats their store opening with the same urgency as their internal team.”
+						“Retail expansion is an operational sport. Brands don't need another list of vendors; they need someone to own the difficult middle between the strategy deck and open doors.”
 					</p>
-					<a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-founder">
-						<span>Connect on LinkedIn ↗</span>
-					</a>
+					
+					<div class="founder-contacts">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20with%20you.`}
+							target="_blank" 
+							rel="noopener noreferrer" 
+							class="btn btn-gold btn-founder"
+						>
+							<span>WhatsApp Direct ↗</span>
+						</a>
+						<a 
+							href={FOUNDER_LINKEDIN} 
+							target="_blank" 
+							rel="noopener noreferrer" 
+							class="btn btn-outline btn-founder"
+						>
+							<span>LinkedIn Profile ↗</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section 9: CTA Section -->
-	<section class="section cta-section">
+	<!-- Section 8: Final Strategic Intake -->
+	<section class="section intake-section">
 		<div class="container">
-			<div class="cta-banner">
-				<span class="eyebrow">Expand With Xpandor</span>
-				<h2 class="cta-title">Expanding in South India?<br />Let's talk about your next store.</h2>
-				<p class="cta-desc">
-					Share your target market, store size, or rollout schedule. We'll review your expansion plan and schedule an on-ground consultation.
-				</p>
-				<div class="cta-button-row">
-					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-gold btn-large"
-					>
-						<span>WhatsApp Preetham (+91 98458 08425) ↗</span>
-					</a>
-					<button type="button" class="btn btn-outline btn-large" data-open-modal>
-						<span>Send Expansion Brief</span>
-					</button>
+			<div class="intake-banner architectural-frame">
+				<div class="intake-content">
+					<span class="eyebrow">Expansion Commissioning</span>
+					<h2 class="intake-title">Planning your next retail store in South India?</h2>
+					<p class="intake-desc">
+						Share your target micro-market, footprint size, or target launch timeline. We will review your brief, evaluate commercial availability, and arrange an on-ground consultation in Bengaluru.
+					</p>
+					
+					<div class="intake-actions">
+						<a 
+							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-gold"
+						>
+							<span>WhatsApp Expansion Lead (+91 98458 08425)</span>
+						</a>
+						<button type="button" class="btn btn-outline" data-open-modal>
+							<span>Submit Detailed Brief</span>
+						</button>
+					</div>
+					<p class="intake-notice">Direct principal review • Confidentiality guaranteed • South India focus</p>
 				</div>
-				<p class="cta-note">Direct communication with leadership • Bengaluru-first • Immediate review</p>
 			</div>
 		</div>
 	</section>
 </BaseLayout>
 
 <style>
-	/* Hero Section */
+	/* Hero Section: Architectural Drafting Frame */
 	.hero-section {
-		padding: 5rem 0 4rem;
-		position: relative;
+		padding: 4.5rem 0 3.5rem;
 	}
 
 	@media (max-width: 768px) {
 		.hero-section {
-			padding: 3rem 0 2rem;
+			padding: 2.5rem 0 2rem;
 		}
 	}
 
-	.hero-inner {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
+	.hero-drafting-frame {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
 	}
 
-	.hero-badge-wrap {
-		margin-bottom: 1.5rem;
+	/* Top Datum Bar */
+	.datum-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 2rem;
+		border-bottom: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.6);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.12em;
+	}
+
+	@media (max-width: 768px) {
+		.datum-bar {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.5rem;
+			padding: 0.85rem 1.25rem;
+		}
+	}
+
+	.datum-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.datum-tag {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.datum-sep {
+		color: var(--text-subdued);
+	}
+
+	.datum-text {
+		color: var(--text-muted);
+	}
+
+	.datum-coord {
+		color: var(--text-subdued);
+	}
+
+	/* Hero Body */
+	.hero-body {
+		padding: 4.5rem 3.5rem 4rem;
+		max-width: 960px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-body {
+			padding: 2.5rem 1.5rem 2.5rem;
+		}
+	}
+
+	.hero-eyebrow-wrap {
+		margin-bottom: 1.25rem;
 	}
 
 	.hero-title {
-		font-size: clamp(2.4rem, 6vw, 4.5rem);
+		font-size: clamp(2.5rem, 5.5vw, 4.4rem);
 		font-weight: 800;
-		line-height: 1.1;
-		letter-spacing: -0.03em;
+		line-height: 1.08;
+		letter-spacing: -0.035em;
 		margin: 0 0 1.5rem;
 		color: var(--text-main);
 	}
 
-	.text-gradient-gold {
-		background: linear-gradient(135deg, #FFF6D6 0%, var(--accent-gold) 50%, #A3841C 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	.hero-subhead {
-		font-size: clamp(1.05rem, 2vw, 1.25rem);
-		line-height: 1.65;
+	.hero-lead {
+		font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+		line-height: 1.7;
 		color: var(--text-muted);
-		max-width: 720px;
-		margin: 0 auto 2.5rem;
+		max-width: 780px;
+		margin: 0 0 2.5rem;
 	}
 
-	.hero-cta-group {
+	.hero-actions {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1rem;
-		margin-bottom: 4rem;
-	}
-
-	.btn-hero {
-		padding: 0.85rem 1.85rem;
-		font-size: 0.95rem;
-	}
-
-	.hero-spotlight {
-		width: 100%;
-		max-width: 1100px;
-		margin-top: 1rem;
-	}
-
-	.spotlight-image-wrapper {
-		position: relative;
-		border-radius: var(--radius-md);
-		overflow: hidden;
-		border: 1px solid var(--border-gold);
-		box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9);
-	}
-
-	.spotlight-img {
-		width: 100%;
-		height: auto;
-		max-height: 520px;
-		object-fit: cover;
-		display: block;
-	}
-
-	.spotlight-overlay {
-		position: absolute;
-		bottom: 0;
-		inset-x: 0;
-		background: linear-gradient(0deg, rgba(8, 10, 16, 0.95) 0%, rgba(8, 10, 16, 0.6) 60%, transparent 100%);
-		padding: 3rem 2rem 1.5rem;
-		text-align: left;
-	}
-
-	@media (max-width: 640px) {
-		.spotlight-overlay {
-			padding: 2rem 1rem 1rem;
-		}
-	}
-
-	.caption-title {
-		font-size: 1.35rem;
-		font-weight: 700;
-		color: var(--text-main);
-		margin: 0.35rem 0 0.2rem;
-	}
-
-	.caption-detail {
-		font-size: 0.85rem;
-		color: var(--accent-gold);
-		margin: 0;
-		font-family: var(--font-mono);
-	}
-
-	/* Comparison Section */
-	.problem-section {
-		background: #06080E;
-		border-top: 1px solid var(--border-subtle);
-		border-bottom: 1px solid var(--border-subtle);
-	}
-
-	.comparison-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-	}
-
-	@media (max-width: 860px) {
-		.comparison-grid {
-			grid-template-columns: 1fr;
-		}
-	}
-
-	.comp-card {
-		border-radius: var(--radius-md);
-		padding: 2.5rem;
-		display: flex;
-		flex-direction: column;
-	}
-
-	@media (max-width: 640px) {
-		.comp-card {
-			padding: 1.5rem;
-		}
-	}
-
-	.fragmented-card {
-		background: rgba(15, 23, 42, 0.4);
-		border: 1px solid var(--border-subtle);
-	}
-
-	.xpandor-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.7);
-	}
-
-	.comp-badge {
-		font-family: var(--font-mono);
-		font-size: 0.72rem;
-		text-transform: uppercase;
-		letter-spacing: 0.12em;
-		padding: 0.3rem 0.75rem;
-		border-radius: var(--radius-full);
-		width: fit-content;
-		margin-bottom: 1rem;
-	}
-
-	.old-badge {
-		background: rgba(239, 68, 68, 0.1);
-		color: #ef4444;
-		border: 1px solid rgba(239, 68, 68, 0.3);
-	}
-
-	.xpandor-badge {
-		background: var(--accent-gold-subtle);
-		color: var(--accent-gold);
-		border: 1px solid var(--border-gold);
-	}
-
-	.comp-title {
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin: 0 0 1.25rem;
-	}
-
-	.comp-list {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 2rem;
-		display: flex;
-		flex-direction: column;
 		gap: 1rem;
 	}
 
-	.comp-list li {
-		display: flex;
-		align-items: baseline;
-		gap: 0.75rem;
-		font-size: 0.9rem;
-	}
-
-	.vendor-tag {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		color: var(--text-subdued);
-		min-width: 80px;
-		font-weight: 600;
-	}
-
-	.vendor-desc {
-		color: var(--text-muted);
-	}
-
-	.xpandor-premise {
-		font-size: 0.95rem;
-		line-height: 1.6;
-		color: var(--text-muted);
-		margin: 0 0 1.5rem;
-	}
-
-	.gold-check {
-		color: var(--accent-gold);
-		font-weight: 800;
-	}
-
-	.comp-footer {
-		margin-top: auto;
-		padding-top: 1.25rem;
-		border-top: 1px solid var(--border-subtle);
-		font-size: 0.85rem;
-		line-height: 1.5;
-	}
-
-	.text-danger {
-		color: #f87171;
-	}
-
-	.text-gold {
-		color: var(--accent-gold);
-		font-weight: 600;
-	}
-
-	/* Verticals Grid */
-	.verticals-grid {
+	/* Integrated 4-Bay Architectural Ledger */
+	.discipline-ledger {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+		background: rgba(11, 13, 19, 0.4);
 	}
 
-	@media (max-width: 1024px) {
-		.verticals-grid {
+	@media (max-width: 960px) {
+		.discipline-ledger {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	@media (max-width: 640px) {
-		.verticals-grid {
+	@media (max-width: 600px) {
+		.discipline-ledger {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.vertical-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
-		padding: 2rem 1.5rem;
+	.ledger-bay {
+		padding: 2.25rem 2rem;
+		border-right: 1px solid var(--border-subtle);
 		display: flex;
 		flex-direction: column;
-		transition: all 0.25s ease;
+		transition: all 0.22s ease;
+		background: transparent;
 	}
 
-	.vertical-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-3px);
-		box-shadow: var(--shadow-card);
+	.ledger-bay:last-child {
+		border-right: none;
 	}
 
-	.v-card-top {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 1.25rem;
-	}
-
-	.v-number {
-		font-family: var(--font-mono);
-		font-size: 0.85rem;
-		font-weight: 700;
-		color: var(--accent-gold);
-	}
-
-	.v-tag {
-		font-family: var(--font-mono);
-		font-size: 0.68rem;
-		letter-spacing: 0.12em;
-		background: var(--accent-gold-subtle);
-		color: var(--accent-gold);
-		padding: 0.2rem 0.5rem;
-		border-radius: 2px;
-	}
-
-	.v-title {
-		font-size: 1.35rem;
-		font-weight: 700;
-		margin: 0;
-	}
-
-	.v-subtitle {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		color: var(--accent-gold);
-		margin: 0.2rem 0 1rem;
-	}
-
-	.v-desc {
-		font-size: 0.85rem;
-		line-height: 1.6;
-		color: var(--text-muted);
-		margin: 0 0 1.5rem;
-	}
-
-	.v-features {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 1.5rem;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		font-size: 0.8rem;
-		color: var(--text-muted);
-	}
-
-	.v-features li::before {
-		content: '— ';
-		color: var(--accent-gold);
-	}
-
-	.v-link {
-		margin-top: auto;
-		font-size: 0.85rem;
-		font-weight: 600;
-		color: var(--accent-gold);
-	}
-
-	.v-link:hover {
-		text-decoration: underline;
-	}
-
-	/* Proof Section */
-	.proof-box {
-		background: #06080E;
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 3.5rem;
-	}
-
-	@media (max-width: 768px) {
-		.proof-box {
-			padding: 2rem 1.25rem;
+	@media (max-width: 960px) {
+		.ledger-bay:nth-child(2) {
+			border-right: none;
+		}
+		.ledger-bay:nth-child(-n+2) {
+			border-bottom: 1px solid var(--border-subtle);
 		}
 	}
 
-	.proof-header {
-		max-width: 700px;
-		margin-bottom: 3rem;
+	@media (max-width: 600px) {
+		.ledger-bay {
+			border-right: none !important;
+			border-bottom: 1px solid var(--border-subtle);
+		}
+		.ledger-bay:last-child {
+			border-bottom: none;
+		}
 	}
 
-	.metrics-row {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1.5rem;
-		padding-bottom: 2.5rem;
+	.ledger-bay:hover {
+		background: var(--bg-stone-muted);
+	}
+
+	.bay-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.bay-num {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--accent-gold);
+	}
+
+	.bay-arrow {
+		color: var(--text-subdued);
+		font-size: 1rem;
+		transition: transform 0.2s ease, color 0.2s ease;
+	}
+
+	.ledger-bay:hover .bay-arrow {
+		color: var(--accent-gold);
+		transform: translate(3px, -3px);
+	}
+
+	.bay-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 0.6rem;
+		color: var(--text-main);
+	}
+
+	.bay-desc {
+		font-size: 0.85rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	/* Section 2: Developer's Audit Metrics */
+	.metrics-section {
+		padding: 4.5rem 0 3.5rem;
 		border-bottom: 1px solid var(--border-subtle);
 	}
 
-	@media (max-width: 900px) {
-		.metrics-row {
+	.metrics-ledger-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2.5rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	@media (max-width: 960px) {
+		.metrics-ledger-grid {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 2rem;
 		}
 	}
 
-	@media (max-width: 500px) {
-		.metrics-row {
+	@media (max-width: 540px) {
+		.metrics-ledger-grid {
 			grid-template-columns: 1fr;
+			gap: 1.75rem;
 		}
 	}
 
-	.metric-card {
+	.metric-column {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.metric-value {
-		font-size: clamp(2.5rem, 4vw, 3.5rem);
+	.metric-num {
+		font-family: var(--font-display);
+		font-size: clamp(2.6rem, 4vw, 3.6rem);
 		font-weight: 800;
 		color: var(--text-main);
 		line-height: 1;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.6rem;
 		letter-spacing: -0.03em;
 	}
 
-	.metric-label {
-		font-size: 1rem;
-		font-weight: 600;
+	.metric-unit {
+		font-size: 0.45em;
 		color: var(--accent-gold);
-		margin-bottom: 0.25rem;
+		font-family: var(--font-mono);
+		font-weight: 600;
+		letter-spacing: 0.1em;
 	}
 
-	.metric-sub {
-		font-size: 0.78rem;
-		color: var(--text-subdued);
+	.metric-title {
+		font-family: var(--font-display);
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--accent-gold);
+		margin-bottom: 0.35rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
 	}
 
-	.brands-band {
-		margin-top: 2rem;
+	.metric-detail {
+		font-size: 0.82rem;
+		line-height: 1.55;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	.brand-lineage {
+		padding-top: 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 1rem;
+		gap: 0.85rem;
 	}
 
-	.brands-eyebrow {
+	.lineage-label {
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		text-transform: uppercase;
-		letter-spacing: 0.12em;
+		font-size: 0.72rem;
+		letter-spacing: 0.14em;
 		color: var(--text-subdued);
 	}
 
-	.brands-list {
+	.lineage-names {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		gap: 1.25rem;
-		font-family: var(--font-mono);
+		font-family: var(--font-display);
 		font-size: 0.95rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
+		color: var(--text-muted);
+	}
+
+	.lineage-names .dot {
+		color: var(--accent-gold);
+		font-size: 0.8rem;
+	}
+
+	/* Section 3: Procurement Matrix */
+	.matrix-section {
+		background: #090B10;
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.matrix-table {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+		margin-top: 3.5rem;
+	}
+
+	.matrix-row {
+		display: grid;
+		grid-template-columns: 220px 1fr 1fr;
+		border-bottom: 1px solid var(--border-subtle);
+		padding: 1.75rem 2rem;
+		gap: 2rem;
+		align-items: center;
+		font-size: 0.92rem;
+		line-height: 1.6;
+	}
+
+	.matrix-row:last-child {
+		border-bottom: none;
+	}
+
+	@media (max-width: 900px) {
+		.matrix-row {
+			grid-template-columns: 1fr;
+			gap: 0.85rem;
+			padding: 1.5rem 1.25rem;
+		}
+	}
+
+	.matrix-header-row {
+		background: rgba(11, 13, 19, 0.8);
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.14em;
+		color: var(--accent-gold);
+		font-weight: 700;
+		padding: 1.2rem 2rem;
+	}
+
+	@media (max-width: 900px) {
+		.matrix-header-row {
+			display: none;
+		}
+	}
+
+	.col-phase {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		font-size: 0.95rem;
+	}
+
+	.phase-code {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--accent-gold);
+		background: var(--accent-gold-subtle);
+		padding: 0.2rem 0.45rem;
+		border-radius: 2px;
+	}
+
+	.col-trad {
+		color: var(--text-muted);
+		border-left: 1px solid var(--border-subtle);
+		padding-left: 1.5rem;
+	}
+
+	@media (max-width: 900px) {
+		.col-trad {
+			border-left: none;
+			padding-left: 0;
+			color: #e57373;
+			background: rgba(239, 68, 68, 0.05);
+			padding: 0.75rem;
+			border-radius: 2px;
+		}
+	}
+
+	.col-xpandor {
+		border-left: 1px solid var(--border-brass);
+		padding-left: 1.5rem;
 		color: var(--text-main);
 	}
 
-	.brand-sep {
-		color: var(--accent-gold);
-		opacity: 0.5;
+	@media (max-width: 900px) {
+		.col-xpandor {
+			border-left: none;
+			padding-left: 0;
+			background: rgba(197, 168, 128, 0.06);
+			padding: 0.75rem;
+			border-radius: 2px;
+		}
 	}
 
-	/* Gallery Section */
-	.gallery-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+	.check-mark {
+		color: var(--accent-gold);
+		font-weight: 800;
+		margin-right: 0.35rem;
+	}
+
+	/* Section 5: Selected Work Specimen Plates */
+	.work-section {
+		border-bottom: 1px solid var(--border-subtle);
+	}
+
+	.header-split {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
 		gap: 2rem;
 	}
 
-	@media (max-width: 860px) {
-		.gallery-grid {
+	.plates-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+
+	@media (max-width: 960px) {
+		.plates-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 
-	.gallery-card {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-sm);
+	.specimen-plate {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
-		transition: all 0.25s ease;
+		transition: border-color 0.25s ease;
 	}
 
-	.gallery-card:hover {
-		border-color: var(--border-gold);
-		transform: translateY(-2px);
+	.specimen-plate:hover {
+		border-color: var(--border-brass);
 	}
 
-	.gallery-img-wrap {
+	.plate-visual {
 		position: relative;
+		aspect-ratio: 16 / 10;
 		overflow: hidden;
-		aspect-ratio: 16 / 9;
 		background: #000;
 	}
 
-	.gallery-img-wrap img {
+	.plate-img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		transition: transform 0.4s ease;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
-	.gallery-card:hover .gallery-img-wrap img {
+	.specimen-plate:hover .plate-img {
 		transform: scale(1.03);
 	}
 
-	.gallery-info {
-		padding: 1.75rem;
+	.plate-tag {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		background: rgba(11, 13, 19, 0.85);
+		color: var(--accent-gold);
+		padding: 0.35rem 0.75rem;
+		border: 1px solid var(--border-brass);
+		backdrop-filter: blur(8px);
+		border-radius: 2px;
+	}
+
+	.plate-dossier {
+		padding: 2.25rem 2rem;
 		display: flex;
 		flex-direction: column;
 		flex: 1;
 	}
 
-	.gallery-meta {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 0.5rem;
-	}
-
-	.gallery-client {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		color: var(--accent-gold);
-		font-weight: 600;
-	}
-
-	.gallery-cat {
-		font-size: 0.72rem;
-		background: rgba(255, 255, 255, 0.06);
-		padding: 0.2rem 0.5rem;
-		border-radius: 2px;
-		color: var(--text-muted);
-	}
-
-	.gallery-title {
-		font-size: 1.2rem;
-		font-weight: 700;
-		margin: 0 0 0.75rem;
-	}
-
-	.gallery-scope {
-		font-size: 0.85rem;
-		color: var(--text-muted);
-		line-height: 1.55;
-		margin: 0 0 1.25rem;
-	}
-
-	.gallery-link {
-		margin-top: auto;
-		font-size: 0.85rem;
-		font-weight: 600;
-		color: var(--accent-gold);
-	}
-
-	/* Model Section */
-	.model-box {
-		background: var(--bg-surface-card);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-md);
-		padding: 3.5rem;
-		display: grid;
-		grid-template-columns: 1.6fr 1fr;
-		gap: 3.5rem;
-		align-items: center;
-	}
-
-	@media (max-width: 980px) {
-		.model-box {
-			grid-template-columns: 1fr;
-			padding: 2rem 1.25rem;
-			gap: 2.5rem;
+	@media (max-width: 640px) {
+		.plate-dossier {
+			padding: 1.5rem 1.25rem;
 		}
 	}
 
-	.model-lead {
-		font-size: 1.15rem;
-		line-height: 1.6;
+	.dossier-header {
+		display: flex;
+		justify-content: space-between;
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.dossier-code {
+		color: var(--accent-gold);
+		font-weight: 700;
+	}
+
+	.dossier-sector {
+		color: var(--text-subdued);
+		letter-spacing: 0.1em;
+	}
+
+	.dossier-title {
+		font-size: 1.45rem;
+		font-weight: 700;
+		margin: 0 0 0.75rem;
 		color: var(--text-main);
-		font-weight: 500;
-		margin: 1rem 0;
 	}
 
-	.model-body {
-		font-size: 0.92rem;
-		line-height: 1.7;
+	.dossier-summary {
+		font-size: 0.88rem;
+		line-height: 1.6;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
+		margin: 0 0 1.5rem;
 	}
 
-	.model-points {
+	.dossier-specs-table {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.85rem;
+		padding: 1.25rem;
+		background: rgba(11, 13, 19, 0.5);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-xs);
+		margin-bottom: 1.75rem;
+	}
+
+	.spec-cell {
 		display: flex;
 		flex-direction: column;
-		gap: 1.25rem;
 	}
 
-	.m-point {
-		display: flex;
-		align-items: flex-start;
-		gap: 1rem;
-	}
-
-	.m-icon {
-		font-size: 1.35rem;
-		line-height: 1;
-	}
-
-	.m-point strong {
-		display: block;
-		font-size: 0.95rem;
-		color: var(--text-main);
+	.spec-k {
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		font-weight: 600;
+		color: var(--accent-gold);
+		letter-spacing: 0.1em;
 		margin-bottom: 0.2rem;
 	}
 
-	.m-point p {
+	.spec-v {
 		font-size: 0.85rem;
-		color: var(--text-muted);
-		margin: 0;
+		font-weight: 500;
+		color: var(--text-main);
 	}
 
-	.founder-card {
-		background: #06080E;
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-sm);
-		padding: 2.5rem 2rem;
-		text-align: center;
+	.dossier-link {
+		margin-top: auto;
+		font-family: var(--font-display);
+		font-size: 0.85rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--accent-gold);
+	}
+
+	.dossier-link:hover {
+		text-decoration: underline;
+	}
+
+	/* Section 7: Direct Leadership Accountability */
+	.leadership-section {
+		border-bottom: 1px solid var(--border-subtle);
+		background: #080A0F;
+	}
+
+	.leadership-frame {
+		display: grid;
+		grid-template-columns: 1fr 380px;
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+	}
+
+	@media (max-width: 960px) {
+		.leadership-frame {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.leadership-body {
+		padding: 4rem 3.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.leadership-body {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.leadership-title {
+		font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.75rem 0 1.25rem;
+	}
+
+	.leadership-lead {
+		font-size: 1.05rem;
+		line-height: 1.7;
+		color: var(--text-main);
+		margin: 0 0 1rem;
+	}
+
+	.leadership-text {
+		font-size: 0.92rem;
+		line-height: 1.7;
+		color: var(--text-muted);
+		margin: 0 0 2rem;
+	}
+
+	.leadership-highlights {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		font-size: 0.9rem;
+	}
+
+	.hl-item {
+		display: flex;
+		gap: 0.75rem;
+		color: var(--text-muted);
+	}
+
+	.hl-dot {
+		color: var(--accent-gold);
+	}
+
+	.founder-spec-card {
+		padding: 3.5rem 2.5rem;
+		background: rgba(11, 13, 19, 0.7);
+		border-left: 1px solid var(--border-subtle);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 	}
 
-	.founder-avatar-wrap {
+	@media (max-width: 960px) {
+		.founder-spec-card {
+			border-left: none;
+			border-top: 1px solid var(--border-subtle);
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	.founder-badge {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		color: var(--accent-gold);
+		margin-bottom: 1.5rem;
+	}
+
+	.founder-monogram {
 		width: 72px;
 		height: 72px;
 		border-radius: 50%;
-		background: var(--accent-gold-subtle);
-		border: 2px solid var(--accent-gold);
+		border: 1px solid var(--border-brass);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 1.25rem;
-	}
-
-	.founder-initials {
-		font-family: var(--font-mono);
+		font-family: var(--font-display);
+		font-size: 1.4rem;
 		font-weight: 800;
-		font-size: 1.25rem;
 		color: var(--accent-gold);
+		margin-bottom: 1.25rem;
+		background: var(--bg-surface);
 	}
 
 	.founder-name {
-		font-size: 1.25rem;
+		font-size: 1.35rem;
 		font-weight: 700;
-		margin: 0;
+		margin: 0 0 0.25rem;
 	}
 
-	.founder-title {
+	.founder-role {
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
+		font-size: 0.78rem;
 		color: var(--accent-gold);
-		margin: 0.25rem 0 1.25rem;
+		margin: 0 0 1.5rem;
 	}
 
 	.founder-quote {
 		font-size: 0.88rem;
 		line-height: 1.6;
-		color: var(--text-muted);
 		font-style: italic;
-		margin: 0 0 1.75rem;
+		color: var(--text-muted);
+		margin: 0 0 2rem;
+	}
+
+	.founder-contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		width: 100%;
 	}
 
 	.btn-founder {
 		width: 100%;
-		font-size: 0.85rem;
+		font-size: 0.8rem;
+		min-height: 42px;
 	}
 
-	/* CTA Section */
-	.cta-banner {
-		background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, rgba(8, 10, 16, 0) 70%), var(--bg-surface-card);
-		border: 1px solid var(--border-gold);
-		border-radius: var(--radius-md);
-		padding: 4.5rem 2rem;
+	/* Section 8: Strategic Intake */
+	.intake-section {
+		padding: 5rem 0 6rem;
+	}
+
+	.intake-banner {
+		background: var(--bg-surface);
+		padding: 4.5rem 3.5rem;
 		text-align: center;
-		max-width: 900px;
-		margin: 0 auto;
+		border-radius: var(--radius-xs);
 	}
 
-	@media (max-width: 640px) {
-		.cta-banner {
-			padding: 2.5rem 1.25rem;
+	@media (max-width: 768px) {
+		.intake-banner {
+			padding: 2.5rem 1.5rem;
 		}
 	}
 
-	.cta-title {
+	.intake-content {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+
+	.intake-title {
 		font-size: clamp(2rem, 4vw, 3rem);
 		font-weight: 800;
 		line-height: 1.15;
 		margin: 0.75rem 0 1.25rem;
 	}
 
-	.cta-desc {
-		font-size: 1.1rem;
+	.intake-desc {
+		font-size: 1.05rem;
+		line-height: 1.7;
 		color: var(--text-muted);
-		max-width: 600px;
-		margin: 0 auto 2.5rem;
-		line-height: 1.65;
+		margin: 0 0 2.5rem;
 	}
 
-	.cta-button-row {
+	.intake-actions {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -1175,23 +1324,10 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		margin-bottom: 1.5rem;
 	}
 
-	.btn-large {
-		padding: 0.9rem 2rem;
-		font-size: 0.95rem;
-	}
-
-	.cta-note {
-		font-size: 0.8rem;
+	.intake-notice {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
 		color: var(--text-subdued);
 		margin: 0;
-	}
-
-	.text-center {
-		text-align: center;
-	}
-
-	.mx-auto {
-		margin-left: auto;
-		margin-right: auto;
 	}
 </style>
