@@ -2,57 +2,33 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { WHATSAPP_BASE_URL } from '../../consts';
 
-const caseStudies = [
+const projects = [
 	{
-		client: "Kushal's Fashion & Silver Jewellery",
-		code: "BLR-FACADE-01",
-		category: "FACADE & FIT-OUT",
-		location: "Bengaluru",
-		scope: "Backlit Wave Facade • 3D Letters • Interior Fit-Out",
-		slug: "/work/kushals",
+		brand: "Kushal's",
 		image: "/images/kushals.jpeg",
-		plate: "PLATE 01",
-		highlight: "Storefront execution featuring custom parametric backlit wave facade panels, precision illuminated brand lettering, and retail interior fit-out."
+		plate: "PLATE 01"
 	},
 	{
-		client: "Timepiece & Horology Showroom",
-		code: "BLR-MALL-02",
-		category: "LUXURY TIMEPIECES",
-		location: "Bengaluru",
-		scope: "Fit-Out • Vitrines • Floor Transitions • Display Lighting",
-		slug: "/work/luxury-watches",
-		image: "/images/img-001.jpg",
-		plate: "PLATE 02",
-		highlight: "Premium boutique retail environment featuring custom perimeter display vitrines, calibrated accent display lighting, and seamless floor transitions."
-	},
-	{
-		client: "Retail Storefront & Custom Millwork",
-		code: "BLR-RETAIL-03",
-		category: "SPECIALTY RETAIL",
-		location: "Bengaluru",
-		scope: "Modular Joinery • Display Shelving • 3D Channel Letters",
-		slug: "/work/toy-shire",
+		brand: "Toy Shire",
 		image: "/images/img-000.jpg",
-		plate: "PLATE 03",
-		highlight: "Precision retail fit-out with color-matched modular display joinery, ceiling cove details, and illuminated storefront signage."
+		plate: "PLATE 02"
 	},
 	{
-		client: "GoFix Electronics Commercial Siting",
-		code: "BLR-SITE-04",
-		category: "COMMERCIAL SITING",
-		location: "Bengaluru",
-		scope: "Micro-Market Siting • Landlord Negotiation • Lease Structuring",
-		slug: "/work/gofix",
+		brand: "Luxury Watches",
+		image: "/images/img-001.jpg",
+		plate: "PLATE 03"
+	},
+	{
+		brand: "Commercial Concourse",
 		image: "/images/img-002.jpg",
-		plate: "PLATE 04",
-		highlight: "Strategic commercial retail locations identified and secured on favorable commercial terms with rent-free execution grace periods."
+		plate: "PLATE 04"
 	}
 ];
 ---
 
 <BaseLayout
-	title="Architectural Project Archive & Case Studies | Xpandor"
-	description="Explore real retail projects executed by Xpandor across Bengaluru and South India: Kushal's, Luxury Watch Showrooms, Toy Shire, and GoFix."
+	title="Selected Projects & Storefront Execution | Xpandor"
+	description="Selected retail storefronts and commercial interiors executed by Xpandor across South India."
 >
 	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
@@ -61,9 +37,9 @@ const caseStudies = [
 				<!-- Top Datum Bar -->
 				<div class="datum-bar">
 					<div class="datum-left">
-						<span class="datum-tag">PROJECT ARCHIVE</span>
+						<span class="datum-tag">PORTFOLIO</span>
 						<span class="datum-sep">/</span>
-						<span class="datum-text">VERIFIED RETAIL EXECUTION</span>
+						<span class="datum-text">PHYSICAL RETAIL SPACES</span>
 					</div>
 					<div class="datum-right">
 						<span class="datum-coord">BENGALURU & SOUTH INDIA</span>
@@ -72,16 +48,16 @@ const caseStudies = [
 
 				<div class="hero-body">
 					<div class="hero-eyebrow-wrap">
-						<span class="eyebrow">Project Dossiers</span>
+						<span class="eyebrow">Project Archive</span>
 					</div>
 
 					<h1 class="page-title">
-						Evidence over <br class="hidden-sm" />
-						<span class="text-gradient-brass">marketing promises.</span>
+						Executed physical <br class="hidden-sm" />
+						<span class="text-gradient-brass">retail spaces.</span>
 					</h1>
 
 					<p class="page-subhead">
-						We measure success by physical stores that open on schedule and trade successfully. Examine the real-world scope, technical specifications, and outcomes from our projects.
+						Real storefronts and commercial retail environments executed on the ground.
 					</p>
 				</div>
 			</div>
@@ -92,36 +68,15 @@ const caseStudies = [
 	<section class="section">
 		<div class="container">
 			<div class="plates-grid">
-				{caseStudies.map((study) => (
+				{projects.map((project) => (
 					<div class="specimen-plate architectural-frame">
 						<div class="plate-visual">
-							<img src={study.image} alt={study.client} loading="lazy" width="800" height="500" class="plate-img" />
-							<span class="plate-tag">{study.plate} / {study.category}</span>
+							<img src={project.image} alt={project.brand} loading="lazy" width="800" height="500" class="plate-img" />
+							<span class="plate-tag">{project.plate}</span>
 						</div>
 
-						<div class="plate-dossier">
-							<div class="dossier-header">
-								<span class="dossier-code">{study.code}</span>
-								<span class="dossier-sector">{study.category}</span>
-							</div>
-
-							<h3 class="dossier-title">{study.client}</h3>
-							<p class="dossier-summary">{study.highlight}</p>
-
-							<div class="dossier-specs-table">
-								<div class="spec-cell">
-									<span class="spec-k">LOCATION</span>
-									<span class="spec-v">{study.location}</span>
-								</div>
-								<div class="spec-cell">
-									<span class="spec-k">CORE SCOPE</span>
-									<span class="spec-v">{study.scope}</span>
-								</div>
-							</div>
-
-							<a href={study.slug} class="dossier-link">
-								<span>Read Complete Case Dossier →</span>
-							</a>
+						<div class="plate-caption">
+							<h3 class="plate-title">{project.brand}</h3>
 						</div>
 					</div>
 				))}
@@ -134,12 +89,12 @@ const caseStudies = [
 		<div class="container text-center">
 			<div class="cta-banner architectural-frame mx-auto">
 				<span class="eyebrow">Commission Your Store</span>
-				<h2 class="cta-title">Ready to execute your next flagship?</h2>
+				<h2 class="cta-title">Ready to execute your next store?</h2>
 				<p class="cta-desc">
 					Share your store format, square footage, and target launch date. We will prepare an operational plan and turnkey timeline.
 				</p>
 				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20project%20dossiers%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
+					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20projects%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="btn btn-gold"
@@ -213,24 +168,24 @@ const caseStudies = [
 	}
 
 	.hero-body {
-		padding: 4rem 3.5rem;
-		max-width: 900px;
+		padding: 3.5rem 2.5rem;
+		max-width: 800px;
 	}
 
 	@media (max-width: 768px) {
 		.hero-body {
-			padding: 2.5rem 1.5rem;
+			padding: 2rem 1.5rem;
 		}
 	}
 
 	.hero-eyebrow-wrap {
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-size: clamp(2.4rem, 4.5vw, 3.4rem);
 		font-weight: 600;
-		line-height: 1.15;
+		line-height: 1.1;
 		letter-spacing: -0.025em;
 		margin: 0.6rem 0 1.25rem;
 		color: var(--text-main);
@@ -250,9 +205,10 @@ const caseStudies = [
 		gap: 2rem;
 	}
 
-	@media (max-width: 960px) {
+	@media (max-width: 768px) {
 		.plates-grid {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
 		}
 	}
 
@@ -284,7 +240,7 @@ const caseStudies = [
 	}
 
 	.specimen-plate:hover .plate-img {
-		transform: scale(1.03);
+		transform: scale(1.02);
 	}
 
 	.plate-tag {
@@ -303,95 +259,18 @@ const caseStudies = [
 		border-radius: 2px;
 	}
 
-	.plate-dossier {
-		padding: 2.25rem 2rem;
-		display: flex;
-		flex-direction: column;
-		flex: 1;
+	.plate-caption {
+		padding: 1.5rem 1.75rem;
+		background: var(--bg-surface);
+		border-top: 1px solid var(--border-subtle);
 	}
 
-	.dossier-header {
-		display: flex;
-		justify-content: space-between;
-		font-family: var(--font-mono);
-		font-size: 0.72rem;
-		margin-bottom: 0.75rem;
-	}
-
-	.dossier-code {
-		color: var(--accent-gold);
-		font-weight: 700;
-	}
-
-	.dossier-sector {
-		color: var(--text-subdued);
-		letter-spacing: 0.1em;
-	}
-
-	.dossier-title {
-		font-size: 1.4rem;
+	.plate-title {
+		font-size: 1.3rem;
 		font-weight: 600;
-		margin: 0 0 0.75rem;
+		margin: 0;
 		color: var(--text-main);
-	}
-
-	.dossier-summary {
-		font-size: 0.88rem;
-		line-height: 1.6;
-		color: var(--text-muted);
-		margin: 0 0 1.5rem;
-	}
-
-	.dossier-specs-table {
-		display: grid;
-		grid-template-columns: 1fr 2.2fr;
-		gap: 1rem;
-		padding: 1.15rem 1.25rem;
-		background: rgba(11, 13, 19, 0.5);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-xs);
-		margin-bottom: 1.75rem;
-	}
-
-	@media (max-width: 560px) {
-		.dossier-specs-table {
-			grid-template-columns: 1fr;
-			gap: 0.75rem;
-		}
-	}
-
-	.spec-cell {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.spec-k {
-		font-family: var(--font-mono);
-		font-size: 0.65rem;
-		font-weight: 600;
-		color: var(--accent-gold);
-		letter-spacing: 0.1em;
-		margin-bottom: 0.2rem;
-	}
-
-	.spec-v {
-		font-size: 0.85rem;
-		font-weight: 500;
-		color: var(--text-main);
-	}
-
-	.dossier-link {
-		margin-top: auto;
-		font-family: var(--font-display);
-		font-size: 0.85rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: var(--accent-gold);
-	}
-
-	.dossier-link:hover {
-		text-decoration: underline;
+		letter-spacing: -0.01em;
 	}
 
 	/* CTA */

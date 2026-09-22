@@ -167,65 +167,25 @@ import { WHATSAPP_BASE_URL } from '../consts';
 			</div>
 
 			<div class="plates-grid">
-				<!-- Plate 1: Kushal's Wave Facade -->
+				<!-- Plate 1: Kushal's -->
 				<div class="specimen-plate architectural-frame">
 					<div class="plate-visual">
-						<img src="/images/kushals.jpeg" alt="Kushal's architectural wave facade and 3D illuminated storefront lettering" loading="lazy" width="800" height="500" class="plate-img" />
-						<span class="plate-tag">PLATE 01 / ARCHITECTURAL FACADE</span>
+						<img src="/images/kushals.jpeg" alt="Kushal's" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 01</span>
 					</div>
-					<div class="plate-dossier">
-						<div class="dossier-header">
-							<span class="dossier-code">DOSSIER 01</span>
-							<span class="dossier-sector">JEWELLERY FACADE</span>
-						</div>
-						<h3 class="dossier-title">Kushal's Illuminated Wave Facade</h3>
-						<p class="dossier-summary">Storefront architectural facade featuring custom fluid backlit wave cladding, concealed warm white illumination, and precision 3D illuminated brand lettering.</p>
-						<div class="dossier-specs-table">
-							<div class="spec-cell">
-								<span class="spec-k">FACADE TYPE</span>
-								<span class="spec-v">Backlit Wave Cladding</span>
-							</div>
-							<div class="spec-cell">
-								<span class="spec-k">ILLUMINATION</span>
-								<span class="spec-v">Concealed Waterproof LEDs</span>
-							</div>
-							<div class="spec-cell">
-								<span class="spec-k">SIGNAGE</span>
-								<span class="spec-v">3D Precision Lettering</span>
-							</div>
-						</div>
-						<a href="/work/kushals" class="dossier-link">View Facade Case Study →</a>
+					<div class="plate-caption">
+						<h3 class="plate-title">Kushal's</h3>
 					</div>
 				</div>
 
-				<!-- Plate 2: High-Street Mall Frontage -->
+				<!-- Plate 2: Toy Shire -->
 				<div class="specimen-plate architectural-frame">
 					<div class="plate-visual">
-						<img src="/images/img-000.jpg" alt="Commercial storefront illuminated signage and header panel" loading="lazy" width="800" height="500" class="plate-img" />
-						<span class="plate-tag">PLATE 02 / STOREFRONT SIGNAGE</span>
+						<img src="/images/img-000.jpg" alt="Toy Shire" loading="lazy" width="800" height="500" class="plate-img" />
+						<span class="plate-tag">PLATE 02</span>
 					</div>
-					<div class="plate-dossier">
-						<div class="dossier-header">
-							<span class="dossier-code">DOSSIER 02</span>
-							<span class="dossier-sector">SPECIALTY RETAIL</span>
-						</div>
-						<h3 class="dossier-title">Retail Storefront & Signage Fascia</h3>
-						<p class="dossier-summary">Commercial storefront header fascia and illuminated branding, engineered for retail visibility and paired with threshold entrance downlighting.</p>
-						<div class="dossier-specs-table">
-							<div class="spec-cell">
-								<span class="spec-k">APPLICATION</span>
-								<span class="spec-v">Storefront Header Fascia</span>
-							</div>
-							<div class="spec-cell">
-								<span class="spec-k">LIGHTING</span>
-								<span class="spec-v">Integrated Downlighting</span>
-							</div>
-							<div class="spec-cell">
-								<span class="spec-k">JOINERY</span>
-								<span class="spec-v">Storefront Millwork</span>
-							</div>
-						</div>
-						<a href="/work/toy-shire" class="dossier-link">View Storefront Case Study →</a>
+					<div class="plate-caption">
+						<h3 class="plate-title">Toy Shire</h3>
 					</div>
 				</div>
 			</div>
@@ -542,88 +502,18 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		border-radius: 2px;
 	}
 
-	.plate-dossier {
-		padding: 2.25rem 2rem;
-		display: flex;
-		flex-direction: column;
-		flex: 1;
+	.plate-caption {
+		padding: 1.5rem 1.75rem;
+		background: var(--bg-surface);
+		border-top: 1px solid var(--border-subtle);
 	}
 
-	.dossier-header {
-		display: flex;
-		justify-content: space-between;
-		font-family: var(--font-mono);
-		font-size: 0.72rem;
-		margin-bottom: 0.75rem;
-	}
-
-	.dossier-code {
-		color: var(--accent-gold);
-		font-weight: 700;
-	}
-
-	.dossier-sector {
-		color: var(--text-subdued);
-		letter-spacing: 0.1em;
-	}
-
-	.dossier-title {
-		font-size: 1.4rem;
+	.plate-title {
+		font-size: 1.3rem;
 		font-weight: 600;
-		margin: 0 0 0.75rem;
+		margin: 0;
 		color: var(--text-main);
-	}
-
-	.dossier-summary {
-		font-size: 0.88rem;
-		line-height: 1.6;
-		color: var(--text-muted);
-		margin: 0 0 1.5rem;
-	}
-
-	.dossier-specs-table {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.85rem;
-		padding: 1.25rem;
-		background: rgba(11, 13, 19, 0.5);
-		border: 1px solid var(--border-subtle);
-		border-radius: var(--radius-xs);
-		margin-bottom: 1.75rem;
-	}
-
-	.spec-cell {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.spec-k {
-		font-family: var(--font-mono);
-		font-size: 0.65rem;
-		font-weight: 600;
-		color: var(--accent-gold);
-		letter-spacing: 0.1em;
-		margin-bottom: 0.2rem;
-	}
-
-	.spec-v {
-		font-size: 0.85rem;
-		font-weight: 500;
-		color: var(--text-main);
-	}
-
-	.dossier-link {
-		margin-top: auto;
-		font-family: var(--font-display);
-		font-size: 0.85rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: var(--accent-gold);
-	}
-
-	.dossier-link:hover {
-		text-decoration: underline;
+		letter-spacing: -0.01em;
 	}
 
 	/* CTA */
