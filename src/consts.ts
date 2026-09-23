@@ -9,6 +9,7 @@ export const WHATSAPP_BASE_URL = 'https://wa.me/919845808425';
 export const FOUNDER_NAME = 'Preetham Phirangi';
 export const FOUNDER_ROLE = 'Founder & Expansion Lead';
 export const FOUNDER_LINKEDIN = 'https://www.linkedin.com/in/preetham-phirangi';
+export const AV_INTERIORS_URL = 'https://av-engineering-interiors-com.vercel.app';
 
 export function getWhatsAppExpansionUrl(details?: {
 	brand?: string;
