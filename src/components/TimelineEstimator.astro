@@ -119,13 +119,13 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 				<div class="results-action">
 					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20used%20the%20Xpandor%20Timeline%20Estimator%20for%20a%20Flagship%20Fashion%20store%20(approx%207-9%20weeks).%20Let's%20discuss.`}
+						href={`${WHATSAPP_BASE_URL}?text=Hi,%20I%20used%20the%20Xpandor%20Timeline%20Estimator%20for%20a%20Flagship%20Fashion%20store%20(approx%207-9%20weeks).%20Let's%20discuss.`}
 						id="whatsapp-planner-link"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="btn btn-gold btn-full"
 					>
-						<span>Discuss This Schedule with Preetham on WhatsApp ↗</span>
+						<span>DISCUSS YOUR PLANS WITH US ↗</span>
 					</a>
 				</div>
 			</div>
@@ -215,7 +215,7 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		if (phasePeopleWeeks) phasePeopleWeeks.textContent = `Weeks ${peopleStart} – ${peopleEnd}`;
 
 		if (whatsappLink) {
-			const text = `Hi Preetham, I used the Xpandor Timeline Estimator for a ${state.categoryLabel} (${state.sizeLabel}, target: ${totalMin}-${totalMax} weeks). I'd like to discuss our expansion.`;
+			const text = `Hi, I used the Xpandor Timeline Estimator for a ${state.categoryLabel} (${state.sizeLabel}, target: ${totalMin}-${totalMax} weeks). I'd like to discuss our expansion.`;
 			whatsappLink.setAttribute('href', `https://wa.me/919845808425?text=${encodeURIComponent(text)}`);
 		}
 	}

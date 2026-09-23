@@ -93,14 +93,19 @@ const projects = [
 				<p class="cta-desc">
 					Share your store format, square footage, and target launch date. We will prepare an operational plan and turnkey timeline.
 				</p>
-				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I%20reviewed%20your%20projects%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-gold"
-				>
-					<span>Discuss Expansion with Preetham on WhatsApp</span>
-				</a>
+				<div class="cta-actions">
+					<button type="button" class="btn btn-gold" data-open-modal>
+						<span>SUBMIT YOUR DETAILED BRIEF ↗</span>
+					</button>
+					<a 
+						href={`${WHATSAPP_BASE_URL}?text=Hi,%20I%20reviewed%20your%20projects%20and%20would%20like%20to%20discuss%20our%20retail%20expansion.`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-outline"
+					>
+						<span>DISCUSS YOUR PLANS WITH US ↗</span>
+					</a>
+				</div>
 
 				<div class="cta-group-callout">
 					<p class="cta-group-text">
@@ -310,6 +315,13 @@ const projects = [
 		color: var(--text-muted);
 		max-width: 600px;
 		margin: 0 auto 2.25rem;
+	}
+
+	.cta-actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
 	}
 
 	.cta-group-callout {

@@ -39,13 +39,12 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 
 					<div class="hero-actions">
 						<a 
-							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20fit-out%20project%20with%20Xpandor.`}
+							href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20a%20retail%20fit-out%20project%20with%20Xpandor.`}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn-gold"
 						>
-							<span>Discuss Your Fit-Out on WhatsApp</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+							<span>DISCUSS YOUR PLANS WITH US ↗</span>
 						</a>
 						<a href="#process" class="btn btn-outline">
 							<span>Explore Execution Lifecycle ↓</span>
@@ -212,14 +211,19 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 				<p class="cta-desc">
 					Send us your architectural drawings, BOQ draft, or site floorplan for an immediate scope evaluation and milestone schedule.
 				</p>
-				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20store%20fit-out%20project%20with%20Xpandor.`}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-gold"
-				>
-					<span>Connect with Preetham on WhatsApp</span>
-				</a>
+				<div class="cta-actions">
+					<button type="button" class="btn btn-gold" data-open-modal>
+						<span>SUBMIT YOUR DETAILED BRIEF ↗</span>
+					</button>
+					<a 
+						href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20a%20store%20fit-out%20project%20with%20Xpandor.`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-outline"
+					>
+						<span>DISCUSS YOUR PLANS WITH US ↗</span>
+					</a>
+				</div>
 
 				<div class="cta-group-callout">
 					<p class="cta-group-text">
@@ -472,6 +476,13 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		color: var(--text-muted);
 		max-width: 600px;
 		margin: 0 auto 2.25rem;
+	}
+
+	.cta-actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
 	}
 
 	.cta-group-callout {

@@ -39,13 +39,12 @@ import { WHATSAPP_BASE_URL } from '../consts';
 
 					<div class="hero-actions">
 						<a 
-							href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20location%20requirement%20for%20our%20retail%20brand.`}
+							href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20a%20location%20requirement%20for%20our%20retail%20brand.`}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn-gold"
 						>
-							<span>Share Your Location Requirement</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+							<span>SHARE YOUR REQUIREMENTS ↗</span>
 						</a>
 						<a href="#shortlist" class="btn btn-outline">
 							<span>View Comparative Shortlist Matrix ↓</span>
@@ -243,14 +242,19 @@ import { WHATSAPP_BASE_URL } from '../consts';
 				<p class="cta-desc">
 					Share your target micro-market, required square footage, and budget. We will audit commercial availability and prepare your shortlist.
 				</p>
-				<a 
-					href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20a%20retail%20location%20search%20with%20Xpandor.`}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-gold"
-				>
-					<span>Discuss Locations with Preetham on WhatsApp</span>
-				</a>
+				<div class="cta-actions">
+					<button type="button" class="btn btn-gold" data-open-modal>
+						<span>SUBMIT YOUR DETAILED BRIEF ↗</span>
+					</button>
+					<a 
+						href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20a%20retail%20location%20search%20with%20Xpandor.`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-outline"
+					>
+						<span>DISCUSS YOUR PLANS WITH US ↗</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -711,5 +715,12 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		color: var(--text-muted);
 		max-width: 600px;
 		margin: 0 auto 2.25rem;
+	}
+
+	.cta-actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
 	}
 </style>

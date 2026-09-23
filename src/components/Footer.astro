@@ -60,12 +60,12 @@ const today = new Date();
 				<p class="contact-desc">Discuss your next store or South India rollout directly with our expansion team.</p>
 				<div class="contact-actions">
 					<a 
-						href={`${WHATSAPP_BASE_URL}?text=Hi%20Preetham,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
+						href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20our%20retail%20expansion%20plans%20with%20Xpandor.`}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="btn btn-gold btn-footer-action"
 					>
-						<span>WhatsApp Us ({CONTACT_PHONE})</span>
+						<span>WHATSAPP US<br />({CONTACT_PHONE})</span>
 					</a>
 					<a href={`mailto:${CONTACT_EMAIL}`} class="email-link">
 						{CONTACT_EMAIL}
@@ -76,12 +76,6 @@ const today = new Date();
 
 		<div class="footer-bottom">
 			<p>&copy; {today.getFullYear()} Xpandor Retail Expansion Partners. All rights reserved.</p>
-			<p class="footer-bottom-practice">
-				Group company: <strong>AV Engineering &amp; Interiors</strong> &mdash; 
-				<a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer">
-					View more on our fitout projects here ↗
-				</a>
-			</p>
 			<p class="footer-subtext">One client. One expansion team. One accountable partner.</p>
 		</div>
 	</div>
@@ -232,7 +226,10 @@ const today = new Date();
 	.btn-footer-action {
 		width: 100%;
 		font-size: 0.82rem;
-		padding: 0.65rem 1rem;
+		padding: 0.75rem 1rem;
+		line-height: 1.35;
+		text-align: center;
+		white-space: normal;
 	}
 
 	.email-link {
@@ -260,28 +257,6 @@ const today = new Date();
 		font-family: var(--font-mono);
 		color: var(--accent-gold);
 		opacity: 0.85;
-	}
-
-	.footer-bottom-practice {
-		color: var(--text-subdued);
-		font-size: 0.8rem;
-		margin: 0;
-	}
-
-	.footer-bottom-practice strong {
-		color: var(--text-main);
-		font-weight: 500;
-	}
-
-	.footer-bottom-practice a {
-		color: var(--accent-gold);
-		text-decoration: none;
-		transition: color 0.2s ease;
-	}
-
-	.footer-bottom-practice a:hover {
-		color: var(--accent-gold-light);
-		text-decoration: underline;
 	}
 
 	@media (max-width: 768px) {
