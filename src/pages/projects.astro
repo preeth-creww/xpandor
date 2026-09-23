@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { WHATSAPP_BASE_URL } from '../consts';
+import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 ---
 
 <BaseLayout
@@ -220,6 +220,15 @@ import { WHATSAPP_BASE_URL } from '../consts';
 				>
 					<span>Connect with Preetham on WhatsApp</span>
 				</a>
+
+				<div class="cta-group-callout">
+					<p class="cta-group-text">
+						Fit-out execution delivered through our group company, <strong>AV Engineering &amp; Interiors</strong>.
+						<a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer" class="group-callout-link">
+							View more on our fitout projects here ↗
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -463,5 +472,34 @@ import { WHATSAPP_BASE_URL } from '../consts';
 		color: var(--text-muted);
 		max-width: 600px;
 		margin: 0 auto 2.25rem;
+	}
+
+	.cta-group-callout {
+		margin-top: 2.25rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.cta-group-text {
+		font-size: 0.88rem;
+		color: var(--text-muted);
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	.cta-group-text strong {
+		color: var(--text-main);
+	}
+
+	.group-callout-link {
+		color: var(--accent-gold);
+		margin-left: 0.35rem;
+		display: inline-block;
+		transition: color 0.2s ease;
+	}
+
+	.group-callout-link:hover {
+		color: var(--accent-gold-light);
+		text-decoration: underline;
 	}
 </style>

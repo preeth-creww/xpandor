@@ -29,8 +29,14 @@ const today = new Date();
 					<li><a href="/people"><span class="step-num">04</span> People (Staffing)</a></li>
 					<li><a href="/how-we-work">Operating Model</a></li>
 					<li><a href="/work">Selected Work</a></li>
-					<li><a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer">AV Engineering &amp; Interiors ↗</a></li>
 				</ul>
+				<div class="leadership-snippet">
+					<p class="lead-role">AV Engineering &amp; Interiors</p>
+					<p class="lead-desc">Our group fit-out execution company.</p>
+					<a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer" class="linkedin-link">
+						View more on our fitout projects here ↗
+					</a>
+				</div>
 			</div>
 
 			<div class="footer-col">
@@ -70,9 +76,12 @@ const today = new Date();
 
 		<div class="footer-bottom">
 			<p>&copy; {today.getFullYear()} Xpandor Retail Expansion Partners. All rights reserved.</p>
-			<a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer" class="footer-bottom-practice">
-				Projects: <span>AV Engineering &amp; Interiors ↗</span>
-			</a>
+			<p class="footer-bottom-practice">
+				Group company: <strong>AV Engineering &amp; Interiors</strong> &mdash; 
+				<a href={AV_INTERIORS_URL} target="_blank" rel="noopener noreferrer">
+					View more on our fitout projects here ↗
+				</a>
+			</p>
 			<p class="footer-subtext">One client. One expansion team. One accountable partner.</p>
 		</div>
 	</div>
@@ -255,23 +264,23 @@ const today = new Date();
 
 	.footer-bottom-practice {
 		color: var(--text-subdued);
-		transition: color 0.2s ease;
-		display: inline-flex;
-		align-items: center;
-		gap: 0.35rem;
-		text-decoration: none;
+		font-size: 0.8rem;
+		margin: 0;
 	}
 
-	.footer-bottom-practice span {
-		color: var(--accent-gold);
+	.footer-bottom-practice strong {
+		color: var(--text-main);
 		font-weight: 500;
 	}
 
-	.footer-bottom-practice:hover {
-		color: var(--text-main);
+	.footer-bottom-practice a {
+		color: var(--accent-gold);
+		text-decoration: none;
+		transition: color 0.2s ease;
 	}
 
-	.footer-bottom-practice:hover span {
+	.footer-bottom-practice a:hover {
+		color: var(--accent-gold-light);
 		text-decoration: underline;
 	}
 
