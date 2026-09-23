@@ -24,3 +24,6 @@ pnpm-debug.log*
 # IDE
 .idea/
 .vscode/
+
+# Local root video copies
+/xpandor-journey.mp4
