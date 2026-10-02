@@ -1,11 +1,203 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
+
+const plates = [
+	{
+		plate: "PLATE 01",
+		brand: "Kushal's",
+		title: "Flagship Storefront Facade",
+		subtitle: "Night illumination • 3D channel letters • Backlit wave panels & video wall",
+		image: "/images/kushals/kushals-01-facade-night.jpeg",
+		category: "kushals",
+		featured: true
+	},
+	{
+		plate: "PLATE 02",
+		brand: "Kushal's",
+		title: "Showroom Axial Perspective",
+		subtitle: "Main entrance view looking into central retail hall and display islands",
+		image: "/images/kushals/kushals-02-showroom-perspective.jpeg",
+		category: "kushals",
+		featured: true
+	},
+	{
+		plate: "PLATE 03",
+		brand: "Kushal's",
+		title: "Retail Floor & Display Islands",
+		subtitle: "Wide perspective of tiered showcase tables and customer circulation",
+		image: "/images/kushals/kushals-03-showroom-wide.jpeg",
+		category: "kushals",
+		featured: true
+	},
+	{
+		plate: "PLATE 04",
+		brand: "Kushal's",
+		title: "Glass Vitrines & Wall Units",
+		subtitle: "Precision glass showcases, integrated shelf lighting & vanity mirror",
+		image: "/images/kushals/kushals-04-vitrines-and-mirror.jpeg",
+		category: "kushals",
+		featured: true
+	},
+	{
+		plate: "PLATE 05",
+		brand: "Kushal's",
+		title: "Glazed Storefront Entrance",
+		subtitle: "Full-height glass entrance framing and custom display pedestals",
+		image: "/images/kushals/kushals-05-glazed-entrance.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 06",
+		brand: "Kushal's",
+		title: "Cash Desk & 3D Brand Logo",
+		subtitle: "Custom millwork cashier pod with red acrylic 3D brand insignia",
+		image: "/images/kushals/kushals-06-cash-counter-logo.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 07",
+		brand: "Kushal's",
+		title: "Regal Wedding Bridal Bay",
+		subtitle: "Dedicated bridal jewellery collection zone with bespoke cove ceiling",
+		image: "/images/kushals/kushals-07-regal-wedding-bay.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 08",
+		brand: "Kushal's",
+		title: "Bridal Vitrines & Graphics",
+		subtitle: "High-CRI accent lighting and backlit promotional brand panels",
+		image: "/images/kushals/kushals-08-bridal-vitrines.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 09",
+		brand: "Kushal's",
+		title: "Display Island & Accent Lighting",
+		subtitle: "Tiered showcase pods with warm under-shelf LED diffusers",
+		image: "/images/kushals/kushals-09-display-islands.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 10",
+		brand: "Kushal's",
+		title: "Stepped Display Gondolas",
+		subtitle: "Curved corner joinery and multi-level merchandising displays",
+		image: "/images/kushals/kushals-10-stepped-gondolas.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 11",
+		brand: "Kushal's",
+		title: "Oval Illuminated Vanity Mirror",
+		subtitle: "Consultation station with halo LED mirror & display counters",
+		image: "/images/kushals/kushals-11-oval-vanity-mirror.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 12",
+		brand: "Kushal's",
+		title: "Service Counter & Wall Modules",
+		subtitle: "Billing support counter and perimeter display shelving bays",
+		image: "/images/kushals/kushals-12-service-counters.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 13",
+		brand: "Kushal's",
+		title: "Corner Perimeter Shelving",
+		subtitle: "Continuous architectural reveals and glass display fixtures",
+		image: "/images/kushals/kushals-13-corner-shelving.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 14",
+		brand: "Kushal's",
+		title: "POS Station & Media Display",
+		subtitle: "Integrated wall display screen and customer billing console",
+		image: "/images/kushals/kushals-14-pos-console.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 15",
+		brand: "Kushal's",
+		title: "Multi-Tier Vitrine Wall",
+		subtitle: "Full-height perimeter display shelving and bottom storage drawers",
+		image: "/images/kushals/kushals-15-multitier-wall.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 16",
+		brand: "Kushal's",
+		title: "Facade Installation & Scaffolding",
+		subtitle: "Active storefront engineering, structural staging & sign installation",
+		image: "/images/kushals/kushals-16-facade-scaffolding.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 17",
+		brand: "Kushal's",
+		title: "Staircase Civil Execution",
+		subtitle: "Polished granite treads, risers, and stainless steel safety railings",
+		image: "/images/kushals/kushals-17-staircase-civil.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 18",
+		brand: "Kushal's",
+		title: "Back-Office Management & CCTV",
+		subtitle: "Operations hub, security monitor desk, and built-in cabinetry",
+		image: "/images/kushals/kushals-18-backoffice-cctv.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 19",
+		brand: "Kushal's",
+		title: "Inventory Stockroom Storage",
+		subtitle: "Modular heavy-duty stock shelving and staging workstations",
+		image: "/images/kushals/kushals-19-stockroom-shelving.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 20",
+		brand: "Kushal's",
+		title: "Mezzanine Floor Handover",
+		subtitle: "Clean civil handover, vitrified tile flooring & service conduit",
+		image: "/images/kushals/kushals-20-mezzanine-handover.jpeg",
+		category: "kushals"
+	},
+	{
+		plate: "PLATE 21",
+		brand: "Toy Shire",
+		title: "Experiential Storefront",
+		subtitle: "Commercial storefront framing and display retail execution",
+		image: "/images/img-000.jpg",
+		category: "other"
+	},
+	{
+		plate: "PLATE 22",
+		brand: "Luxury Watches",
+		title: "Boutique Showroom",
+		subtitle: "High-security display vitrines and ambient lighting design",
+		image: "/images/img-001.jpg",
+		category: "other"
+	},
+	{
+		plate: "PLATE 23",
+		brand: "Commercial Concourse",
+		title: "Retail Concourse",
+		subtitle: "High-traffic commercial interior fit-out and customer circulation",
+		image: "/images/img-002.jpg",
+		category: "other"
+	}
+];
 ---
 
 <BaseLayout
-	title="Retail Fit-Outs & Turnkey Civil Projects | Xpandor"
-	description="From empty shell to open trading doors. Xpandor manages retail fit-outs with strict BOQ ownership, bespoke joinery, MEP engineering, and line-by-line QA/QC."
+	title="Fitout Projects & Turnkey Retail Execution | Xpandor"
+	description="From empty shell to open trading doors. Browse our verified retail fit-out projects archive across South India, managed with strict BOQ ownership, bespoke joinery, MEP engineering, and inspected handover."
+	image="/images/kushals/kushals-01-facade-night.jpeg"
 >
 	<!-- Hero Section: Architectural Drafting Frame -->
 	<section class="page-hero">
@@ -16,16 +208,16 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 					<div class="datum-left">
 						<span class="datum-tag">DISCIPLINE 02</span>
 						<span class="datum-sep">/</span>
-						<span class="datum-text">TURNKEY FIT-OUT & EXECUTION</span>
+						<span class="datum-text">TURNKEY FIT-OUT &amp; EXECUTION ARCHIVE</span>
 					</div>
 					<div class="datum-right">
-						<span class="datum-coord">CIVIL • MEP • MILLWORK • HANDOVER</span>
+						<span class="datum-coord">CIVIL • MEP • MILLWORK • 23 VERIFIED PLATES</span>
 					</div>
 				</div>
 
 				<div class="hero-body">
 					<div class="hero-eyebrow-wrap">
-						<span class="eyebrow">Turnkey Fit-Out Management</span>
+						<span class="eyebrow">Fitout Projects &amp; Turnkey Execution</span>
 					</div>
 
 					<h1 class="page-title">
@@ -34,20 +226,18 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 					</h1>
 
 					<p class="page-subhead">
-						You found the space. We make it a high-performing store. Xpandor manages retail fit-outs from architectural CAD drawings and itemized BOQs through civil execution, custom millwork, services coordination, and inspected handover.
+						You found the space. We make it a high-performing store. Xpandor manages retail fit-outs from architectural CAD drawings and itemized BOQs through civil execution, bespoke joinery, MEP services coordination, and inspected handover — backed by real, verified physical stores on the ground.
 					</p>
 
 					<div class="hero-actions">
-						<a 
-							href={`${WHATSAPP_BASE_URL}?text=Hi,%20I'd%20like%20to%20discuss%20a%20retail%20fit-out%20project%20with%20Xpandor.`}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="btn btn-gold"
-						>
-							<span>DISCUSS YOUR PLANS WITH US ↗</span>
+						<button type="button" class="btn btn-gold" data-open-modal>
+							<span>SUBMIT YOUR DETAILED BRIEF ↗</span>
+						</button>
+						<a href="#archive" class="btn btn-outline">
+							<span>Explore Photo Archive ({plates.length} Plates) ↓</span>
 						</a>
-						<a href="#process" class="btn btn-outline">
-							<span>Explore Execution Lifecycle ↓</span>
+						<a href="#process" class="btn btn-outline hidden-sm">
+							<span>Fit-Out Lifecycle ↓</span>
 						</a>
 					</div>
 				</div>
@@ -55,7 +245,80 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		</div>
 	</section>
 
-	<!-- Process Lifecycle -->
+	<!-- Projects Photo Archive Section -->
+	<section id="archive" class="section archive-section">
+		<div class="container">
+			<div class="section-header">
+				<div class="section-title-wrap">
+					<span class="eyebrow">Physical Store Execution</span>
+					<h2 class="section-title">Verified Fitout Projects.</h2>
+					<p class="section-desc">
+						Real storefronts, custom millwork, display vitrines, civil finishes, and trading spaces executed across South India.
+					</p>
+				</div>
+
+				<!-- Category Filters -->
+				<div class="filter-bar" role="tablist" aria-label="Project filter tabs">
+					<button type="button" class="filter-btn active" data-filter="all">
+						<span>All Plates ({plates.length})</span>
+					</button>
+					<button type="button" class="filter-btn" data-filter="kushals">
+						<span>Kushal's Flagship (20)</span>
+					</button>
+					<button type="button" class="filter-btn" data-filter="other">
+						<span>Other Commercial (3)</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- Specimen Plates Grid -->
+			<div class="plates-grid" id="plates-grid">
+				{plates.map((p, idx) => (
+					<div 
+						class="specimen-plate architectural-frame" 
+						data-category={p.category}
+						data-index={idx}
+					>
+						<div class="plate-visual">
+							<img 
+								src={p.image} 
+								alt={`${p.brand} - ${p.title}`} 
+								loading="lazy" 
+								width="800" 
+								height="500" 
+								class="plate-img" 
+							/>
+							<span class="plate-tag">{p.plate}</span>
+							<button 
+								type="button" 
+								class="plate-zoom-btn" 
+								aria-label={`View ${p.brand} ${p.title} full screen`}
+								data-lightbox-trigger={idx}
+							>
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<polyline points="15 3 21 3 21 9"></polyline>
+									<polyline points="9 21 3 21 3 15"></polyline>
+									<line x1="21" y1="3" x2="14" y2="10"></line>
+									<line x1="3" y1="21" x2="10" y2="14"></line>
+								</svg>
+							</button>
+						</div>
+
+						<div class="plate-caption">
+							<div class="plate-brand-row">
+								<span class="plate-brand">{p.brand}</span>
+								<span class="plate-id">{p.plate}</span>
+							</div>
+							<h3 class="plate-title">{p.title}</h3>
+							<p class="plate-subtitle">{p.subtitle}</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Process Lifecycle Section -->
 	<section id="process" class="section process-section">
 		<div class="container">
 			<div class="section-header">
@@ -69,7 +332,7 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 			<div class="process-grid">
 				<div class="proc-card architectural-frame">
 					<span class="proc-step">01</span>
-					<h3 class="proc-title">Site Survey & As-Built</h3>
+					<h3 class="proc-title">Site Survey &amp; As-Built</h3>
 					<p class="proc-desc">Laser-accurate physical dimensions, MEP shaft mapping, structural beam clearances, floor flatness, and landlord fit-out guidelines.</p>
 				</div>
 				<div class="proc-card architectural-frame">
@@ -94,19 +357,19 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 				</div>
 				<div class="proc-card architectural-frame">
 					<span class="proc-step">06</span>
-					<h3 class="proc-title">QA/QC & Handover</h3>
+					<h3 class="proc-title">QA/QC &amp; Handover</h3>
 					<p class="proc-desc">Line-by-line inspection of joinery reveals, paint flatness, electrical loads, snag list resolution, and ready-to-trade site handover.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Core Capabilities (Architectural SVG Stroke Icons — No Emojis) -->
+	<!-- Technical Trade Depth Capabilities -->
 	<section class="section capabilities-section">
 		<div class="container">
 			<div class="section-header">
 				<span class="eyebrow">Technical Trade Depth</span>
-				<h2 class="section-title">Engineered for retail footfall & durability.</h2>
+				<h2 class="section-title">Engineered for retail footfall &amp; durability.</h2>
 				<p class="section-desc">
 					We build physical spaces designed to withstand thousands of daily customer touches without peeling laminate, sagging shelving, or lighting failure.
 				</p>
@@ -135,7 +398,7 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 						</div>
 						<span class="trade-tag">MILLWORK</span>
 					</div>
-					<h3 class="card-title">Custom Joinery & Millwork</h3>
+					<h3 class="card-title">Custom Joinery &amp; Millwork</h3>
 					<p class="card-text">
 						Bespoke display vitrines with security hardware, floating island counters, marble-clad cash desks, and modular wall panelling fabricated to millimeter tolerances.
 					</p>
@@ -149,7 +412,7 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 						</div>
 						<span class="trade-tag">ENGINEERING</span>
 					</div>
-					<h3 class="card-title">Services & MEP Coordination</h3>
+					<h3 class="card-title">Services &amp; MEP Coordination</h3>
 					<p class="card-text">
 						Electrical load distribution, retail accent track lighting, HVAC airflow balancing, and statutory fire compliance coordinated by site engineers.
 					</p>
@@ -183,7 +446,7 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 					</p>
 				</div>
 
-				<!-- Card 6: Zero Operational Leaks -->
+				<!-- Card 6: Zero Operational Leakage -->
 				<div class="card-trade architectural-frame">
 					<div class="trade-header">
 						<div class="arch-icon">
@@ -200,16 +463,14 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		</div>
 	</section>
 
-
-
-	<!-- CTA -->
+	<!-- CTA & Group Company Section -->
 	<section class="section cta-section">
 		<div class="container text-center">
 			<div class="cta-banner architectural-frame mx-auto">
 				<span class="eyebrow">Execute With Rigor</span>
 				<h2 class="cta-title">Planning a store fit-out in South India?</h2>
 				<p class="cta-desc">
-					Send us your architectural drawings, BOQ draft, or site floorplan for an immediate scope evaluation and milestone schedule.
+					Share your store format, square footage, architectural drawings, or target launch date. We will prepare an operational plan, itemized BOQ, and turnkey timeline.
 				</p>
 				<div class="cta-actions">
 					<button type="button" class="btn btn-gold" data-open-modal>
@@ -236,7 +497,129 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 			</div>
 		</div>
 	</section>
+
+	<!-- Lightbox Modal for High-Resolution Inspection -->
+	<div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Photo Inspector">
+		<div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+		<div class="lightbox-content">
+			<button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close photo inspector">&times;</button>
+			<div class="lightbox-figure">
+				<img id="lightbox-img" src="" alt="" />
+				<div class="lightbox-meta">
+					<span class="lightbox-tag" id="lightbox-tag"></span>
+					<span class="lightbox-title" id="lightbox-title"></span>
+					<span class="lightbox-sub" id="lightbox-sub"></span>
+				</div>
+			</div>
+			<div class="lightbox-nav">
+				<button type="button" class="lightbox-btn" id="lightbox-prev" aria-label="Previous photo">← PREV</button>
+				<span class="lightbox-counter" id="lightbox-counter"></span>
+				<button type="button" class="lightbox-btn" id="lightbox-next" aria-label="Next photo">NEXT →</button>
+			</div>
+		</div>
+	</div>
 </BaseLayout>
+
+<script is:inline define:vars={{ plates }}>
+	// Filter functionality
+	const filterBtns = document.querySelectorAll('.filter-btn');
+	const plateCards = document.querySelectorAll('.specimen-plate');
+
+	filterBtns.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			filterBtns.forEach((b) => b.classList.remove('active'));
+			btn.classList.add('active');
+
+			const filter = btn.getAttribute('data-filter');
+			plateCards.forEach((card) => {
+				const cat = card.getAttribute('data-category');
+				if (filter === 'all' || cat === filter) {
+					card.style.display = 'flex';
+				} else {
+					card.style.display = 'none';
+				}
+			});
+		});
+	});
+
+	// Lightbox functionality
+	const modal = document.getElementById('lightbox-modal');
+	const backdrop = document.getElementById('lightbox-backdrop');
+	const closeBtn = document.getElementById('lightbox-close');
+	const imgEl = document.getElementById('lightbox-img');
+	const tagEl = document.getElementById('lightbox-tag');
+	const titleEl = document.getElementById('lightbox-title');
+	const subEl = document.getElementById('lightbox-sub');
+	const counterEl = document.getElementById('lightbox-counter');
+	const prevBtn = document.getElementById('lightbox-prev');
+	const nextBtn = document.getElementById('lightbox-next');
+
+	let currentIndex = 0;
+
+	function openLightbox(idx) {
+		currentIndex = idx;
+		renderLightbox();
+		modal?.classList.add('is-open');
+		modal?.setAttribute('aria-hidden', 'false');
+		document.body.style.overflow = 'hidden';
+	}
+
+	function closeLightbox() {
+		modal?.classList.remove('is-open');
+		modal?.setAttribute('aria-hidden', 'true');
+		document.body.style.overflow = '';
+	}
+
+	function renderLightbox() {
+		const item = plates[currentIndex];
+		if (!item) return;
+		imgEl.src = item.image;
+		imgEl.alt = `${item.brand} - ${item.title}`;
+		tagEl.textContent = `${item.plate} • ${item.brand}`;
+		titleEl.textContent = item.title;
+		subEl.textContent = item.subtitle;
+		counterEl.textContent = `${currentIndex + 1} of ${plates.length}`;
+	}
+
+	function nextImage() {
+		currentIndex = (currentIndex + 1) % plates.length;
+		renderLightbox();
+	}
+
+	function prevImage() {
+		currentIndex = (currentIndex - 1 + plates.length) % plates.length;
+		renderLightbox();
+	}
+
+	document.querySelectorAll('[data-lightbox-trigger]').forEach((trigger) => {
+		trigger.addEventListener('click', (e) => {
+			e.stopPropagation();
+			const idx = parseInt(trigger.getAttribute('data-lightbox-trigger') || '0', 10);
+			openLightbox(idx);
+		});
+	});
+
+	// Also clicking on plate visual opens lightbox
+	document.querySelectorAll('.plate-visual').forEach((vis) => {
+		vis.addEventListener('click', () => {
+			const parent = vis.closest('.specimen-plate');
+			const idx = parseInt(parent?.getAttribute('data-index') || '0', 10);
+			openLightbox(idx);
+		});
+	});
+
+	closeBtn?.addEventListener('click', closeLightbox);
+	backdrop?.addEventListener('click', closeLightbox);
+	nextBtn?.addEventListener('click', nextImage);
+	prevBtn?.addEventListener('click', prevImage);
+
+	window.addEventListener('keydown', (e) => {
+		if (!modal?.classList.contains('is-open')) return;
+		if (e.key === 'Escape') closeLightbox();
+		if (e.key === 'ArrowRight') nextImage();
+		if (e.key === 'ArrowLeft') prevImage();
+	});
+</script>
 
 <style>
 	.page-hero {
@@ -300,31 +683,31 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 	}
 
 	.hero-body {
-		padding: 4rem 3.5rem;
-		max-width: 900px;
+		padding: 3.5rem 2.5rem;
+		max-width: 880px;
 	}
 
 	@media (max-width: 768px) {
 		.hero-body {
-			padding: 2.5rem 1.5rem;
+			padding: 2rem 1.5rem;
 		}
 	}
 
 	.hero-eyebrow-wrap {
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
 	}
 
 	.page-title {
-		font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+		font-size: clamp(2.4rem, 4.5vw, 3.4rem);
 		font-weight: 600;
-		line-height: 1.15;
+		line-height: 1.1;
 		letter-spacing: -0.025em;
 		margin: 0.6rem 0 1.25rem;
 		color: var(--text-main);
 	}
 
 	.page-subhead {
-		font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+		font-size: clamp(1.02rem, 1.4vw, 1.15rem);
 		line-height: 1.7;
 		color: var(--text-muted);
 		margin-bottom: 2.25rem;
@@ -336,7 +719,214 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		gap: 1rem;
 	}
 
-	/* Process Grid */
+	/* Archive Section & Filter Tabs */
+	.archive-section {
+		border-top: 1px solid var(--border-subtle);
+		background: #06070B;
+		padding: 4.5rem 0 5.5rem;
+	}
+
+	.section-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+	}
+
+	.section-title-wrap {
+		max-width: 650px;
+	}
+
+	.section-title {
+		font-size: clamp(2rem, 3.5vw, 2.75rem);
+		font-weight: 600;
+		line-height: 1.15;
+		margin: 0.5rem 0 0.85rem;
+		color: var(--text-main);
+		letter-spacing: -0.02em;
+	}
+
+	.section-desc {
+		font-size: 1rem;
+		color: var(--text-muted);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.filter-bar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		background: rgba(11, 13, 19, 0.7);
+		padding: 0.4rem;
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-xs);
+	}
+
+	.filter-btn {
+		background: transparent;
+		border: 1px solid transparent;
+		color: var(--text-muted);
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.08em;
+		padding: 0.5rem 0.95rem;
+		border-radius: 2px;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+
+	.filter-btn:hover {
+		color: var(--text-main);
+		border-color: var(--border-subtle);
+	}
+
+	.filter-btn.active {
+		background: rgba(212, 175, 55, 0.12);
+		color: var(--accent-gold);
+		border-color: var(--border-gold);
+		font-weight: 600;
+	}
+
+	/* Plates Grid */
+	.plates-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.25rem;
+	}
+
+	@media (max-width: 860px) {
+		.plates-grid {
+			grid-template-columns: 1fr;
+			gap: 1.75rem;
+		}
+	}
+
+	.specimen-plate {
+		background: var(--bg-surface);
+		border-radius: var(--radius-xs);
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		transition: border-color 0.25s ease, transform 0.25s ease;
+	}
+
+	.specimen-plate:hover {
+		border-color: var(--border-brass);
+	}
+
+	.plate-visual {
+		position: relative;
+		aspect-ratio: 16 / 10;
+		overflow: hidden;
+		background: #000;
+		cursor: pointer;
+	}
+
+	.plate-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+		display: block;
+	}
+
+	.specimen-plate:hover .plate-img {
+		transform: scale(1.025);
+	}
+
+	.plate-tag {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		background: rgba(11, 13, 19, 0.88);
+		color: var(--accent-gold);
+		padding: 0.35rem 0.75rem;
+		border: 1px solid var(--border-brass);
+		backdrop-filter: blur(8px);
+		border-radius: 2px;
+		z-index: 2;
+	}
+
+	.plate-zoom-btn {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(11, 13, 19, 0.85);
+		color: var(--text-main);
+		border: 1px solid var(--border-subtle);
+		border-radius: 2px;
+		cursor: pointer;
+		opacity: 0;
+		transition: opacity 0.25s ease, background 0.2s ease, border-color 0.2s ease;
+		z-index: 2;
+	}
+
+	.specimen-plate:hover .plate-zoom-btn {
+		opacity: 1;
+	}
+
+	.plate-zoom-btn:hover {
+		background: var(--accent-gold);
+		color: #000;
+		border-color: var(--accent-gold);
+	}
+
+	.plate-caption {
+		padding: 1.5rem 1.75rem;
+		background: var(--bg-surface);
+		border-top: 1px solid var(--border-subtle);
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.plate-brand-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		letter-spacing: 0.1em;
+	}
+
+	.plate-brand {
+		color: var(--accent-gold);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.plate-id {
+		color: var(--text-subdued);
+	}
+
+	.plate-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin: 0.2rem 0 0;
+		color: var(--text-main);
+		letter-spacing: -0.01em;
+	}
+
+	.plate-subtitle {
+		font-size: 0.86rem;
+		color: var(--text-muted);
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	/* Process Lifecycle */
 	.process-section {
 		border-top: 1px solid var(--border-subtle);
 		border-bottom: 1px solid var(--border-subtle);
@@ -391,7 +981,11 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		margin: 0;
 	}
 
-	/* Trade Cards */
+	/* Capabilities / Trade Grid */
+	.capabilities-section {
+		background: var(--bg-base);
+	}
+
 	.grid-3 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -414,15 +1008,23 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		background: var(--bg-surface);
 		padding: 2.25rem 2rem;
 		border-radius: var(--radius-xs);
-		display: flex;
-		flex-direction: column;
 	}
 
 	.trade-header {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 1.5rem;
+		justify-content: space-between;
+		margin-bottom: 1.25rem;
+	}
+
+	.arch-icon {
+		color: var(--accent-gold);
+	}
+
+	.arch-icon svg {
+		stroke: var(--accent-gold);
+		fill: none;
+		stroke-width: 1.5;
 	}
 
 	.trade-tag {
@@ -430,10 +1032,11 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		font-size: 0.68rem;
 		letter-spacing: 0.12em;
 		color: var(--text-subdued);
+		font-weight: 600;
 	}
 
 	.card-title {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 		font-weight: 600;
 		margin: 0 0 0.75rem;
 		color: var(--text-main);
@@ -441,19 +1044,17 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 
 	.card-text {
 		font-size: 0.88rem;
-		line-height: 1.6;
+		line-height: 1.65;
 		color: var(--text-muted);
 		margin: 0;
 	}
-
-
 
 	/* CTA */
 	.cta-banner {
 		background: var(--bg-surface);
 		padding: 4.5rem 3rem;
 		border-radius: var(--radius-xs);
-		max-width: 800px;
+		max-width: 820px;
 	}
 
 	@media (max-width: 640px) {
@@ -474,20 +1075,20 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 		font-size: 1rem;
 		line-height: 1.65;
 		color: var(--text-muted);
-		max-width: 600px;
+		max-width: 620px;
 		margin: 0 auto 2.25rem;
 	}
 
 	.cta-actions {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
+		flex-wrap: wrap;
 		gap: 1rem;
 	}
 
 	.cta-group-callout {
-		margin-top: 2.25rem;
-		padding-top: 1.5rem;
+		margin-top: 3rem;
+		padding-top: 2rem;
 		border-top: 1px solid var(--border-subtle);
 	}
 
@@ -504,13 +1105,157 @@ import { AV_INTERIORS_URL, WHATSAPP_BASE_URL } from '../consts';
 
 	.group-callout-link {
 		color: var(--accent-gold);
-		margin-left: 0.35rem;
+		margin-left: 0.5rem;
 		display: inline-block;
-		transition: color 0.2s ease;
 	}
 
 	.group-callout-link:hover {
-		color: var(--accent-gold-light);
 		text-decoration: underline;
+	}
+
+	/* Lightbox Modal */
+	.lightbox-modal {
+		position: fixed;
+		inset: 0;
+		z-index: 3000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.25s ease;
+	}
+
+	.lightbox-modal.is-open {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.lightbox-backdrop {
+		position: absolute;
+		inset: 0;
+		background: rgba(4, 5, 8, 0.94);
+		backdrop-filter: blur(16px);
+	}
+
+	.lightbox-content {
+		position: relative;
+		z-index: 10;
+		max-width: 1000px;
+		width: 92%;
+		max-height: 92vh;
+		display: flex;
+		flex-direction: column;
+		background: var(--bg-surface);
+		border: 1px solid var(--border-gold);
+		border-radius: var(--radius-xs);
+		box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85);
+		overflow: hidden;
+	}
+
+	.lightbox-close {
+		position: absolute;
+		top: 1rem;
+		right: 1.25rem;
+		background: rgba(11, 13, 19, 0.8);
+		border: 1px solid var(--border-subtle);
+		color: var(--text-muted);
+		font-size: 2rem;
+		line-height: 1;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 20;
+		transition: all 0.2s ease;
+	}
+
+	.lightbox-close:hover {
+		color: var(--text-main);
+		border-color: var(--border-brass);
+	}
+
+	.lightbox-figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow: hidden;
+		background: #000;
+	}
+
+	#lightbox-img {
+		max-width: 100%;
+		max-height: 65vh;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+		display: block;
+	}
+
+	.lightbox-meta {
+		width: 100%;
+		padding: 1.25rem 2rem;
+		background: var(--bg-surface);
+		border-top: 1px solid var(--border-subtle);
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.lightbox-tag {
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		color: var(--accent-gold);
+		text-transform: uppercase;
+	}
+
+	.lightbox-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--text-main);
+	}
+
+	.lightbox-sub {
+		font-size: 0.88rem;
+		color: var(--text-muted);
+	}
+
+	.lightbox-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.85rem 2rem;
+		background: rgba(11, 13, 19, 0.95);
+		border-top: 1px solid var(--border-subtle);
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+	}
+
+	.lightbox-btn {
+		background: transparent;
+		border: 1px solid var(--border-subtle);
+		color: var(--text-muted);
+		padding: 0.45rem 1rem;
+		border-radius: 2px;
+		cursor: pointer;
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		letter-spacing: 0.1em;
+		transition: all 0.2s ease;
+	}
+
+	.lightbox-btn:hover {
+		color: var(--accent-gold);
+		border-color: var(--border-gold);
+	}
+
+	.lightbox-counter {
+		color: var(--text-subdued);
+		letter-spacing: 0.1em;
 	}
 </style>

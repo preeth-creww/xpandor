@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 # Local root video copies
 /xpandor-journey.mp4
+
+# Raw input media folders
+Kushal's fitout images/
