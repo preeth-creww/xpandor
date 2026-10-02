@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import JourneyTimeline from '../components/JourneyTimeline.astro';
 import TimelineEstimator from '../components/TimelineEstimator.astro';
 import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from '../consts';
 ---
@@ -155,113 +154,106 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		</div>
 	</section>
 
-	<!-- Section 3: The Procurement Matrix (The 7-Vendor Problem vs. Turnkey Ownership) -->
+	<!-- Section 3: Direct Model Comparison Matrix (Conventional Fragmented Model vs. The Xpandor Turnkey Partnership) -->
 	<section class="section matrix-section">
 		<div class="container">
-			<div class="section-header text-center mx-auto" style="max-width: 780px;">
-				<span class="eyebrow">Procurement Reality</span>
-				<h2 class="section-title">Opening a store is one physical project.<br />Not seven disconnected vendors.</h2>
+			<div class="section-header text-center mx-auto" style="max-width: 820px;">
+				<span class="eyebrow">Direct Model Comparison</span>
+				<h2 class="section-title">Fragmented Vendor Model vs.<br /><span class="text-gradient-brass">The Xpandor Turnkey Partnership.</span></h2>
 				<p class="section-desc mx-auto">
-					Traditional retail expansion fractures responsibility across brokers, lawyers, designers, and trades. When a store opening is delayed by four weeks, every vendor blames the next.
+					See how conventional retail expansion breaks down across multiple disconnected parties — and how Xpandor delivers single-contract accountability across all 4 core disciplines.
 				</p>
 			</div>
 
 			<div class="matrix-table architectural-frame">
 				<div class="matrix-row matrix-header-row">
-					<div class="col-phase">EXPANSION PHASE</div>
+					<div class="col-phase">CORE OFFERING</div>
 					<div class="col-trad">CONVENTIONAL FRAGMENTED MODEL</div>
 					<div class="col-xpandor">THE XPANDOR TURNKEY PARTNERSHIP</div>
 				</div>
 
 				<div class="matrix-row">
 					<div class="col-phase">
-						<span class="phase-code">01</span>
-						<strong>Site Selection</strong>
+						<a href="/locations" class="phase-link">
+							<span class="phase-code">01</span>
+							<strong>Locations & Siting</strong>
+							<span class="phase-arrow">↗</span>
+						</a>
 					</div>
 					<div class="col-trad text-muted">
-						Local broker shows spaces without evaluating fit-out feasibility, MEP loads, or true civil renovation costs.
+						Disconnected local brokers pitch spaces without verifying structural MEP clearance, power loads, or true civil capex. Commercial terms leave you without adequate rent-free execution buffers.
 					</div>
 					<div class="col-xpandor">
 						<span class="check-mark">✓</span>
-						<strong>Commercial Feasibility Audit:</strong> Every site screened against unit economics, power loads, and build capex before you sign.
+						<strong>Feasibility-Backed Siting:</strong> Catchment footfall audits, structural MEP verification, and 45–75 day rent-free fit-out windows negotiated directly with landlords before signing.
 					</div>
 				</div>
 
 				<div class="matrix-row">
 					<div class="col-phase">
-						<span class="phase-code">02</span>
-						<strong>Lease Negotiation</strong>
+						<a href="/projects" class="phase-link">
+							<span class="phase-code">02</span>
+							<strong>Turnkey Fit-Out</strong>
+							<span class="phase-arrow">↗</span>
+						</a>
 					</div>
 					<div class="col-trad text-muted">
-						Disconnected legal counsel unaware of rent-free fit-out periods required for civil execution.
+						Architect drawings clash with on-site MEP realities. Disconnected civil, MEP, and carpentry contractors trade blame for delays and pass variation cost overruns onto the client.
 					</div>
 					<div class="col-xpandor">
 						<span class="check-mark">✓</span>
-						<strong>Turnkey Commercial Structuring:</strong> Rent-free execution buffers, landlord NOCs, and escalation caps locked upfront.
+						<strong>Strict BOQ & Schedule Control:</strong> Single master team coordinating civil, HVAC, electrical, and bespoke joinery with zero contractor markup leaks and penalty-backed handover deadlines.
 					</div>
 				</div>
 
 				<div class="matrix-row">
 					<div class="col-phase">
-						<span class="phase-code">03</span>
-						<strong>Fit-Out & Execution</strong>
+						<a href="/signage" class="phase-link">
+							<span class="phase-code">03</span>
+							<strong>Facades & Signage</strong>
+							<span class="phase-arrow">↗</span>
+						</a>
 					</div>
 					<div class="col-trad text-muted">
-						Architect drawings fail to align with site MEP reality. Contractor pushes cost variations onto client.
+						Independent signage vendor arrives after civil handover only to discover storefront framing lacks structural reinforcement. Non-compliant signage risks municipal penalties or removal.
 					</div>
 					<div class="col-xpandor">
 						<span class="check-mark">✓</span>
-						<strong>Strict BOQ & Schedule Control:</strong> Single master team coordinating civil, HVAC, electrical, and bespoke joinery with zero markup leakage.
+						<strong>Synchronized Facade Engineering:</strong> Structural steel framing, 3D illuminated letters, and municipal bilingual script compliance engineered directly into the civil construction schedule.
 					</div>
 				</div>
 
 				<div class="matrix-row">
 					<div class="col-phase">
-						<span class="phase-code">04</span>
-						<strong>Facade & Signage</strong>
+						<a href="/people" class="phase-link">
+							<span class="phase-code">04</span>
+							<strong>Retail Staffing</strong>
+							<span class="phase-arrow">↗</span>
+						</a>
 					</div>
 					<div class="col-trad text-muted">
-						Sign vendor shows up on handover day only to realize facade framing was never reinforced.
+						External staffing agency begins searching for associates only after civil handover. Store sits completed and paying rent while store floor positions remain unfilled.
 					</div>
 					<div class="col-xpandor">
 						<span class="check-mark">✓</span>
-						<strong>Synchronized Signage:</strong> Facade engineering built directly into civil schedules. 3D illuminated letters ready 7 days prior.
+						<strong>Day-1 Trading Readiness:</strong> Store leadership and retail floor associates recruited, background-vetted, and brand-inducted in parallel with the fit-out, ready to sell from day one.
 					</div>
 				</div>
 
-				<div class="matrix-row">
-					<div class="col-phase">
-						<span class="phase-code">05</span>
-						<strong>Store Launch</strong>
+				<div class="matrix-footer">
+					<div class="matrix-footer-content">
+						<span class="matrix-footer-tag">OPERATIONAL PROTOCOL</span>
+						<span class="matrix-footer-text">Want to see the end-to-end execution blueprint?</span>
 					</div>
-					<div class="col-trad text-muted">
-						Staffing agency begins sourcing associates after doors are built. Store sits empty paying rent.
-					</div>
-					<div class="col-xpandor">
-						<span class="check-mark">✓</span>
-						<strong>Synchronized Staffing:</strong> Store manager and retail crew recruited and inducted ahead of store handover for day-one readiness.
-					</div>
+					<a href="/how-we-work" class="matrix-footer-link">
+						<span>Explore How We Work ↗</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Section 4: The 6-Stage Turnkey Journey -->
-	<section id="journey" class="section journey-section">
-		<div class="container">
-			<div class="section-header">
-				<span class="eyebrow">Structured Execution</span>
-				<h2 class="section-title">The Sequence Is The Product.</h2>
-				<p class="section-desc">
-					You don't buy fragmented services. You commission one integrated expansion sequence from location discovery to doors open.
-				</p>
-			</div>
-
-			<JourneyTimeline activeStep={1} />
-		</div>
-	</section>
-
-	<!-- Section 5: Selected Project Specimen Plates -->
+	<!-- Section 4: Selected Project Specimen Plates -->
 	<section id="selected-work" class="section work-section">
 		<div class="container">
 			<div class="section-header">
@@ -367,14 +359,14 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		</div>
 	</section>
 
-	<!-- Section 6: Interactive Store Milestone Specifier -->
+	<!-- Section 5: Interactive Store Milestone Specifier -->
 	<section class="section estimator-section">
 		<div class="container">
 			<TimelineEstimator />
 		</div>
 	</section>
 
-	<!-- Section 7: Founder & Expansion Lead Accountability -->
+	<!-- Section 6: Founder & Expansion Lead Accountability -->
 	<section class="section leadership-section">
 		<div class="container">
 			<div class="leadership-frame architectural-frame">
@@ -436,7 +428,7 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		</div>
 	</section>
 
-	<!-- Section 8: Final Strategic Intake -->
+	<!-- Section 7: Final Strategic Intake -->
 	<section class="section intake-section">
 		<div class="container">
 			<div class="intake-banner architectural-frame">
@@ -872,10 +864,31 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 	}
 
 	.col-phase {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
 		font-size: 0.95rem;
+	}
+
+	.phase-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+		color: var(--text-main);
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+
+	.phase-link:hover {
+		color: var(--accent-gold);
+	}
+
+	.phase-arrow {
+		font-size: 0.82rem;
+		color: var(--text-muted);
+		transition: transform 0.2s ease, color 0.2s ease;
+	}
+
+	.phase-link:hover .phase-arrow {
+		transform: translate(2px, -2px);
+		color: var(--accent-gold);
 	}
 
 	.phase-code {
@@ -927,7 +940,72 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		margin-right: 0.35rem;
 	}
 
-	/* Section 5: Selected Work Specimen Plates */
+	.matrix-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.25rem 2rem;
+		background: rgba(11, 13, 19, 0.6);
+		border-top: 1px solid var(--border-subtle);
+		font-size: 0.85rem;
+		gap: 1.5rem;
+	}
+
+	.matrix-footer-content {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.matrix-footer-tag {
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		letter-spacing: 0.12em;
+		color: var(--accent-gold);
+		background: var(--accent-gold-subtle);
+		padding: 0.2rem 0.5rem;
+		border-radius: 2px;
+		font-weight: 700;
+	}
+
+	.matrix-footer-text {
+		color: var(--text-muted);
+	}
+
+	.matrix-footer-link {
+		font-family: var(--font-mono);
+		font-size: 0.78rem;
+		letter-spacing: 0.08em;
+		color: var(--accent-gold);
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-weight: 600;
+		transition: color 0.2s ease;
+		white-space: nowrap;
+	}
+
+	.matrix-footer-link:hover {
+		color: #fff;
+	}
+
+	@media (max-width: 900px) {
+		.matrix-footer {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.75rem;
+			padding: 1.25rem;
+		}
+
+		.matrix-footer-content {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.4rem;
+		}
+	}
+
+	/* Section 4: Selected Work Specimen Plates */
 	.work-section {
 		border-bottom: 1px solid var(--border-subtle);
 	}
@@ -1024,7 +1102,7 @@ import { FOUNDER_LINKEDIN, FOUNDER_NAME, FOUNDER_ROLE, WHATSAPP_BASE_URL } from 
 		letter-spacing: 0.08em;
 	}
 
-	/* Section 7: Direct Leadership Accountability */
+	/* Section 6: Direct Leadership Accountability */
 	.leadership-section {
 		border-bottom: 1px solid var(--border-subtle);
 		background: #080A0F;
